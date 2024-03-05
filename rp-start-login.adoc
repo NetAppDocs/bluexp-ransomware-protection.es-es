@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: rp-start-login.html 
+keywords: bluexp login, ransomware protection log in 
+summary: Empieza a usar la protección frente al ransomware de BlueXP accediendo a este servicio en BlueXP. 
+---
+= Accede a la protección frente al ransomware de BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Utilizarás NetApp BlueXP para iniciar sesión en el servicio de protección contra ransomware de BlueXP.
+
+Para iniciar sesión en BlueXP, puede utilizar sus credenciales del sitio de soporte de NetApp o puede registrarse para iniciar sesión en cloud de NetApp con su correo electrónico y una contraseña. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Obtenga más información sobre cómo iniciar sesión"^].
+
+.Pasos
+. Abra un explorador web y vaya al https://console.bluexp.netapp.com/["Consola BlueXP"^].
++
+Aparece la página de inicio de sesión de NetApp BlueXP.
+
+. Inicie sesión en BlueXP.
+. En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
++
+Si es la primera vez que inicia sesión en este servicio, aparecerá la página de destino.
+
++
+De lo contrario, se mostrará la consola de protección contra ransomware de BlueXP.
+
++
+image:screen-dashboard.png["Consola de protección contra ransomware de BlueXP"]
+
+. Comience a utilizar el servicio.
++
+** Si no tienes un conector BlueXP o no es el indicado para esta vista previa, es posible que debas ponerte en contacto con el Soporte de NetApp o seguir mensajes para registrarte en esta vista previa.
+** Si eres nuevo en BlueXP y no has usado ningún conector, cuando seleccionas «*Protección contra ransomware*», aparecerá un mensaje sobre la inscripción. Continúe y envíe el formulario. NetApp se pondrá en contacto con usted para informarse sobre su solicitud de evaluación.
+** Si eres un usuario de BlueXP con un conector existente, cuando seleccionas «*Protección contra ransomware*», aparecerá un mensaje sobre la inscripción.
+** Si ya estás participando en la vista previa, al seleccionar “*Protección contra ransomware*”, puedes continuar con el servicio. Si aún no lo ha hecho, debe seleccionar la opción *Descubrir cargas de trabajo*.
+
+
+

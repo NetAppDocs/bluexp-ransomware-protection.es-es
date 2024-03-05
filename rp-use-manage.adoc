@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: rp-use-manage.html 
+keywords: ransomware protection workload name, ransomware protection 
+summary: Puede gestionar las cargas de trabajo si cambia el nombre de la carga de trabajo en lugar de utilizar un nombre predeterminado, que es más peligroso. 
+---
+= Gestionar cargas de trabajo
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Es posible gestionar las cargas de trabajo cambiando el nombre de la carga de trabajo. El uso de un nombre predeterminado es un riesgo para ataques de ransomware.
+
+.Pasos
+. En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
+. En el menú, selecciona *Protección*.
+. Seleccione una carga de trabajo, seleccione la opción *Acciones* ... Icono a la derecha y seleccione *Editar nombre de carga de trabajo*.
+. Introduzca el nombre de la nueva carga de trabajo y seleccione *Guardar*.
+

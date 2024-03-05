@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: rp-start-faq.html 
+keywords: ransomware protection faq, ransomware protection frequently asked questions 
+summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
+---
+= Preguntas frecuentes sobre la protección contra ransomware de BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.
+
+
+
+== Acceso
+
+*¿Cuál es la URL de protección contra ransomware de BlueXP?*
+Para la URL, en un navegador, introduzca: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Para acceder a la consola BlueXP.
+
+*¿Necesitas una licencia para usar la protección contra ransomware de BlueXP?*
+No se requiere un archivo de licencia de NetApp (NLF). La versión previa de la protección contra ransomware de BlueXP no requiere ninguna licencia especial.  Todas las licencias de vista previa son licencias de evaluación.
+
+Para la versión previa de este servicio, se requiere una licencia de servicio de backup y recuperación de BlueXP.
+
+
+TIP: Para la versión de vista previa, NetApp ayuda a configurar la evaluación y las licencias necesarias.
+
+*¿Cómo habilitas la protección contra ransomware de BlueXP?*
+La protección frente al ransomware de BlueXP no requiere habilitación. La opción de protección frente a ransomware se habilita automáticamente en la navegación de la izquierda de BlueXP.
+
+Para la versión de vista previa, debes registrarte o ponerte en contacto con tu representante de ventas de NetApp para probar este servicio. Una vez que utilices BlueXP Connector, incluirá las prestaciones adecuadas para el servicio.
+
+**¿La protección contra ransomware de BlueXP está disponible en modos estándar, restringido y privado?**
+Por el momento, la protección contra ransomware de BlueXP solo está disponible en modo estándar. Manténgase atento para obtener más información.
+
+Para ver una explicación sobre estos modos en todos los servicios de BlueXP, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Modos de implementación de BlueXP"^].
+
+** ¿Cómo se manejan los permisos de acceso?**
+Solo los administradores de cuentas tienen la capacidad de iniciar el servicio y detectar cargas de trabajo (porque esto implica comprometerse con el uso de un recurso). Cualquier rol puede realizar interacciones posteriores.
+
+** ¿Qué resolución de dispositivo es la mejor?**
+La resolución de dispositivo recomendada para la protección contra ransomware de BlueXP es 1920x1080 o superior.
+
+** ¿Qué navegador debo usar?**
+Cualquier navegador moderno funcionará.
+
+
+
+== Interacción con otros servicios
+
+*¿La protección contra ransomware de BlueXP es consciente de las configuraciones de protección hechas en NetApp ONTAP?*
+Sí, la protección frente a ransomware de BlueXP detecta las programaciones de Snapshot establecidas en ONTAP.
+
+*Si estableces una política usando la protección contra ransomware de BlueXP, ¿tienes que hacer cambios futuros solo en este servicio?*
+No, puede realizar cambios de política desde cualquier servicio.
+
+
+
+== Cargas de trabajo
+
+** ¿Qué compone una carga de trabajo?**
+Una carga de trabajo incluye todos los volúmenes que utiliza una única instancia de aplicación. Por ejemplo, una instancia de Oracle DB desplegada en ora3.host.com puede tener vol1 y vol2 para sus datos y registros, respectivamente. Esos volúmenes juntos constituyen la carga de trabajo para esa instancia específica de la instancia de Oracle DB.
+
+*¿Cómo prioriza la protección contra ransomware de BlueXP los datos de carga de trabajo?*
+La prioridad de los datos para la versión Preview viene determinada por las copias snapshot realizadas y las copias de seguridad programadas.
+
+La prioridad de la carga de trabajo se determina en las siguientes frecuencias de Snapshot:
+
+* *Crítico*: Copias instantáneas tomadas menos de 1 por hora (programa de protección altamente agresivo)
+* *Importante*: Copias instantáneas tomadas menos de 1 por día pero más de 1 por hora
+* *Estándar*: Copias instantáneas tomadas más de 1 por día
+
+
+**Nuevo volumen añadido, pero aún no aparece**
+Si añadió un volumen nuevo a su entorno, inicie la detección nuevamente y aplique políticas de protección para proteger ese nuevo volumen.
+
+**La consola no muestra todas mis cargas de trabajo. ¿Qué podría estar mal?**
+Actualmente, solo se admiten volúmenes NFS. Los volúmenes iSCSI, los volúmenes CIFS y otras configuraciones no compatibles se filtran y no aparecen en la consola.
+
+
+
+== Políticas de protección
+
+*¿Coexisten las políticas de ransomware de BlueXP con los otros tipos de políticas de cargas de trabajo?*
+En este momento, el backup y recuperación de datos de BlueXP (Cloud Backup) admite una política de backup por volumen. Por ello, el backup y la recuperación de BlueXP y la protección frente a ransomware de BlueXP comparten las políticas de backup.
+
+Las copias Snapshot no están limitadas y se pueden añadir por separado en cada servicio.

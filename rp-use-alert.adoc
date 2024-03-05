@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: rp-use-alert.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
+summary: Si la protección contra ransomware de BlueXP detecta un posible ataque, aparece una alerta en el panel de protección contra ransomware de BlueXP que indica un posible ataque de ransomware. El servicio también inicia inmediatamente la creación de una copia snapshot. En este punto, deberías conocer el riesgo potencial en la pestaña Alertas de protección contra ransomware de BlueXP. 
+---
+= Responder a una alerta de ransomware detectada
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si la protección frente al ransomware de BlueXP detecta un posible ataque, aparece una alerta en el panel de protección contra ransomware de BlueXP y en las notificaciones de BlueXP en la parte superior derecha que indican un posible ataque de ransomware. El servicio también inicia inmediatamente la creación de una copia snapshot. En este punto, deberías analizar el riesgo potencial en la pestaña *Alertas* de protección contra ransomware de BlueXP.
+
+Para comenzar a recuperar los datos, marque la alerta como lista para la recuperación para que el administrador de almacenamiento pueda comenzar el proceso de recuperación.
+
+Cada alerta podría tener varios incidentes en volúmenes diferentes con estados diferentes, así que asegúrese de revisar todos los incidentes.
+
+El servicio proporciona información llamada _Evidence_ sobre qué causó que se emitiera la alerta, como la siguiente:
+
+* Las extensiones de archivo se han creado o cambiado
+* Se ha producido la creación del archivo y se ha aumentado en un porcentaje mostrado
+* Se ha suprimido el archivo y se ha aumentado en un porcentaje mostrado
+
+
+Una alerta se basa en los siguientes tipos de comportamiento:
+
+* *Ataque potencial*: Una alerta se produce cuando Autonomous Ransomware Protection detecta una nueva extensión y la ocurrencia se repite más de 20 veces en las últimas 24 horas (comportamiento predeterminado).
+* *Advertencia*: Se produce una advertencia basada en los siguientes comportamientos:
++
+** La detección de una nueva extensión no se ha identificado antes y el mismo comportamiento no se repite las veces suficientes para declararla como un ataque.
+** Se observa una alta entropía.
+** Las operaciones de lectura/escritura/cambio de nombre/eliminación de archivos han experimentado un aumento del 100% de la actividad más allá de la línea base.
+
+
+
+
+La evidencia se basa en la información de la Protección Autónoma contra el ransomware de ONTAP. Para obtener más información, consulte https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Información general sobre la protección de ransomware autónoma"^].
+
+
+
+== Ver las alertas
+
+Puedes acceder a alertas desde el Panel de protección contra ransomware de BlueXP o desde la pestaña * Alertas *.
+
+.Pasos
+. En la consola de protección contra ransomware de BlueXP, revisa el panel Alertas.
+. Selecciona *Ver todo* debajo de una de las estatuas.
+. Haga clic en una alerta para revisar todos los incidentes en cada volumen de cada alerta.
+. Para revisar alertas adicionales, haga clic en *Alert* en las rutas de navegación en la parte superior izquierda.
+. Revise las alertas en la página Alertas.
++
+image:screen-alerts.png["Alertas"]
+
+. Continúe con <<Marcar los incidentes de ransomware como listos para la recuperación (después de neutralizar los incidentes)>>.
+
+
+
+
+== Marcar los incidentes de ransomware como listos para la recuperación (después de neutralizar los incidentes)
+
+Una vez que haya mitigado el ataque y esté listo para recuperar cargas de trabajo, debe comunicarse con el equipo de administrador de almacenamiento que los datos están listos para la recuperación, de modo que puedan iniciar el proceso de recuperación.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Alertas*.
++
+image:screen-alerts.png["Alertas"]
+
+. En la página Alerts, seleccione la alerta.
+. Revise los incidentes en la alerta.
++
+image:screen-alerts-incidents.png["Página Incidentes de Alertas"]
+
+. Si determina que los incidentes están listos para la recuperación, seleccione *Marcar restauración necesaria*.
+. Confirme la acción y seleccione *Mark restore needed*.
+. Para iniciar la recuperación de la carga de trabajo, seleccione *Recuperar* carga de trabajo en el mensaje o seleccione la pestaña *Recuperar*.
+
+
+.Resultado
+Una vez que se marca la alerta para la recuperación, la alerta pasa de la pestaña Alertas a la pestaña Recuperación.

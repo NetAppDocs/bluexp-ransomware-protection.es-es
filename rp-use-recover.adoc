@@ -1,0 +1,240 @@
+---
+sidebar: sidebar 
+permalink: rp-use-recover.html 
+keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
+summary: 'Después de un ataque, la protección frente al ransomware de BlueXP verifica que los datos de backup en el almacenamiento secundario no sean correctos, recomienda un punto de recuperación real (RPA) y orquesta el flujo de trabajo para conseguir una recuperación resistente a los fallos.' 
+---
+= Recuperarse de un ataque de ransomware (después de neutralizar los incidentes)
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Después de que las cargas de trabajo se hayan marcado como «listas para la recuperación», la protección contra el ransomware de BlueXP recomienda un punto de recuperación real (RPA) y orquesta el flujo de trabajo para una recuperación resistente a los fallos.
+
+
+
+== Permite ver las cargas de trabajo que están listas para restaurarse
+
+Revise las cargas de trabajo que se encuentran en el estado de recuperación «Restauración necesaria».
+
+.Pasos
+. Debe realizar una de las siguientes acciones:
++
+** Desde el Panel de Control, revise los totales “Restaurar necesario” en el panel Alertas y seleccione *Ver todo*.
+** En el menú, seleccione *Recuperación*.
+
+
+. Revise la información de la carga de trabajo en la página *Recovery*.
++
+image:screen-recovery.png["Recuperación"]
+
+
+
+
+
+== Recuperar una carga de trabajo
+
+Gracias a la protección frente al ransomware de BlueXP, el administrador de almacenamiento puede determinar la mejor forma de recuperar las cargas de trabajo, ya sea desde el punto de restauración recomendado o desde su punto de restauración preferido.
+
+El administrador del almacenamiento de seguridad puede recuperar los datos en diferentes niveles:
+
+* Recuperar todos los volúmenes
+* Recuperar una aplicación en el nivel de volumen o a nivel de archivo y carpeta.
+* Recupere un recurso compartido de archivos en el nivel de volumen, directorio o archivo/carpeta.
+* Recuperación de un almacén de datos en el nivel de máquina virtual.
+
+
+El proceso difiere levemente en función del tipo de carga de trabajo.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Recuperación*.
+. Revise la información de la carga de trabajo en la página *Recovery*.
+. Seleccione una carga de trabajo que esté en el estado «Restore needed».
+. Para restaurar, seleccione *Restaurar*.
+. *Restore Scope*: Seleccione el tipo de restauración que desea completar:
++
+** Todos los volúmenes
+** Por volumen
+** Por archivo: Puede especificar una carpeta o archivos individuales para restaurar.
++
+
+TIP: Puede seleccionar hasta 100 archivos o una sola carpeta.
+
+
+
+. Continúe con uno de los siguientes procedimientos, dependiendo de si eligió una aplicación, volumen o archivo.
+
+
+
+
+=== Restaure todos los volúmenes
+
+. En la página Restaurar, en Restore Scope, seleccione *All volumes*.
++
+image:screen-recovery-all-volumes.png["Página Restaurar por Todos los Volúmenes"]
+
+. *Fuente*: Selecciona la flecha hacia abajo junto a Fuente para ver los detalles.
++
+.. Seleccione el punto de restauración que desea utilizar para restaurar los datos.
++
+
+TIP: La protección frente al ransomware de BlueXP identifica el mejor punto de restauración como el último backup antes del incidente y muestra una indicación de «el más seguro para todos los volúmenes». Esto significa que todos los volúmenes se restaurarán a una copia antes del primer ataque en el primer volumen detectado.
+
+
+
+. *Destino*: Selecciona la flecha hacia abajo junto a Destino para ver los detalles.
++
+.. Seleccione el entorno de trabajo.
+.. Seleccione la Storage VM.
+.. Seleccione el agregado.
+.. Cambie el prefijo del volumen que se antepondrá a todos los volúmenes nuevos.
++
+
+TIP: El nombre del volumen nuevo aparece como prefijo + nombre del volumen original + nombre de backup + fecha de backup.
+
+
+
+. Seleccione *Guardar*.
+. Seleccione *Siguiente*.
+. Revise las selecciones.
+. Seleccione *Restaurar*.
+. En el menú superior, seleccione *Recuperación* para revisar la carga de trabajo en la página de recuperación donde el estado de la operación se mueve a través de los estados.
+
+
+
+
+=== Restaure una carga de trabajo de la aplicación en el nivel de volumen
+
+. En la página Restaurar, en Restore Scope, seleccione *by volume*.
++
+image:screen-recovery-byvolume.png["Página Restore by volume"]
+
+. En la lista de volúmenes, seleccione el volumen que desea restaurar.
+. *Fuente*: Selecciona la flecha hacia abajo junto a Fuente para ver los detalles.
++
+.. Seleccione el punto de restauración que desea utilizar para restaurar los datos.
++
+
+TIP: La protección frente al ransomware de BlueXP identifica el mejor punto de restauración como el último backup antes del incidente y muestra una indicación «recomendada».
+
+
+
+. *Destino*: Selecciona la flecha hacia abajo junto a Destino para ver los detalles.
++
+.. Seleccione el entorno de trabajo.
+.. Seleccione la Storage VM.
+.. Seleccione el agregado.
+.. Revise el nombre del nuevo volumen.
++
+
+TIP: El nombre del volumen nuevo aparece como nombre del volumen original + nombre de backup + fecha de backup.
+
+
+
+. Seleccione *Guardar*.
+. Seleccione *Siguiente*.
+. Revise las selecciones.
+. Seleccione *Restaurar*.
+. En el menú superior, seleccione *Recuperación* para revisar la carga de trabajo en la página de recuperación donde el estado de la operación se mueve a través de los estados.
+
+
+
+
+=== Restaure una carga de trabajo de la aplicación en el nivel de archivo
+
+. En la página Restaurar, en Restore Scope, seleccione *Por archivo*.
+. En la lista de volúmenes, seleccione el volumen que desea restaurar.
+. *Fuente*: Selecciona la flecha hacia abajo junto a Fuente para ver los detalles.
++
+.. Seleccione el punto de restauración que desea utilizar para restaurar los datos.
++
+
+TIP: La protección frente al ransomware de BlueXP identifica el mejor punto de restauración como el último backup antes del incidente y muestra una indicación «recomendada».
+
+.. Seleccione hasta 100 archivos o una sola carpeta para restaurar.
+
+
+. *Destino*: Selecciona la flecha hacia abajo junto a Destino para ver los detalles.
++
+.. Elija dónde restaurar los datos: Ubicación de origen original o una ubicación alternativa que pueda especificar.
++
+
+TIP: Mientras que los archivos o directorios originales se sobrescribirán con los datos restaurados, los nombres de archivo y carpeta originales seguirán siendo los mismos a menos que especifique nuevos nombres.
+
+.. Seleccione el entorno de trabajo.
+.. Seleccione la Storage VM.
+.. Si lo desea, introduzca la ruta.
++
+
+TIP: Si no especifica una ruta para la restauración, los archivos se restaurarán en un nuevo volumen en el directorio de nivel superior.
+
+.. Seleccione si desea que los nombres de los archivos o directorios restaurados sean los mismos que la ubicación actual o nombres diferentes.
+
+
+. Seleccione *Guardar*.
+. Seleccione *Siguiente*.
+. Revise las selecciones.
+. Seleccione *Restaurar*.
+. En el menú superior, seleccione *Recuperación* para revisar la carga de trabajo en la página de recuperación donde el estado de la operación se mueve a través de los estados.
+
+
+
+
+=== Restaure un recurso compartido de archivos o un almacén de datos en el nivel de volumen o archivos
+
+. Después de seleccionar un recurso compartido de archivos o un almacén de datos para restaurar, en la página Restaurar, en Restore Scope, seleccione *by volume* o *by file*.
++
+image:screen-recovery-fileshare.png["Página de recuperación que muestra la recuperación del recurso compartido de archivos"]
+
+. En la lista de volúmenes, seleccione el volumen que desea restaurar.
+. *Fuente*: Selecciona la flecha hacia abajo junto a Fuente para ver los detalles.
++
+.. Seleccione el punto de restauración que desea utilizar para restaurar los datos.
++
+
+TIP: La protección frente al ransomware de BlueXP identifica el mejor punto de restauración como el último backup antes del incidente y muestra una indicación «recomendada».
+
+
+
+. *Destino*: Selecciona la flecha hacia abajo junto a Destino para ver los detalles.
++
+.. Elija dónde restaurar los datos: Ubicación de origen original o una ubicación alternativa que pueda especificar.
++
+
+TIP: Mientras que los archivos o directorios originales se sobrescribirán con los datos restaurados, los nombres de archivo y carpeta originales seguirán siendo los mismos a menos que especifique nuevos nombres.
+
+.. Seleccione el entorno de trabajo.
+.. Seleccione la Storage VM.
+.. Si lo desea, introduzca la ruta.
++
+
+TIP: Si no especifica una ruta para la restauración, los archivos se restaurarán en un nuevo volumen en el directorio de nivel superior.
+
+
+
+. Seleccione *Guardar*.
+. Revise las selecciones.
+. Seleccione *Restaurar*.
+. En el menú, seleccione *Recuperación* para revisar la carga de trabajo en la página Recuperación donde el estado de la operación se mueve a través de los estados.
+
+
+
+
+=== Restaurar un recurso compartido de archivos de equipo virtual a nivel de máquina virtual
+
+En la página Recovery después de seleccionar una VM para restaurar, continúe con estos pasos.
+
+. *Fuente*: Selecciona la flecha hacia abajo junto a Fuente para ver los detalles.
++
+image:screen-recovery-vm.png["Página de recuperación que muestra una máquina virtual que se está restaurando"]
+
+. Seleccione el punto de restauración que desea utilizar para restaurar los datos.
+. *Destino*: A la ubicación original.
+. Seleccione *Siguiente*.
+. Revise las selecciones.
+. Seleccione *Restaurar*.
+. En el menú, seleccione *Recuperación* para revisar la carga de trabajo en la página Recuperación donde el estado de la operación se mueve a través de los estados.
+

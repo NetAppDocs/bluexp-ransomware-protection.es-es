@@ -1,0 +1,147 @@
+---
+sidebar: sidebar 
+permalink: rp-use-settings.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
+summary: Puedes configurar varias opciones, incluido un destino de backup, en el servicio de protección contra ransomware de BlueXP. 
+---
+= Configura las opciones de protección contra ransomware de BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Si desea configurar un destino de backup, revise las recomendaciones en la consola.
+
+
+
+== Agregue un destino de copia de seguridad
+
+La protección frente al ransomware de BlueXP puede identificar cargas de trabajo que aún no tienen backups y también cargas de trabajo que todavía no tengan destinos de backup asignados.
+
+Para proteger esas cargas de trabajo, debe añadir un destino de backup. Es posible elegir uno de los siguientes destinos de backup:
+
+* StorageGRID de NetApp
+* Amazon Web Services (AWS)
+
+
+Puede añadir un destino de backup en función de una acción recomendada en la consola.
+
+
+
+=== Acceda a las opciones de destino de copia de seguridad desde las acciones recomendadas del panel de control
+
+La consola ofrece muchas recomendaciones. Una recomendación podría ser configurar un destino de copia de seguridad.
+
+.Pasos
+. En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
+. Revise el panel de acciones recomendadas de la consola.
++
+image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Consola"]
+
+. Desde el Panel de Control, seleccione *Revisar y corregir* para la recomendación de “Configurar destinos de copia de seguridad”.
+. Continúe con las instrucciones dependiendo del proveedor de copias de seguridad.
+
+
+
+
+== Añada StorageGRID como destino de backup
+
+Para configurar NetApp StorageGRID como destino de backup, introduzca la siguiente información.
+
+. En la página *Configuración > Destinos de copia de seguridad*, seleccione *Agregar*.
+. Introduzca un nombre para el destino de la copia de seguridad.
++
+image:screen-settings-backup-destination-storagegrid.png["Destinos de backup"]
+
+. Seleccione *StorageGRID*.
+. Seleccione la flecha hacia abajo junto a cada ajuste e introduzca o seleccione valores:
++
+** *Configuración del proveedor*:
++
+*** Cree un nuevo bloque o traiga su propio bloque que almacenará los backups.
+*** Nodo de puerta de enlace StorageGRID Nombre de dominio completo, puerto, clave de acceso a StorageGRID y credenciales de clave secreta.
+
+
+** *Networking*: Elige el espacio IP.
++
+*** El espacio IP es el clúster donde residen los volúmenes del que se desea incluir en un backup. Las LIF entre clústeres de este espacio IP deben tener acceso a Internet saliente.
+
+
+** * Bloqueo de respaldo*: Elija si desea que el servicio proteja las copias de seguridad de ser modificadas o eliminadas. Esta opción utiliza la tecnología DataLock de NetApp. Cada copia de seguridad se bloqueará durante el período de retención, o durante un mínimo de 30 días, más un período de búfer de hasta 14 días.
++
+
+CAUTION: Si configura ahora el ajuste de bloqueo de copia de seguridad, no es posible cambiarlo más tarde después de configurar el destino de copia de seguridad.
+
++
+*** *Modo de cumplimiento*: Los usuarios no pueden sobrescribir ni eliminar los archivos de copia de seguridad protegidos durante el período de retención.
+
+
+
+
+. Seleccione *Agregar*.
+
+
+.Resultado
+El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia de seguridad.
+
+image:screen-settings-backup-destinations-list-storagegrid.png["Backup destinations para la página Settings"]
+
+
+
+== Añada Amazon Web Services como destino de backup
+
+Para configurar AWS como destino de backup, introduzca la siguiente información.
+
+Para obtener más información sobre la gestión de su almacenamiento de AWS en BlueXP, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gestione sus bloques de Amazon S3"^].
+
+. En la página *Configuración > Destinos de copia de seguridad*, seleccione *Agregar*.
+. Introduzca un nombre para el destino de la copia de seguridad.
++
+image:screen-settings-backup-destination-storagegrid.png["Destinos de backup"]
+
+. Seleccione *Amazon Web Services*.
+. Seleccione la flecha hacia abajo junto a cada ajuste e introduzca o seleccione valores:
++
+** *Configuración del proveedor*:
++
+*** Crea un nuevo bloque, selecciona un bloque existente si ya existe uno en BlueXP o trae tu propio bloque que almacenará los backups.
+*** Cuenta, región, clave de acceso y clave secreta de AWS para las credenciales de AWS
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Si desea traer su propio cubo, consulte Agregar cubos S3"^].
+
+
+
+** *Cifrado*: Si está creando un nuevo depósito de S3, introduzca la información de clave de cifrado que le haya proporcionado el proveedor. Si eligió un depósito existente, la información de cifrado ya estará disponible.
++
+De forma predeterminada, los datos del bloque se cifran con claves gestionadas por AWS. Puede seguir utilizando claves administradas por AWS o puede gestionar el cifrado de sus datos utilizando sus propias claves.
+
+** *Redes*: Elige el espacio IP y si vas a usar un Punto Final Privado.
++
+*** El espacio IP es el clúster donde residen los volúmenes del que se desea incluir en un backup. Las LIF entre clústeres de este espacio IP deben tener acceso a Internet saliente.
+*** Opcionalmente, seleccione si va a utilizar un punto final privado de AWS (PrivateLink) que haya configurado previamente.
++
+Si desea utilizar AWS PrivateLink, consulte https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink para Amazon S3"^].
+
+
+
+** * Bloqueo de respaldo*: Elija si desea que el servicio proteja las copias de seguridad de ser modificadas o eliminadas. Esta opción utiliza la tecnología DataLock de NetApp. Cada copia de seguridad se bloqueará durante el período de retención, o durante un mínimo de 30 días, más un período de búfer de hasta 14 días.
++
+
+CAUTION: Si configura ahora el ajuste de bloqueo de copia de seguridad, no es posible cambiarlo más tarde después de configurar el destino de copia de seguridad.
+
++
+*** *Modo de gobierno*: Los usuarios específicos (con el permiso S3:BypassGovernanceRetention) pueden sobrescribir o eliminar archivos protegidos durante el período de retención.
+*** *Modo de cumplimiento*: Los usuarios no pueden sobrescribir ni eliminar los archivos de copia de seguridad protegidos durante el período de retención.
+
+
+
+
+. Seleccione *Agregar*.
+
+
+.Resultado
+El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia de seguridad.
+
+image:screen-settings-backup-destinations-list-aws.png["Backup destinations para la página Settings"]

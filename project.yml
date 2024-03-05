@@ -1,0 +1,59 @@
+---
+settings:
+  name: BlueXP ransomware protection
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: es-es,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,fr-fr,it-it
+sidebar:
+  entries:
+  - title: Documentos de protección contra ransomware de BlueXP
+    url: "/index.html"
+  - title: Notas de la versión
+    url: "/whats-new.html"
+  - title: Manos a la obra
+    entries:
+    - title: Obtén más información sobre la protección frente al ransomware de BlueXP
+      url: "/concept-ransomware-protection.html"
+    - title: Requisitos previos
+      url: "/rp-start-prerequisites.html"
+    - title: Inicio rápido
+      url: "/rp-start-quick-start.html"
+    - title: Configura la protección contra el ransomware de BlueXP
+      url: "/rp-start-setup.html"
+    - title: Accede a la protección frente al ransomware de BlueXP
+      url: "/rp-start-login.html"
+    - title: Detectar cargas de trabajo
+      url: "/rp-start-discover.html"
+    - title: Configurar destinos de copia de seguridad
+      url: "/rp-use-settings.html"
+    - title: PREGUNTAS FRECUENTES
+      url: "/rp-start-faq.html"
+  - title: Usa la protección frente al ransomware de BlueXP
+    entries:
+    - title: Usa la información general sobre la protección frente a ransomware de
+        BlueXP
+      url: "/rp-use-overview.html"
+    - title: Ver el estado de las cargas de trabajo mediante la consola
+      url: "/rp-use-dashboard.html"
+    - title: Proteja las cargas de trabajo
+      url: "/rp-use-protect.html"
+    - title: Responder a una alerta detectada
+      url: "/rp-use-alert.html"
+    - title: Recuperarse de un ataque de ransomware
+      url: "/rp-use-recover.html"
+  - title: Conocimiento y apoyo
+    entries:
+    - title: Regístrese para recibir soporte
+      url: "/task-support-registration.html"
+    - title: Obtenga ayuda
+      url: "/task-get-help.html"
+  - title: Avisos legales
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP
+  repo: bluexp-family

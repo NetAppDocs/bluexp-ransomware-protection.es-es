@@ -1,0 +1,273 @@
+---
+sidebar: sidebar 
+permalink: rp-use-protect.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies 
+summary: Puedes proteger las cargas de trabajo contra ataques de ransomware mediante la asignación de políticas a una carga de trabajo en la protección contra ransomware de BlueXP. 
+---
+= Protege las cargas de trabajo contra ataques de ransomware
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+Puedes proteger las cargas de trabajo contra ataques de ransomware completando las siguientes acciones mediante la protección contra ransomware de BlueXP.
+
+* Ver la protección de cargas de trabajo existentes.
+* Asignar una política a una carga de trabajo.
++
+** Aumente la protección de la aplicación para evitar futuros ataques RW.
+** Cambie la protección de una carga de trabajo que estaba protegida previamente en el servicio RW.
+
+
+* Gestione las políticas (solo las que haya creado).
+
+
+La protección frente al ransomware de BlueXP asigna una prioridad a cada carga de trabajo durante la detección. La prioridad de la carga de trabajo se determina en las siguientes frecuencias de Snapshot:
+
+* *Crítico*: Copias instantáneas tomadas menos de 1 por hora (programa de protección altamente agresivo)
+* *Importante*: Copias instantáneas tomadas menos de 1 por día pero más de 1 por hora
+* *Estándar*: Copias instantáneas tomadas más de 1 por día
+
+
+*Estado de protección*: Una carga de trabajo puede mostrar uno de los siguientes estados de protección para indicar si se aplica o no una política:
+
+* *Protegido*: Se aplica una política.
+* *En riesgo*: No se aplica ninguna política.
+* *En progreso*: Se está aplicando una política pero aún no se ha completado.
+* *Fallo*: Se aplica una política pero no funciona.
+
+
+*Protección de la salud*: Una carga de trabajo puede tener uno de los siguientes estados de protección de la salud:
+
+* *Healthy*: La carga de trabajo tiene la protección habilitada y se han completado las copias de seguridad y las copias de Snapshot.
+* *En progreso*: Las copias de seguridad o las copias snapshot están en curso.
+* *Fallo*: Las copias de seguridad o las copias de Snapshot no se han completado correctamente.
+* *N/A*: La protección no está habilitada o es suficiente en la carga de trabajo.
+
+
+
+
+== Mira la protección contra ransomware de las cargas de trabajo
+
+Uno de los primeros pasos para proteger las cargas de trabajo es visualizar las cargas de trabajo actuales y su estado de protección. Se pueden ver los siguientes tipos de cargas de trabajo:
+
+* Cargas de trabajo de máquinas virtuales
+* Cargas de trabajo de recursos compartidos de archivos
+
+
+.Pasos
+. En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
+. Debe realizar una de las siguientes acciones:
++
+** En el panel de protección de datos del panel, seleccione *Ver todo*.
+** En el menú, selecciona *Protección*.
++
+image:screen-protection.png["Protección"]
+
+
+
+. En esta página, puede asignar una política a una carga de trabajo.
+
+
+
+
+== Asigne una política de protección predefinida a las cargas de trabajo
+
+Para ayudar a proteger los datos, se puede asignar una política de protección contra ransomware existente a una o más cargas de trabajo. También puede asignar una política diferente a una carga de trabajo que ya tenga una política.
+
+La protección contra ransomware de BlueXP incluye las siguientes políticas predefinidas que se alinean con la prioridad de carga de trabajo:
+
+[cols="10,15a,20,15,15,15"]
+|===
+| Nivel de política | Snapshot | Frecuencia | Retención (días) | N.o de copias Snapshot | Número máximo total de copias snapshot 
+
+
+.4+| *Política de carga de trabajo crítica*  a| 
+Cada trimestre
+| Cada 15 min | 3 | 288 | 309 
+
+
+| Todos los días  a| 
+Cada 1 días
+| 14 | 14 | 309 
+
+
+| Semanal  a| 
+Cada 1 semanas
+| 35 | 5 | 309 
+
+
+| Mensual  a| 
+Cada 30 días
+| 60 | 2 | 309 
+
+
+.4+| *Política de carga de trabajo importante*  a| 
+Cada trimestre
+| Cada 30 minutos | 3 | 144 | 165 
+
+
+| Todos los días  a| 
+Cada 1 días
+| 14 | 14 | 165 
+
+
+| Semanal  a| 
+Cada 1 semanas
+| 35 | 5 | 165 
+
+
+| Mensual  a| 
+Cada 30 días
+| 60 | 2 | 165 
+
+
+.4+| *Política de carga de trabajo estándar*  a| 
+Cada trimestre
+| Cada 60 min | 3 | 72 | 93 
+
+
+| Todos los días  a| 
+Cada 1 días
+| 14 | 14 | 93 
+
+
+| Semanal  a| 
+Cada 1 semanas
+| 35 | 5 | 93 
+
+
+| Mensual  a| 
+Cada 30 días
+| 60 | 2 | 93 
+|===
+.Pasos
+. Con la protección contra ransomware de BlueXP, realice una de las siguientes acciones:
++
+** En el panel de protección de datos del panel, seleccione *Ver todo*.
+** En el panel Recomendación del panel de control, seleccione una recomendación sobre la asignación de una política y seleccione *Revisar y corregir*.
+** En el menú, selecciona *Protección*.
+
+
+. En la página Protección, revise las cargas de trabajo y seleccione *Proteger* junto a la carga de trabajo.
++
+Aparece una lista de políticas.
+
++
+image:screen-protect-policy-list.png["Lista de políticas de protección"]
+
+. Para ver los detalles, haga clic en la flecha hacia abajo de una política.
+. Seleccione una política para asignar a la carga de trabajo.
+. Seleccione *Proteger*.
+. Revise el panel de acciones recomendadas de la consola, que muestra la acción como «Completada».
+
+
+
+
+== Cree una política de protección
+
+Si las políticas existentes no satisfacen sus necesidades empresariales, puede crear una nueva política de protección. Puede crear su propia política desde cero o utilizar una política existente y modificar su configuración.
+
+Puede crear normativas que rijan el almacenamiento principal y secundario y tratar el almacenamiento primario y secundario de manera igual o diferente.
+
+Puede crear una política al gestionarla o durante el proceso de asignación de una política a una carga de trabajo.
+
+.Pasos para crear una política durante la gestión de políticas
+. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
++
+image:screen-protection2.png["Protección"]
+
+. En la página Protección, selecciona *Administrar políticas*.
++
+image:screen-protection-policy-manage2.png["Gestionar políticas"]
+
+. En la página Administrar políticas, selecciona *Agregar*.
++
+image:screen-protection-policy-add2.png["Agregar página de política"]
+
+. Introduzca un nombre de política nuevo o introduzca un nombre de política existente para copiarlo. Si introduce un nombre de política existente, elija qué política desea copiar.
++
+
+NOTE: Si decide copiar y modificar una política existente, debe cambiar al menos una configuración para que sea única.
+
+. Para cada elemento, seleccione la flecha hacia abajo.
++
+** *Almacenamiento primario*:
++
+*** *Programaciones de copias snapshot*: Elija las opciones de programación, el número de copias snapshot que desea conservar y seleccione habilitar la programación.
+*** *Detección primaria*: Habilita el servicio para detectar incidentes de ransomware en el almacenamiento primario.
+*** *Extensiones de archivo de bloque*: Permite que este tenga el bloqueo de servicio conocido extensiones de archivo sospechosas. El servicio realiza copias Snapshot automatizadas cuando está habilitada la detección primaria.
+
+
+** *Almacenamiento secundario*:
++
+*** *Horarios de copia de seguridad*: Elija opciones de programación para el almacenamiento secundario y habilite el horario.
+*** *Detección secundaria*: Habilita el servicio para detectar incidentes de ransomware en el almacenamiento secundario.
+*** *Bloquear copias de seguridad*: Elija esta opción para evitar que las copias de seguridad en el almacenamiento secundario se modifiquen o eliminen durante un cierto período de tiempo. Esto también se denomina _almacenamiento inmutable_.
++
+Esta opción utiliza la tecnología DataLock de NetApp, que bloquea los backups en el almacenamiento secundario. El período de tiempo durante el que el archivo de copia de seguridad está bloqueado (y retenido) se denomina período de retención de DataLock. Se basa en el programa de políticas de backup y la configuración de retención que haya definido, además de un búfer de 14 días. Cualquier política de retención de DataLock que sea inferior a 30 días se redondea a un mínimo de 30 días.
+
+
+
+
+
+. Seleccione *Agregar*.
+
+
+.Pasos para crear una política durante la asignación de la política de protección
+. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
++
+image:screen-protection2.png["Protección"]
+
+. En la página Protección, selecciona *Proteger*.
+. En la página Proteger, selecciona *Añadir*.
++
+image:screen-protection-policy-add2.png["Agregar página de política"]
+
+. Complete el proceso, que es lo mismo que crear una política desde la página Gestionar políticas.
+
+
+
+
+== Asigne una política de protección diferente
+
+Puede seleccionar una política de protección diferente para una carga de trabajo.
+Puede que desee aumentar la protección para evitar futuros ataques de ransomware cambiando la política de protección.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
+. En la página Proteger, seleccione una carga de trabajo y seleccione *Proteger*.
+. En la página Protect, seleccione una política diferente para la carga de trabajo.
+. Para cambiar cualquier detalle de la política, seleccione la flecha hacia abajo a la derecha y cambie los detalles.
+. Selecciona *Guardar* para finalizar el cambio.
+
+
+
+
+== Editar una política existente
+
+Solo es posible cambiar los detalles de una política cuando la política no está asociada con una carga de trabajo.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
+. En la página Protección, selecciona *Administrar políticas*.
+. En la página Administrar políticas, seleccione la opción *Acciones* para la política que desea cambiar.
+. En el menú Acciones, selecciona *Editar política*.
+. Cambie los detalles.
+. Selecciona *Guardar* para finalizar el cambio.
+
+
+
+
+== Eliminar una política
+
+Es posible eliminar una política de protección que actualmente no esté asociada a ninguna carga de trabajo.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
+. En la página Protección, selecciona *Administrar políticas*.
+. En la página Administrar políticas, seleccione la opción *Acciones* para la política que desea eliminar.
+. En el menú Acciones, selecciona *Eliminar política*.
+
