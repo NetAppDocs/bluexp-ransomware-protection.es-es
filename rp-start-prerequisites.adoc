@@ -14,27 +14,32 @@ summary: Empieza a usar la protección contra el ransomware de BlueXP verificand
 [role="lead"]
 Comience a usar la protección frente al ransomware de BlueXP verificando la preparación de su entorno operativo, inicio de sesión, acceso a red y navegador web.
 
-Para utilizar la protección contra ransomware de BlueXP, necesitarás estos requisitos previos:
+Para utilizar la versión previa de la protección contra ransomware de BlueXP, necesitarás estos requisitos previos:
 
-* Para la versión de vista previa, necesitará una cuenta en NetApp StorageGRID o AWS S3 para los destinos de copia de seguridad y el conjunto de permisos de AWS.
+* Una cuenta en NetApp StorageGRID o AWS S3 para los destinos de backup y los permisos de acceso establecidos
 +
 Consulte la https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Lista de permisos de AWS"^] para obtener más detalles.
 
 * ONTAP 9.11.1 y versiones posteriores
 +
 ** Permisos de la ONTAP del administrador de clústeres
-** Una licencia de la protección autónoma frente a ransomware de NetApp, que usa la protección frente a ransomware de BlueXP, en la instancia de ONTAP, según la versión de ONTAP que esté utilizando. Consulte https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Información general sobre la protección de ransomware autónoma"^].
+** Una licencia de la protección autónoma frente a ransomware de NetApp, utilizada por la protección frente a ransomware de BlueXP, habilitada en la instancia de ONTAP en las instalaciones, según la versión de ONTAP que esté utilizando. Consulte https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Información general sobre la protección de ransomware autónoma"^].
++
+Para obtener más información sobre las licencias, consulte link:concept-ransomware-protection.html["Obtén más información sobre la protección frente al ransomware de BlueXP"].
+
 
 
 * En BlueXP:
 +
-** Hay que configurar un conector BlueXP por región en la nube o en una región on-premises en NetApp BlueXP. Todos los entornos de trabajo y origen deben estar en la misma cuenta de BlueXP. Consulte https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Documentación de BlueXP para configurar el Connector"^].
+** Debe configurarse un conector BlueXP por cada cloud privado virtual (VPC) o en una región en las instalaciones en BlueXP. Consulte https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Documentación de BlueXP para configurar el Connector"^].
 +
 
 NOTE: Si tienes varios BlueXP Connectors, el servicio analizará los datos en todos los conectores más allá de los que se muestren actualmente en la interfaz de usuario de BlueXP.
 
 ** El servicio de backup y recuperación de BlueXP con backup habilitado en el entorno de trabajo
-** Se debe configurar el entorno de trabajo de BlueXP con almacenamiento en las instalaciones NAS de NetApp.
+** Un entorno de trabajo BlueXP con almacenamiento on-premises NAS de NetApp
+** Una cuenta de BlueXP con al menos un conector activo que se conecta a clústeres de ONTAP en las instalaciones. Todos los entornos de trabajo y origen deben estar en la misma cuenta de BlueXP.
+** Una cuenta de usuario de BlueXP con privilegios de administrador de cuenta para detectar recursos
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Requisitos estándar de BlueXP"^]
 
 

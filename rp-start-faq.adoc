@@ -56,7 +56,7 @@ Cualquier navegador moderno funcionará.
 Sí, la protección frente a ransomware de BlueXP detecta las programaciones de Snapshot establecidas en ONTAP.
 
 *Si estableces una política usando la protección contra ransomware de BlueXP, ¿tienes que hacer cambios futuros solo en este servicio?*
-No, puede realizar cambios de política desde cualquier servicio.
+Te recomendamos que realices cambios de política en el servicio de protección contra ransomware de BlueXP.
 
 
 
