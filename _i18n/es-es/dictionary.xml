@@ -808,4 +808,6 @@ Te recomendamos que realices cambios de política en el servicio de protección 
   <block id="9583d75cd4c629fc5e8bc18b167335c7" category="list-text">Un entorno de trabajo BlueXP con almacenamiento on-premises NAS de NetApp</block>
   <block id="8bea151378448834f662f674981096f7" category="list-text">Una cuenta de BlueXP con al menos un conector activo que se conecta a clústeres de ONTAP en las instalaciones. Todos los entornos de trabajo y origen deben estar en la misma cuenta de BlueXP.</block>
   <block id="baea1fd040c528a3cf05517592d54383" category="list-text">Una cuenta de usuario de BlueXP con privilegios de administrador de cuenta para detectar recursos</block>
+  <block id="1ad5d2b1df5750779a9e10432b0d7a7b" category="list-text">*Crítico*: Copias instantáneas tomadas más de 1 por hora (programa de protección altamente agresivo)</block>
+  <block id="1adc4b459e7f50d96280424fb7e06709" category="list-text">*Importante*: Copias instantáneas tomadas menos de 1 por hora pero más de 1 por día</block>
 </blocks>
