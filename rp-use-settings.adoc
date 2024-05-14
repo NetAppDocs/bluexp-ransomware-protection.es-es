@@ -12,7 +12,9 @@ summary: Puedes configurar varias opciones, incluido un destino de backup, en el
 
 
 [role="lead"]
-Si desea configurar un destino de backup, revise las recomendaciones en la consola.
+Puede configurar un destino de copia de seguridad o activar la detección de amenazas revisando las recomendaciones en el panel de control.
+
+Habilitar la detección de amenazas envía automáticamente datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas.
 
 
 
@@ -38,7 +40,7 @@ La consola ofrece muchas recomendaciones. Una recomendación podría ser configu
 . En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
 . Revise el panel de acciones recomendadas de la consola.
 +
-image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Consola"]
+image:screen-dashboard.png["Consola"]
 
 . Desde el Panel de Control, seleccione *Revisar y corregir* para la recomendación de “Configurar destinos de copia de seguridad”.
 . Continúe con las instrucciones dependiendo del proveedor de copias de seguridad.
@@ -46,7 +48,7 @@ image:screen-dashboard-recommended-actions-configure-backup-destinations.png["Co
 
 
 
-== Añada StorageGRID como destino de backup
+=== Añada StorageGRID como destino de backup
 
 Para configurar NetApp StorageGRID como destino de backup, introduzca la siguiente información.
 
@@ -90,7 +92,7 @@ image:screen-settings-backup-destinations-list-storagegrid.png["Backup destinati
 
 
 
-== Añada Amazon Web Services como destino de backup
+=== Añada Amazon Web Services como destino de backup
 
 Para configurar AWS como destino de backup, introduzca la siguiente información.
 
@@ -145,3 +147,29 @@ CAUTION: Si configura ahora el ajuste de bloqueo de copia de seguridad, no es po
 El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia de seguridad.
 
 image:screen-settings-backup-destinations-list-aws.png["Backup destinations para la página Settings"]
+
+
+
+== Habilita la detección de amenazas
+
+Puede enviar datos automáticamente a un sistema de gestión de eventos y seguridad (SIEM) para analizar y detectar amenazas.
+
+. En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
+. Revise el panel de acciones recomendadas de la consola.
+. Desde el Panel de Control, selecciona *Revisar y corregir* para la recomendación de “Habilitar detección de amenazas”.
++
+Aparece la página Configuración.
+
++
+image:screen-settings-threat-detection2.png["Configuración"]
+
+. En la página Configuración, selecciona *Conectar* en el panel de detección de amenazas.
++
+image:screen-settings-threat-detection-details.png["Activar página de detalles de detección de amenazas"]
+
+. Introduzca los detalles del servidor SIEM para activar la detección de amenazas.
+. Selecciona *Activar*.
++
+El panel de detección de amenazas de la página Configuración muestra Conectado.
+
+

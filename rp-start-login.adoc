@@ -34,10 +34,13 @@ image:screen-dashboard.png["Consola de protección contra ransomware de BlueXP"]
 
 . Comience a utilizar el servicio.
 +
-** Si no tienes un conector BlueXP o no es el indicado para esta vista previa, es posible que debas ponerte en contacto con el Soporte de NetApp o seguir mensajes para registrarte en esta vista previa.
+** Si no tienes un conector BlueXP o no es el único para este servicio, es posible que necesites ponerte en contacto con el soporte de NetApp o seguir los mensajes para registrarte.
 ** Si eres nuevo en BlueXP y no has usado ningún conector, cuando seleccionas «*Protección contra ransomware*», aparecerá un mensaje sobre la inscripción. Continúe y envíe el formulario. NetApp se pondrá en contacto con usted para informarse sobre su solicitud de evaluación.
 ** Si eres un usuario de BlueXP con un conector existente, cuando seleccionas «*Protección contra ransomware*», aparecerá un mensaje sobre la inscripción.
-** Si ya estás participando en la vista previa, al seleccionar “*Protección contra ransomware*”, puedes continuar con el servicio. Si aún no lo ha hecho, debe seleccionar la opción *Descubrir cargas de trabajo*.
 
+
+. Si aún no lo ha hecho, seleccione la opción *Descubrir cargas de trabajo*.
++
+Consulte link:rp-start-discover.html["Detectar cargas de trabajo"].
 
 

@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack' 
 summary: Descubre las novedades de la protección frente al ransomware de BlueXP. 
 ---
-= Notas de la versión: Novedades de la vista previa de la protección frente al ransomware de BlueXP
+= Notas de la versión: Novedades de la protección frente al ransomware de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,51 @@ summary: Descubre las novedades de la protección frente al ransomware de BlueXP
 
 
 [role="lead"]
-Descubre las novedades de la versión previa de la protección frente al ransomware de BlueXP.
+Descubre las novedades de la protección frente al ransomware de BlueXP.
+
+
+
+== 14 de mayo de 2024
+
+Esta versión es la versión de disponibilidad general de la protección de ransomware de BlueXP. Incluye las siguientes actualizaciones:
+
+* *Actualizaciones de licencias*: Puedes registrarte para una prueba gratuita de 90 días, comprar una suscripción de pago por uso por 1, 2 o 3 años con Amazon Web Services Marketplace, o traer tu propia licencia de NetApp.
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Obtenga más información sobre la configuración de licencias"].
+
+* *Protocolo CIFS*: El servicio ahora es compatible con ONTAP y Cloud Volumes ONTAP en entornos de trabajo de AWS usando protocolos NFS y CIFS. La versión anterior solo admitía el protocolo NFS.
+* *Detalles de la carga de trabajo*: Esta versión ahora proporciona más detalles en la información de la carga de trabajo de las páginas de Protección para mejorar la evaluación de la protección de la carga de trabajo. A partir de los detalles de la carga de trabajo, es posible cambiar el nombre de la carga de trabajo, cambiar la importancia de la carga de trabajo, revisar la política asignada actualmente y revisar los destinos de backup configurados.
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Obtenga más información sobre la visualización de detalles de las cargas de trabajo en las páginas Protection"].
+
+* * Protección y recuperación coherentes con las aplicaciones y con las máquinas virtuales*: Ahora puede realizar una protección coherente con las aplicaciones con el software NetApp SnapCenter y una protección coherente con las máquinas virtuales con el complemento SnapCenter para VMware vSphere, logrando un estado inactivo y consistente para evitar una posible pérdida de datos más adelante si se necesita recuperación. Si se requiere la recuperación, puede restaurar la aplicación o la máquina virtual a su estado anterior y a la última transacción.
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Obtenga más información sobre la protección de cargas de trabajo"].
+
+* * Estrategias de protección contra ransomware*: Si las políticas Snapshot o Backup no existen en la carga de trabajo, puede crear una estrategia de protección contra ransomware, que puede incluir las siguientes políticas que cree en este servicio:
++
+** Política de Snapshot
+** Política de backup
+** Política de detección
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Obtenga más información sobre la protección de cargas de trabajo"].
+
+
+
+* *Habilitar detección de amenazas* ahora está disponible usando un sistema de administración de eventos y seguridad de terceros (SIEM). El panel de control muestra ahora una nueva recomendación para habilitar la detección de amenazas, que se puede configurar en la página Configuración.
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Obtenga más información sobre la configuración de opciones de configuración"].
+
+* *Los nuevos estados de detección* aparecen en la página Protección que muestra el estado de la detección de ransomware aplicada a la carga de trabajo.
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Obtenga más información sobre la protección de cargas de trabajo y la visualización de estados de protección"].
+
+* *Descargar archivos CSV* desde las páginas Panel de Control, Protección, Alertas y Recuperación.
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["Obtenga más información sobre la descarga de archivos CSV desde el panel de control y otras páginas"].
+
+* *Ver documentación* el enlace ahora está incluido en la interfaz de usuario. Puede acceder a esta documentación desde la vertical de Dasbhoard *Acciones* image:button-actions-vertical.png["Acciones verticales"] opción. Selecciona *Novedades* para ver los detalles en las notas de la versión o *Documentación* para ver la página principal de la documentación de protección contra ransomware de BlueXP.
+
 
 
 
@@ -24,8 +68,6 @@ Esta versión previa de la protección contra ransomware de BlueXP incluye las s
 
 * *Gestión de políticas de protección*: Además de usar políticas predefinidas, ahora puede crear, cambiar y eliminar políticas. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Obtenga más información sobre la gestión de políticas"].
 * *Inmutabilidad en almacenamiento secundario (DataLock)*: Ahora puede hacer que la copia de seguridad sea inmutable en el almacenamiento secundario usando la tecnología NetApp DataLock en el almacén de objetos. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Obtén más información sobre la creación de políticas de protección"].
-
-
 * *Copia de seguridad automática en NetApp StorageGRID*: Además de usar AWS, ahora puede elegir StorageGRID como destino de copia de seguridad. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Obtenga más información sobre la configuración de destinos de backup"].
 * *Características adicionales para investigar posibles ataques*: Ahora puedes ver más detalles forenses para investigar el posible ataque detectado. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Más información sobre cómo responder a una alerta de ransomware detectada"].
 * *Proceso de recuperación*. Se mejoró el proceso de recuperación. Ahora puede recuperar volumen por volumen, todos los volúmenes para una carga de trabajo o incluso algunos archivos del volumen, todo en un único flujo de trabajo. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Descubre cómo recuperarse de un ataque de ransomware (después de que se hayan neutralizado los incidentes)"].

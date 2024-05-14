@@ -14,6 +14,13 @@ summary: 'Después de un ataque, la protección frente al ransomware de BlueXP v
 [role="lead"]
 Después de que las cargas de trabajo se hayan marcado como «listas para la recuperación», la protección contra el ransomware de BlueXP recomienda un punto de recuperación real (RPA) y orquesta el flujo de trabajo para una recuperación resistente a los fallos.
 
+* Si SnapCenter gestiona la aplicación o las máquinas virtuales, la protección contra ransomware BlueXP restaura la aplicación o la máquina virtual a su estado anterior y la última transacción mediante el proceso consistente con las aplicaciones o consistente con máquinas virtuales.
+* Si la aplicación o la máquina virtual están _not_ gestionadas por SnapCenter, la protección contra ransomware de BlueXP restaura la aplicación o la máquina virtual, puede restaurar la carga de trabajo seleccionando todos los volúmenes, volúmenes o archivos.
+
+
+
+TIP: La recuperación de las cargas de trabajo puede afectar a las cargas de trabajo Deberá coordinar los procesos de recuperación con las partes interesadas adecuadas.
+
 
 
 == Permite ver las cargas de trabajo que están listas para restaurarse
@@ -29,15 +36,49 @@ Revise las cargas de trabajo que se encuentran en el estado de recuperación «R
 
 . Revise la información de la carga de trabajo en la página *Recovery*.
 +
-image:screen-recovery.png["Recuperación"]
+image:screen-recovery2.png["Recuperación"]
 
 
 
 
 
-== Recuperar una carga de trabajo
+== Restaure una carga de trabajo gestionada por SnapCenter
 
-Gracias a la protección frente al ransomware de BlueXP, el administrador de almacenamiento puede determinar la mejor forma de recuperar las cargas de trabajo, ya sea desde el punto de restauración recomendado o desde su punto de restauración preferido.
+Gracias a la protección frente al ransomware de BlueXP, el administrador de almacenamiento puede determinar la mejor forma de restaurar las cargas de trabajo, ya sea desde el punto de restauración recomendado o desde el punto de restauración preferido.
+
+El estado de la aplicación cambiará si es necesario para la restauración. La aplicación se restaurará a su estado anterior a partir de los archivos de control, si se incluyen en la copia de seguridad. Una vez finalizada la restauración, la aplicación se abre en modo de LECTURA y ESCRITURA.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Recuperación*.
+. Revise la información de la carga de trabajo en la página *Recovery*.
+. Seleccione una carga de trabajo que esté en el estado «Restore needed».
+. Para restaurar, seleccione *Restaurar*.
+. *Alcance de la restauración*: Coherente con la aplicación (o para SnapCenter para VM, el alcance de la restauración es “por VM”)
+. *Fuente*: Selecciona la flecha hacia abajo junto a Fuente para ver los detalles. Seleccione el punto de restauración que desea utilizar para restaurar los datos.
++
+
+TIP: La protección frente al ransomware de BlueXP identifica el mejor punto de restauración como el último backup antes del incidente y muestra una indicación «recomendada».
+
+. *Destino*: Selecciona la flecha hacia abajo junto a Destino para ver los detalles.
++
+.. Seleccione la ubicación original o una alternativa.
+.. Seleccione el entorno de trabajo.
+.. Seleccione la Storage VM.
+
+
+. Si el destino original no dispone de espacio suficiente para restaurar la carga de trabajo, aparecerá una fila de almacenamiento temporal. Puede seleccionar el almacenamiento temporal para restaurar los datos de la carga de trabajo. Los datos restaurados se copiarán del almacenamiento temporal a la ubicación original. Haga clic en la flecha hacia abajo * en la fila de almacenamiento temporal y establezca el clúster de destino, la VM de almacenamiento y el nivel local.
+. Seleccione *Guardar*.
+. Seleccione *Siguiente*.
+. Revise las selecciones.
+. Seleccione *Restaurar*.
+. En el menú superior, seleccione *Recuperación* para revisar la carga de trabajo en la página de recuperación donde el estado de la operación se mueve a través de los estados.
+
+
+
+
+== Restaure una carga de trabajo no gestionada por SnapCenter
+
+Gracias a la protección frente al ransomware de BlueXP, el administrador de almacenamiento puede determinar la mejor forma de restaurar las cargas de trabajo, ya sea desde el punto de restauración recomendado o desde el punto de restauración preferido.
 
 El administrador del almacenamiento de seguridad puede recuperar los datos en diferentes niveles:
 
@@ -145,6 +186,9 @@ TIP: El nombre del volumen nuevo aparece como nombre del volumen original + nomb
 
 === Restaure una carga de trabajo de la aplicación en el nivel de archivo
 
+Descargue una lista de archivos afectados* antes de restaurar una carga de trabajo de aplicación a nivel de archivo. Ahora puede acceder a la página Alertas para descargar una lista de archivos afectados y, a continuación, utilizar la página Recuperación para cargar la lista y elegir los archivos que desea restaurar.
+
+.Pasos
 . En la página Restaurar, en Restore Scope, seleccione *Por archivo*.
 . En la lista de volúmenes, seleccione el volumen que desea restaurar.
 . *Fuente*: Selecciona la flecha hacia abajo junto a Fuente para ver los detalles.

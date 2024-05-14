@@ -22,17 +22,18 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 Para la URL, en un navegador, introduzca: https://console.bluexp.netapp.com/["https://console.bluexp.netapp.com/"^] Para acceder a la consola BlueXP.
 
 *¿Necesitas una licencia para usar la protección contra ransomware de BlueXP?*
-No se requiere un archivo de licencia de NetApp (NLF). La versión previa de la protección contra ransomware de BlueXP no requiere ninguna licencia especial.  Todas las licencias de vista previa son licencias de evaluación.
 
-Para la versión previa de este servicio, se requiere una licencia de servicio de backup y recuperación de BlueXP.
+Puede utilizar los siguientes tipos de licencia:
 
+* Regístrate para una prueba gratuita de 90 días.
+* Compre una suscripción de pago por uso (PAYGO) con Amazon Web Services (AWS) Marketplace.
+* BYOL (BYOL), que es un Archivo de licencia de NetApp (NLF) que obtiene del representante de ventas de NetApp Puede utilizar el número de serie de la licencia para activar la licencia de licencia en la cartera digital de BlueXP.
 
-TIP: Para la versión de vista previa, NetApp ayuda a configurar la evaluación y las licencias necesarias.
 
 *¿Cómo habilitas la protección contra ransomware de BlueXP?*
 La protección frente al ransomware de BlueXP no requiere habilitación. La opción de protección frente a ransomware se habilita automáticamente en la navegación de la izquierda de BlueXP.
 
-Para la versión de vista previa, debes registrarte o ponerte en contacto con tu representante de ventas de NetApp para probar este servicio. Una vez que utilices BlueXP Connector, incluirá las prestaciones adecuadas para el servicio.
+Para continuar, debes registrarte o ponerte en contacto con tu representante de ventas de NetApp para probar este servicio. Una vez que utilices BlueXP Connector, incluirá las prestaciones adecuadas para el servicio.
 
 **¿La protección contra ransomware de BlueXP está disponible en modos estándar, restringido y privado?**
 Por el momento, la protección contra ransomware de BlueXP solo está disponible en modo estándar. Manténgase atento para obtener más información.
@@ -66,20 +67,17 @@ Te recomendamos que realices cambios de política en el servicio de protección 
 Una carga de trabajo incluye todos los volúmenes que utiliza una única instancia de aplicación. Por ejemplo, una instancia de Oracle DB desplegada en ora3.host.com puede tener vol1 y vol2 para sus datos y registros, respectivamente. Esos volúmenes juntos constituyen la carga de trabajo para esa instancia específica de la instancia de Oracle DB.
 
 *¿Cómo prioriza la protección contra ransomware de BlueXP los datos de carga de trabajo?*
-La prioridad de los datos para la versión Preview viene determinada por las copias snapshot realizadas y las copias de seguridad programadas.
+La prioridad de los datos viene determinada por las copias Snapshot realizadas y los backups programados.
 
-La prioridad de la carga de trabajo se determina en las siguientes frecuencias de Snapshot:
+La prioridad de la carga de trabajo se determina mediante frecuencias Snapshot.
 
-* *Crítico*: Copias instantáneas tomadas menos de 1 por hora (programa de protección altamente agresivo)
-* *Importante*: Copias instantáneas tomadas menos de 1 por día pero más de 1 por hora
-* *Estándar*: Copias instantáneas tomadas más de 1 por día
-
+link:rp-use-protect.html["Obtenga información acerca de la prioridad o la importancia de las cargas de trabajo"].
 
 **Nuevo volumen añadido, pero aún no aparece**
 Si añadió un volumen nuevo a su entorno, inicie la detección nuevamente y aplique políticas de protección para proteger ese nuevo volumen.
 
 **La consola no muestra todas mis cargas de trabajo. ¿Qué podría estar mal?**
-Actualmente, solo se admiten volúmenes NFS. Los volúmenes iSCSI, los volúmenes CIFS y otras configuraciones no compatibles se filtran y no aparecen en la consola.
+Actualmente, solo son compatibles los volúmenes NFS y CIFS. Los volúmenes iSCSI y otras configuraciones no compatibles se filtran y no aparecen en la consola.
 
 
 

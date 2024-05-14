@@ -22,9 +22,9 @@ Gracias a la protección frente al ransomware de BlueXP, podrás ver el estado d
 
 * link:rp-use-protect.html["Proteja las cargas de trabajo"]:
 +
-** Asigna una política de protección contra ransomware a las cargas de trabajo.
+** Asigna una estrategia de protección frente al ransomware a las cargas de trabajo.
 ** Aumenta la protección de las aplicaciones para evitar futuros ataques de ransomware.
-** Cree, cambie o elimine una política de protección.
+** Cree, cambie o elimine una estrategia de protección.
 
 
 * link:rp-use-alert.html["Responde a la detección de posibles ataques de ransomware"].

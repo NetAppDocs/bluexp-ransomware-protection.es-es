@@ -14,8 +14,10 @@ summary: Durante la detección, la protección frente al ransomware de BlueXP an
 [role="lead"]
 Para utilizar la protección frente al ransomware de BlueXP, el servicio debe detectar primero los datos. Durante la detección, la protección frente al ransomware de BlueXP analiza todos los volúmenes y archivos en entornos de trabajo en todos los conectores y espacios de trabajo de BlueXP dentro de una cuenta.
 
+La protección contra ransomware de BlueXP evalúa las aplicaciones de MySQL, las aplicaciones de Oracle, los almacenes de datos de VMware y los recursos compartidos de archivos.
 
-NOTE: Para la versión preliminar, la protección frente al ransomware BlueXP evalúa las aplicaciones MySQL, las aplicaciones de Oracle, los almacenes de datos de VMware y los recursos compartidos de archivos.
+
+NOTE: No se detectarán las cargas de trabajo con volúmenes que usan FlexGroup o iSCSI.
 
 El servicio evalúa el nivel de protección existente, incluida la protección actual del backup, las copias Snapshot y las opciones de protección autónoma frente a ransomware de NetApp. Según la evaluación, el servicio te recomienda cómo mejorar tu protección frente al ransomware.
 
