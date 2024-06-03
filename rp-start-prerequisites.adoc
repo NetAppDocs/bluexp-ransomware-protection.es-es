@@ -40,11 +40,13 @@ Para obtener más información sobre las licencias, consulte link:concept-ransom
 
 NOTE: Si tienes varios BlueXP Connectors, el servicio analizará los datos en todos los conectores más allá de los que se muestren actualmente en la interfaz de usuario de BlueXP.
 
-** El servicio de backup y recuperación de BlueXP con backup habilitado en el entorno de trabajo
-** Un entorno de trabajo de BlueXP con almacenamiento en las instalaciones de NetApp (mediante protocolos NAS o CIFS)
 ** Una cuenta de BlueXP con al menos un conector activo que se conecta a clústeres de ONTAP en las instalaciones. Todos los entornos de trabajo y origen deben estar en la misma cuenta de BlueXP.
 ** Una cuenta de usuario de BlueXP con privilegios de administrador de cuenta para detectar recursos
+** Un entorno de trabajo de BlueXP con almacenamiento en las instalaciones de NetApp (mediante protocolos NAS o CIFS)
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Requisitos estándar de BlueXP"^]
 
 
 
+
+
+NOTE: El servicio de backup y recuperación de BlueXP ya no tiene que estar habilitado en el entorno de trabajo. El servicio de protección frente a ransomware de BlueXP ayuda a configurar un destino de backup mediante la opción Configuración. Consulte link:rp-use-settings.html["Configurar ajustes"].

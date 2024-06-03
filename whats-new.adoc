@@ -58,6 +58,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["Obtenga más información sobre la descarga de archivos CSV desde el panel de control y otras páginas"].
 
 * *Ver documentación* el enlace ahora está incluido en la interfaz de usuario. Puede acceder a esta documentación desde la vertical de Dasbhoard *Acciones* image:button-actions-vertical.png["Acciones verticales"] opción. Selecciona *Novedades* para ver los detalles en las notas de la versión o *Documentación* para ver la página principal de la documentación de protección contra ransomware de BlueXP.
+* *Copia de seguridad y recuperación de BlueXP*: El servicio de copia de seguridad y recuperación de BlueXP ya no necesita estar habilitado en el entorno de trabajo. Consulte link:rp-start-prerequisites.html["requisitos previos"]. El servicio de protección frente a ransomware de BlueXP ayuda a configurar un destino de backup mediante la opción Configuración. Consulte link:rp-use-settings.html["Configurar ajustes"].
 
 
 
