@@ -26,8 +26,8 @@ Para la URL, en un navegador, introduzca: https://console.bluexp.netapp.com/["ht
 Puede utilizar los siguientes tipos de licencia:
 
 * Regístrate para una prueba gratuita de 90 días.
-* Compre una suscripción de pago por uso (PAYGO) con Amazon Web Services (AWS) Marketplace.
-* BYOL (BYOL), que es un Archivo de licencia de NetApp (NLF) que obtiene del representante de ventas de NetApp Puede utilizar el número de serie de la licencia para activar la licencia de licencia en la cartera digital de BlueXP.
+* Pronto podrás comprar una suscripción de pago por uso (PAYGO) con Amazon Web Services (AWS) Marketplace.
+* Pronto podrá traer su propia licencia (BYOL), que es un Archivo de licencia de NetApp (NLF) que obtiene de su representante de ventas de NetApp Puede utilizar el número de serie de la licencia para activar la licencia de licencia en la cartera digital de BlueXP.
 
 
 *¿Cómo habilitas la protección contra ransomware de BlueXP?*

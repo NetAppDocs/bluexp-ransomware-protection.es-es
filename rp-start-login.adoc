@@ -27,17 +27,17 @@ Aparece la página de inicio de sesión de NetApp BlueXP.
 Si es la primera vez que inicia sesión en este servicio, aparecerá la página de destino.
 
 +
+image:screen-landing.png["Captura de pantalla de la página de destino para la protección frente al ransomware de BlueXP"]
+
++
 De lo contrario, se mostrará la consola de protección contra ransomware de BlueXP.
 
 +
 image:screen-dashboard.png["Consola de protección contra ransomware de BlueXP"]
 
-. Comience a utilizar el servicio.
 +
-** Si no tienes un conector BlueXP o no es el único para este servicio, es posible que necesites ponerte en contacto con el soporte de NetApp o seguir los mensajes para registrarte.
-** Si eres nuevo en BlueXP y no has usado ningún conector, cuando seleccionas «*Protección contra ransomware*», aparecerá un mensaje sobre la inscripción. Continúe y envíe el formulario. NetApp se pondrá en contacto con usted para informarse sobre su solicitud de evaluación.
-** Si eres un usuario de BlueXP con un conector existente, cuando seleccionas «*Protección contra ransomware*», aparecerá un mensaje sobre la inscripción.
 
+NOTE: Si no tienes un conector BlueXP o no es el único para este servicio, puede que necesites ponerte en contacto con el soporte de NetApp.
 
 . Si aún no lo ha hecho, seleccione la opción *Descubrir cargas de trabajo*.
 +

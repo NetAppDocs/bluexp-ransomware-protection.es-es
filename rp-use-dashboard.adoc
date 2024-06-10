@@ -74,24 +74,24 @@ Aquí hay una muestra de las recomendaciones que ofrece el servicio.
 | Recomendación | Descripción | Cómo resolver 
 
 
-| Añade una política de protección contra ransomware | La carga de trabajo actualmente no está protegida. | Asigne una política a la carga de trabajo.
+| Añade una política de protección contra ransomware. | La carga de trabajo actualmente no está protegida. | Asigne una política a la carga de trabajo.
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 
 
-| Configurar destinos de copia de seguridad | La carga de trabajo no tiene ningún destino de backup. | Añada destinos de backup a esta carga de trabajo para protegerla.
+| Preparar <backup provider> como destino de backup para realizar un backup de los datos de carga de trabajo. | La carga de trabajo no tiene ningún destino de backup. | Añada destinos de backup a esta carga de trabajo para protegerla.
 Consulte link:rp-use-settings.html["Configure las opciones de protección"]. 
 
 
-| Editar el nombre de la carga de trabajo | Las cargas de trabajo usan nombres predeterminados. | Asigne a la carga de trabajo un nombre descriptivo.
+| Editar el nombre de la carga de trabajo. | Las cargas de trabajo usan nombres predeterminados. | Asigne a la carga de trabajo un nombre descriptivo.
 Consulte link:rp-use-manage.html["Gestionar cargas de trabajo"]. 
 
 
-| Habilita la detección de amenazas | Envíe datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas. | Introduzca los detalles del servidor SIEM/XDR para activar la detección de amenazas.
+| Habilita la detección de amenazas. | Envíe datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas. | Introduzca los detalles del servidor SIEM/XDR para activar la detección de amenazas.
 Consulte link:rp-use-settings.html["Configure las opciones de protección"].
 Consulte link:rp-use-settings.html["Configure las opciones de protección"]. 
 
 
-| Habilite la protección coherente con las cargas de trabajo para aplicaciones o VMware | Estas cargas de trabajo no están gestionadas por el software SnapCenter o el plugin de SnapCenter para VMware vSphere. | Para que sean administradas por SnapCenter, habilite la protección consistente con las cargas de trabajo.
+| Habilite la protección coherente con las cargas de trabajo para aplicaciones o VMware. | Estas cargas de trabajo no están gestionadas por el software SnapCenter o el plugin de SnapCenter para VMware vSphere. | Para que sean administradas por SnapCenter, habilite la protección consistente con las cargas de trabajo.
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 
 
@@ -107,7 +107,7 @@ Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques 
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 
 
-| Revisar nuevas alertas | Existen nuevas alertas. | Revise las nuevas alertas.
+| Revisar nuevas alertas. | Existen nuevas alertas. | Revise las nuevas alertas.
 Consulte link:rp-use-alert.html["Responder a una alerta de ransomware detectada"]. 
 |===
 .Pasos

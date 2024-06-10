@@ -15,16 +15,10 @@ summary: Puedes proteger las cargas de trabajo contra ataques de ransomware medi
 Puedes proteger las cargas de trabajo contra ataques de ransomware completando las siguientes acciones mediante la protección contra ransomware de BlueXP.
 
 * Cambiar los detalles de la protección de cargas de trabajo existentes.
-+
-** Modifique el nombre de una carga de trabajo (como aplicaciones y almacenes de datos de máquinas virtuales) no gestionada en SnapCenter.
-** Cambie la prioridad o la importancia de la carga de trabajo.
-
-
 * Habilite la protección coherente con las cargas de trabajo, que funciona con el software SnapCenter o el complemento SnapCenter para VMware vSphere.
 * Cree o gestione estrategias de protección frente al ransomware que incluyan políticas que cree en copias Snapshot, backups y detección de ransomware.
 +
 ** Importe una estrategia y ajústela.
-** Edite o elimine estrategias de detección (solo las que creó).
 
 
 
@@ -69,7 +63,7 @@ En la página Protection, se muestra la siguiente información sobre la protecci
 La protección frente al ransomware de BlueXP asigna una importancia o prioridad a cada carga de trabajo durante la detección, en función de un análisis de cada carga de trabajo. La importancia de la carga de trabajo se determina en las siguientes frecuencias Snapshot:
 
 * *Crítico*: Copias instantáneas tomadas más de 1 por hora (programa de protección altamente agresivo)
-* *Alto*: Copias instantáneas tomadas menos de 1 por hora pero más de 1 por día
+* *Importante*: Copias instantáneas tomadas menos de 1 por hora pero más de 1 por día
 * *Estándar*: Copias instantáneas tomadas más de 1 por día
 
 
@@ -104,7 +98,7 @@ Cada 30 días
 | 60 | 2 | 309 
 
 
-.4+| * Política de alta carga de trabajo*  a| 
+.4+| *Política de carga de trabajo importante*  a| 
 Cada trimestre
 | Cada 30 minutos | 3 | 144 | 165 
 
@@ -126,7 +120,7 @@ Cada 30 días
 
 .4+| *Política de carga de trabajo estándar*  a| 
 Cada trimestre
-| Cada 60 min | 3 | 72 | 93 
+| Cada 30 min | 3 | 72 | 93 
 
 
 | Todos los días  a| 
@@ -161,7 +155,7 @@ Uno de los primeros pasos para proteger las cargas de trabajo es visualizar las 
 ** En el panel Protección de datos del panel, seleccione *Ver todo*.
 ** En el menú, selecciona *Protección*.
 +
-image:screen-protection-sc-columns.png["Protección"]
+image:screen-protection-sc-columns2.png["Protección"]
 
 
 
@@ -169,22 +163,25 @@ image:screen-protection-sc-columns.png["Protección"]
 
 
 
+NOTE: Para las cargas de trabajo que ya poseen una política de protección con un servicio de backup y recuperación de datos de SnapCenter o BlueXP, no se puede editar la protección. Para estas cargas de trabajo, el ransomware de BlueXP permite la protección autónoma frente a ransomware o la protección de FPolicy si ya están activados en otros servicios. Más información acerca de https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protección autónoma de ransomware"^] y.. https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup y recuperación de BlueXP"^], y. https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy de ONTAP"^].
 
-== Cambiar los detalles de protección de las cargas de trabajo
 
-Puede cambiar detalles de protección como la prioridad de la carga de trabajo y el nombre de la carga de trabajo, si esa carga de trabajo no está gestionada por el backup y la recuperación de SnapCenter o BlueXP.
+
+== Revisar los detalles de protección de cargas de trabajo
+
+Es posible revisar detalles de protección como la prioridad de la carga de trabajo, las políticas de protección y la información del almacenamiento.
 
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
 . En la página Protection, seleccione una carga de trabajo.
 +
-image:screen-protection-details2.png["Detalles de las cargas de trabajo en la página Protection"]
+image:screen-protection-details3.png["Detalles de las cargas de trabajo en la página Protection"]
 
 +
-En la página de detalles de la carga de trabajo, es posible asignar una política a una carga de trabajo, cambiar el nombre o la prioridad de una carga de trabajo, ver alertas, ver destinos de backup y ver información de recuperación.
+En la página de detalles de la carga de trabajo, es posible asignar una política a una carga de trabajo, ver alertas, ver destinos de backups y ver información de recuperación.
 
-. Para cambiar el nombre de una carga de trabajo, haga clic en el *Lápiz* image:button_pencil.png["Lápiz"] el icono junto al nombre de la carga de trabajo y cambie el nombre.
-. Para cambiar la importancia de la carga de trabajo de la prioridad asignada, haga clic en el *Lápiz* image:button_pencil.png["Lápiz"] icono junto a la prioridad de la carga de trabajo y cámbielo.
+
+
 . Para ver la política asociada a la carga de trabajo, en el panel Protección de la página Detalles de carga de trabajo, haga clic en *Ver política*.
 . Para ver los destinos de copia de seguridad de la carga de trabajo, en el panel Protección de la página Detalles de la carga de trabajo, haga clic en el *Ver destino de copia de seguridad*.
 +
@@ -276,6 +273,13 @@ Si desea cambiar las extensiones de archivo bloqueadas, edítelas en System Mana
 ** *Política de Snapshot*:
 +
 *** *Nombre de la política de Snapshot*: Introduzca un nombre para la política de Snapshot.
+*** * Bloqueo de instantáneas*: Permite que esto bloquee las copias snapshot en el almacenamiento primario para que no puedan ser modificadas o eliminadas durante un cierto período de tiempo, incluso si un ataque de ransomware se dirige al destino de almacenamiento de la copia de seguridad. Esto también se denomina _almacenamiento inmutable_. Esto permite acelerar el tiempo de restauración.
++
+Cuando una snapshot está bloqueada, la hora de caducidad del volumen se establece en la hora de caducidad de la copia Snapshot.
+
++
+ONTAP 9.12.1 y las versiones posteriores ofrecen el bloqueo de copias de SnapVault. Para obtener más información acerca de SnapLock, consulte https://docs.netapp.com/us-en/ontap/snaplock/index.html["SnapLock en ONTAP"^].
+
 *** * Horarios de instantáneas*: Elija las opciones de programación, el número de copias de instantáneas que desea conservar y seleccione habilitar el horario.
 
 
@@ -333,7 +337,7 @@ image:screen-protect-br-policies.png["Protege la página que muestra las políti
 
 
 
-=== Asigne una política diferente
+== Asigne una política diferente
 
 Puede asignar una política de protección diferente a la actual.
 
@@ -350,31 +354,3 @@ Puede asignar una política de protección diferente a la actual.
 == Gestionar las estrategias de protección frente al ransomware
 
 Puedes editar o eliminar una estrategia de ransomware.
-
-
-
-=== Edita una estrategia de protección frente al ransomware
-
-Puede editar una estrategia de protección si selecciona otra estrategia de política de detección preconfigurada.
-
-.Pasos
-. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
-. En la página Protección, selecciona *Administrar estrategias de ransomware*.
-. En la página Administrar estrategias, selecciona las *Acciones* image:screenshot_horizontal_more_button.gif["Botón Acciones"] opción para la política que desea cambiar.
-. En el menú Acciones, selecciona *Editar estrategia*.
-. Cambie los detalles.
-. Selecciona *Guardar* para finalizar el cambio.
-
-
-
-
-=== Elimina una estrategia de protección contra ransomware
-
-Es posible eliminar una estrategia de protección que actualmente no esté asociada a ninguna carga de trabajo.
-
-.Pasos
-. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
-. En la página Protección, selecciona *Administrar estrategias de ransomware*.
-. En la página Administrar estrategias, selecciona las *Acciones* image:screenshot_horizontal_more_button.gif["Botón Acciones"] opción para la estrategia que desea suprimir.
-. En el menú Acciones, selecciona *Eliminar estrategia*.
-

@@ -35,6 +35,7 @@ Para obtener más información sobre las licencias, consulte link:concept-ransom
 
 * En BlueXP:
 +
+** Un entorno de trabajo de BlueXP con almacenamiento en las instalaciones de NetApp (mediante protocolos NAS o CIFS)
 ** Debe configurarse un conector BlueXP por cada cloud privado virtual (VPC) o en una región en las instalaciones en BlueXP. Consulte https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Documentación de BlueXP para configurar el Connector"^].
 +
 

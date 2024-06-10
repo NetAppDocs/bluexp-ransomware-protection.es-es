@@ -26,6 +26,7 @@ Para proteger esas cargas de trabajo, debe añadir un destino de backup. Es posi
 
 * StorageGRID de NetApp
 * Amazon Web Services (AWS)
+* Microsoft Azure
 
 
 Puede añadir un destino de backup en función de una acción recomendada en la consola.
@@ -42,8 +43,19 @@ La consola ofrece muchas recomendaciones. Una recomendación podría ser configu
 +
 image:screen-dashboard.png["Consola"]
 
-. Desde el Panel de Control, seleccione *Revisar y corregir* para la recomendación de “Configurar destinos de copia de seguridad”.
+. Desde el Panel de Control, seleccione *Revisar y corregir* para la recomendación de “Preparar <backup provider> como destino de respaldo”.
 . Continúe con las instrucciones dependiendo del proveedor de copias de seguridad.
+
+
+
+
+=== Acceda a la página Configuración desde el menú
+
+Puede acceder fácilmente a la página Configuración desde el menú.
+
+. En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical image:button-actions-vertical.png["Acciones verticales"]... opción en la parte superior derecha.
+. En el menú, selecciona *Ajustes*.
+. Para agregar un destino de copia de seguridad, seleccione *Agregar*.
 
 
 
@@ -55,7 +67,7 @@ Para configurar NetApp StorageGRID como destino de backup, introduzca la siguien
 . En la página *Configuración > Destinos de copia de seguridad*, seleccione *Agregar*.
 . Introduzca un nombre para el destino de la copia de seguridad.
 +
-image:screen-settings-backup-destination-storagegrid.png["Destinos de backup"]
+image:screen-settings-backup-destination-azure.png["Destinos de backup"]
 
 . Seleccione *StorageGRID*.
 . Seleccione la flecha hacia abajo junto a cada ajuste e introduzca o seleccione valores:
@@ -88,7 +100,7 @@ CAUTION: Si configura ahora el ajuste de bloqueo de copia de seguridad, no es po
 .Resultado
 El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia de seguridad.
 
-image:screen-settings-backup-destinations-list-storagegrid.png["Backup destinations para la página Settings"]
+image:screen-settings-backup-destinations-list-azure.png["Backup destinations para la página Settings"]
 
 
 
@@ -101,7 +113,7 @@ Para obtener más información sobre la gestión de su almacenamiento de AWS en 
 . En la página *Configuración > Destinos de copia de seguridad*, seleccione *Agregar*.
 . Introduzca un nombre para el destino de la copia de seguridad.
 +
-image:screen-settings-backup-destination-storagegrid.png["Destinos de backup"]
+image:screen-settings-backup-destination-azure.png["Destinos de backup"]
 
 . Seleccione *Amazon Web Services*.
 . Seleccione la flecha hacia abajo junto a cada ajuste e introduzca o seleccione valores:
@@ -146,7 +158,65 @@ CAUTION: Si configura ahora el ajuste de bloqueo de copia de seguridad, no es po
 .Resultado
 El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia de seguridad.
 
-image:screen-settings-backup-destinations-list-aws.png["Backup destinations para la página Settings"]
+image:screen-settings-backup-destinations-list-azure.png["Backup destinations para la página Settings"]
+
+
+
+=== Añada Microsoft Azure como destino de backup
+
+Para configurar Azure como destino de backup, introduzca la siguiente información.
+
+Para obtener más información sobre cómo gestionar sus credenciales de Azure y suscripciones al mercado en BlueXP, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gestiona tus credenciales de Azure y tus suscripciones al mercado"^].
+
+. En la página *Configuración > Destinos de copia de seguridad*, seleccione *Agregar*.
+. Introduzca un nombre para el destino de la copia de seguridad.
++
+image:screen-settings-backup-destination-azure.png["Destinos de backup"]
+
+. Seleccione *Azure*.
+. Seleccione la flecha hacia abajo junto a cada ajuste e introduzca o seleccione valores:
++
+** *Configuración del proveedor*:
++
+*** Crea una nueva cuenta de almacenamiento, selecciona una existente si ya existe en BlueXP o trae tu propia cuenta de almacenamiento que almacenará los backups.
+*** Suscripción, región y grupo de recursos de Azure para las credenciales de Azure
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Si desea traer su propia cuenta de almacenamiento, consulte Agregar cuentas de almacenamiento de Azure Blob"^].
+
+
+
+** *Cifrado*: Si está creando una nueva cuenta de almacenamiento, introduzca la información de clave de cifrado que le haya proporcionado el proveedor. Si eligió una cuenta existente, la información de cifrado ya está disponible.
++
+Los datos de la cuenta se cifran con claves gestionadas por Microsoft de forma predeterminada. Puede seguir utilizando claves administradas por Microsoft, o puede administrar el cifrado de sus datos con sus propias claves.
+
+** *Redes*: Elige el espacio IP y si vas a usar un Punto Final Privado.
++
+*** El espacio IP es el clúster donde residen los volúmenes del que se desea incluir en un backup. Las LIF entre clústeres de este espacio IP deben tener acceso a Internet saliente.
+*** Opcionalmente, seleccione si va a utilizar un punto final privado de Azure que haya configurado previamente.
++
+Si desea utilizar Azure PrivateLink, consulte https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^].
+
+
+
+** * Bloqueo de respaldo*: Elija si desea que el servicio proteja las copias de seguridad de ser modificadas o eliminadas. Esta opción utiliza la tecnología DataLock de NetApp. Cada copia de seguridad se bloqueará durante el período de retención, o durante un mínimo de 30 días, más un período de búfer de hasta 14 días.
++
+
+CAUTION: Si configura ahora el ajuste de bloqueo de copia de seguridad, no es posible cambiarlo más tarde después de configurar el destino de copia de seguridad.
+
++
+*** *Desbloqueado*: Usuarios específicos pueden sobrescribir o eliminar archivos protegidos durante el período de retención.
+*** *Bloqueado*: Los usuarios no pueden sobrescribir o eliminar los archivos de copia de seguridad protegidos durante el período de retención. Esta opción satisface el cumplimiento normativo completo.
+
+
+
+
+. Seleccione *Agregar*.
+
+
+.Resultado
+El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia de seguridad.
+
+image:screen-settings-backup-destinations-list-azure.png["Backup destinations para la página Settings"]
 
 
 
@@ -155,21 +225,18 @@ image:screen-settings-backup-destinations-list-aws.png["Backup destinations para
 Puede enviar datos automáticamente a un sistema de gestión de eventos y seguridad (SIEM) para analizar y detectar amenazas.
 
 . En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
-. Revise el panel de acciones recomendadas de la consola.
-. Desde el Panel de Control, selecciona *Revisar y corregir* para la recomendación de “Habilitar detección de amenazas”.
+. En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical image:button-actions-vertical.png["Acciones verticales"]... opción en la parte superior derecha.
+. Selecciona *Ajustes*.
 +
 Aparece la página Configuración.
 
 +
-image:screen-settings-threat-detection2.png["Configuración"]
+image:screen-settings-threat-detection3.png["Configuración"]
 
-. En la página Configuración, selecciona *Conectar* en el panel de detección de amenazas.
-+
-image:screen-settings-threat-detection-details.png["Activar página de detalles de detección de amenazas"]
-
+. En la página Configuración, seleccione *Conectar* en el panel de conexión SIEM.
 . Introduzca los detalles del servidor SIEM para activar la detección de amenazas.
 . Selecciona *Activar*.
 +
-El panel de detección de amenazas de la página Configuración muestra Conectado.
+En la página Configuración se muestra «Conectado».
 
 
