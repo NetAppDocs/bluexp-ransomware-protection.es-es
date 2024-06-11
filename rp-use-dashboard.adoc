@@ -79,10 +79,7 @@ Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques 
 
 
 | Preparar <backup provider> como destino de backup para realizar un backup de los datos de carga de trabajo. | La carga de trabajo no tiene ningún destino de backup. | Añada destinos de backup a esta carga de trabajo para protegerla.
-Consulte link:rp-use-settings.html["Configure las opciones de protección"]. 
-
-
-| Editar el nombre de la carga de trabajo. | Las cargas de trabajo usan nombres predeterminados. | Asigne a la carga de trabajo un nombre descriptivo.
+Consulte link:rp-use-settings.html["Configure las opciones de protección"].
 Consulte link:rp-use-manage.html["Gestionar cargas de trabajo"]. 
 
 

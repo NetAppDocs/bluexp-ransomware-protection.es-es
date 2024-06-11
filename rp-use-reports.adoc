@@ -18,7 +18,6 @@ Antes de descargar los archivos CSV, debe actualizar los datos, que también act
 
 Puede descargar archivos CSV desde cualquiera de las opciones del menú principal:
 
-* *Dashboard:* contiene toda la información de resumen para todas las cargas de trabajo.
 * *Protección*: Contiene el estado y los detalles de todas las cargas de trabajo, incluido el número total protegido y en riesgo.
 * *Alertas*: Incluye el estado y los detalles de todas las alertas, incluyendo el número total de alertas y Snapshots automatizados.
 * *Recuperación*: Incluye el estado y los detalles de todas las cargas de trabajo que necesitan ser restauradas, incluyendo el número total de cargas de trabajo marcadas como “Restauración necesaria”, “En curso”, “Restauración fallida” y “Restaurada exitosamente”.

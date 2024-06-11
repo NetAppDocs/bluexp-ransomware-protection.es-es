@@ -37,8 +37,6 @@
   <block id="6fea4ae8bfd57b1144290174a7991835" category="paragraph"><block ref="a2af5739e158fa554d3968802020d899" category="inline-link-macro-rx"></block>.</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Dos</block>
   <block id="88879dd410c929d5bb33be99ae9be42b" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Configura el servicio de protección contra ransomware</block>
-  <block id="6bf45a6b70688711bb03d799ea6987ff" category="inline-link-macro">Preparar NetApp StorageGRID o Amazon Web Services como destino de backup</block>
-  <block id="a8c9d306c78466ca4525a34137565f4f" category="list-text"><block ref="02f122f9ad78cf4530f83863dfff9d44" category="inline-link-macro-rx"></block>.</block>
   <block id="bdd0311a659415960a895cb7120b8f36" category="inline-link-macro">Configura un conector en BlueXP</block>
   <block id="3e4fb7af5fa9931235320a5c69cbbd95" category="list-text"><block ref="d08f5d92c8a7aaa3a14b96426841252f" category="inline-link-macro-rx"></block>.</block>
   <block id="2eee0208d7c6702078e5b0a246b9c4d7" category="inline-link-macro">Configurar destinos de copia de seguridad</block>
@@ -107,16 +105,11 @@
   <block id="f18c5bf56745addde245bfdabd75c3a2" category="admonition">La protección frente al ransomware de BlueXP identifica el mejor punto de restauración como el último backup antes del incidente y muestra una indicación «recomendada».</block>
   <block id="ce398ae17610821c0664dc141883be1a" category="list-text">Revise el nombre del nuevo volumen.</block>
   <block id="e117d7e0417b0abf71f8e538099181f1" category="admonition">El nombre del volumen nuevo aparece como nombre del volumen original + nombre de backup + fecha de backup.</block>
-  <block id="6412a45d589675b39a03f4d8c440e7a7" category="section-title">Restaure una carga de trabajo de la aplicación en el nivel de archivo</block>
-  <block id="3e64769073a6ebfad26862c552f42c72" category="list-text">En la página Restaurar, en Restore Scope, seleccione *Por archivo*.</block>
-  <block id="2eb90d1019a833fede5f2a1e23f0591d" category="list-text">Seleccione hasta 100 archivos o una sola carpeta para restaurar.</block>
   <block id="2aed74adef5cde2e5d5472060833755d" category="list-text">Elija dónde restaurar los datos: Ubicación de origen original o una ubicación alternativa que pueda especificar.</block>
   <block id="4d0b36ce90456f06852d4441a17c882b" category="admonition">Mientras que los archivos o directorios originales se sobrescribirán con los datos restaurados, los nombres de archivo y carpeta originales seguirán siendo los mismos a menos que especifique nuevos nombres.</block>
   <block id="4aa5c52de0a02969447ad2b59e0451ae" category="list-text">Si lo desea, introduzca la ruta.</block>
   <block id="20358f2fa930b8db61d2496aa4577907" category="admonition">Si no especifica una ruta para la restauración, los archivos se restaurarán en un nuevo volumen en el directorio de nivel superior.</block>
   <block id="f674c7471994552522ed1d3f05b7bac1" category="list-text">Seleccione si desea que los nombres de los archivos o directorios restaurados sean los mismos que la ubicación actual o nombres diferentes.</block>
-  <block id="cb6e7fc3f457310ea21a986a1f81b1b5" category="section-title">Restaure un recurso compartido de archivos o un almacén de datos en el nivel de volumen o archivos</block>
-  <block id="3657cfc546fcba4c47b4a5ba6c661fb1" category="list-text">Después de seleccionar un recurso compartido de archivos o un almacén de datos para restaurar, en la página Restaurar, en Restore Scope, seleccione *by volume* o *by file*.</block>
   <block id="e8a4593ae7085eb934113d300b05524e" category="inline-image-macro">Página de recuperación que muestra la recuperación del recurso compartido de archivos</block>
   <block id="4066589b2c7a739e063b41ce11b7eae0" category="paragraph"><block ref="4066589b2c7a739e063b41ce11b7eae0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af12c570c3ed9f169c9b2497886d07e5" category="list-text">En el menú, seleccione *Recuperación* para revisar la carga de trabajo en la página Recuperación donde el estado de la operación se mueve a través de los estados.</block>
@@ -126,11 +119,8 @@
   <block id="985a17beca436d81e26faeb5d73538bb" category="paragraph"><block ref="985a17beca436d81e26faeb5d73538bb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cc03ddbe51eba1cd776926690a07ca14" category="list-text">*Destino*: A la ubicación original.</block>
   <block id="150b98b7bdd494e0922e7bd3769c6178" category="summary">Los ataques de ransomware pueden suponer un coste comercial, recursos y reputación. El servicio de protección frente al ransomware de BlueXP te permite ver información relevante sobre ciberseguridad y evaluar la resiliencia de tu organización ante un ciberataque. También incluye una lista de alertas y soluciones para proteger los datos.</block>
-  <block id="0dcedf097338e5c6ce2fc1189847f484" category="paragraph">Los ataques de ransomware pueden bloquear el acceso a tus sistemas y los datos, y los atacantes pueden solicitar un rescate a cambio de la liberación de datos o descifrado. Según IDC, no es raro que las víctimas de ransomware sufran múltiples ataques de ransomware. El ataque puede interrumpir el acceso a los datos entre un día y varias semanas.</block>
   <block id="6321ab6443de9de91f1f7313b1cfcce7" category="section-title">Todo lo que puedes hacer con la protección frente al ransomware de BlueXP</block>
   <block id="8e22c5498680469033ebfa929699936b" category="paragraph">El servicio de protección frente a ransomware de BlueXP proporciona un uso completo de diversas tecnologías de NetApp para que el administrador de almacenamiento, el administrador de seguridad de los datos o el ingeniero de operaciones de seguridad puedan lograr los siguientes objetivos:</block>
-  <block id="054bc259e9aa68fb8f3bfe542d228b0b" category="list-text">*Proteja* sus cargas de trabajo habilitando copias de seguridad y copias snapshot en sus datos.</block>
-  <block id="833da0c333e295aca4bc69596dd1dd5e" category="list-text">* Recuperar* sus cargas de trabajo que ayudan a acelerar el tiempo de actividad de la carga de trabajo mediante la orquestación de varias tecnologías de NetApp. Puede optar por recuperar volúmenes, carpetas o archivos específicos. El servicio ofrece recomendaciones sobre las mejores opciones.</block>
   <block id="0939045244bbd868a8a6209521a2393b" category="inline-image-macro">Diagrama en el que se muestran las estrategias de protección frente al ransomware de BlueXP para identificar, proteger, detectar, responder y recuperar</block>
   <block id="e85f3e8ff11de85c9bc6143961646d4b" category="section-title">Beneficios de usar la protección frente al ransomware de BlueXP</block>
   <block id="f9a111d845ac7fab15da6792ce0c355d" category="paragraph">La protección frente al ransomware de BlueXP ofrece las siguientes ventajas:</block>
@@ -156,7 +146,6 @@
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link">Backup y recuperación de BlueXP</block>
   <block id="2dd00507ca85eec8a3465506e478e45f" category="inline-link">FPolicy de ONTAP</block>
   <block id="472b4a66f24a5029874468d609155979" category="list-text">Asigna una prioridad empresarial a cada carga de trabajo en función de los niveles de protección detectados automáticamente y recomienda políticas de protección para las cargas de trabajo en función de su prioridad empresarial.</block>
-  <block id="3b07a7551ed4aba9700a33a9931f3be8" category="list-text">La protección frente al ransomware también aprende las asociaciones de políticas y recomienda tus políticas personalizadas en cargas de trabajo similares.</block>
   <block id="f23d5c00c473a2e87ffcd7a0eedb89b5" category="cell">*PROTEGER*</block>
   <block id="bd86dbcbafa7a7406429c16dcbb97e30" category="cell">*DETECTAR*</block>
   <block id="c69ab1786234ed8d66d89ba56a6b84ea" category="list-text">Proporciona detección de doble capa que comienza con la detección de posibles ataques de ransomware en el almacenamiento principal y la respuesta a actividades anormales realizando copias Snapshot adicionales automatizadas para crear los puntos de restauración de datos más cercanos. El servicio ofrece la capacidad de obtener más información para identificar posibles ataques con mayor precisión sin que ello afecte al rendimiento de las cargas de trabajo principales.</block>
@@ -452,7 +441,6 @@ En este momento, el backup y recuperación de datos de BlueXP (Cloud Backup) adm
   <block id="592997dde366d5775e7e052816854f74" category="section-title">5 de marzo de 2024</block>
   <block id="5a62a1aba4b0b7df087f145049f2b71f" category="paragraph">Esta versión previa de la protección contra ransomware de BlueXP incluye las siguientes actualizaciones:</block>
   <block id="cf69a03aa5287886f0e8d3de1a6334cc" category="inline-link">Obtenga más información sobre la gestión de políticas</block>
-  <block id="2c32a45feb7d83419121ac60cd93f581" category="list-text">*Gestión de políticas de protección*: Además de usar políticas predefinidas, ahora puede crear, cambiar y eliminar políticas.<block ref="b9442a8e5462552f8e91e8150e2b9935" category="inline-link-rx"></block>.</block>
   <block id="ac623dda99022aa586562b6804c2f1b8" category="inline-link">Obtén más información sobre la creación de políticas de protección</block>
   <block id="0fd4c934346a4b20a9b03012b080912b" category="list-text">*Inmutabilidad en almacenamiento secundario (DataLock)*: Ahora puede hacer que la copia de seguridad sea inmutable en el almacenamiento secundario usando la tecnología NetApp DataLock en el almacén de objetos.<block ref="a216e61ae0b0740b7be8287c615fa066" category="inline-link-rx"></block>.</block>
   <block id="732b7b17a4dd9ae4a4359cee4b9b391d" category="inline-link">Obtenga más información sobre la configuración de destinos de backup</block>
@@ -577,8 +565,6 @@ En este momento, el backup y recuperación de datos de BlueXP (Cloud Backup) adm
   <block id="2b23e67a81e3d69dd9c1a80ae371b5ac" category="cell">Asigne una política a la carga de trabajo.
 Consulte <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>.</block>
   <block id="e08278c8217792f95a8bc1de9c7a7d8b" category="cell">La carga de trabajo no tiene ningún destino de backup.</block>
-  <block id="600a7b18be10701f94a8ee3667ed9056" category="cell">Añada destinos de backup a esta carga de trabajo para protegerla.
-Consulte <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block>.</block>
   <block id="eebff47fbf7c92aeaa2f87d473eb32ec" category="cell">Haga una política más fuerte.</block>
   <block id="2efe8733dcd7aa63db28fb5caa6a3f8a" category="cell">Es posible que algunas cargas de trabajo no tengan suficiente protección. Refuerce la protección en las cargas de trabajo con una política.</block>
   <block id="8db2e9b654cd93f28beeae96f827c30a" category="cell">Aumenta la retención, agrega copias de seguridad, aplica copias de seguridad inmutables, bloquea extensiones de archivos sospechosos, habilita la detección en el almacenamiento secundario y mucho más.
@@ -703,9 +689,6 @@ Te recomendamos que realices cambios de política en el servicio de protección 
   <block id="01d9db102d1bd61a6c3336ec537d1d6b" category="list-text">Asigna una estrategia de protección frente al ransomware a las cargas de trabajo.</block>
   <block id="39eb13fe6281f202063b8531a23fd007" category="list-text">Cree, cambie o elimine una estrategia de protección.</block>
   <block id="476c2e1a5efbef67d0e9ca7a6bf574ff" category="paragraph">También se puede usar la consola para revisar y actuar sobre recomendaciones de protección, acceder a configuraciones globales, descargar informes y acceder a esta documentación técnica.</block>
-  <block id="5df5d8d14e98747a0288882cfd05111b" category="cell">Las cargas de trabajo usan nombres predeterminados.</block>
-  <block id="d2c953ec201965c7baa55e9f62d2c8a5" category="cell">Asigne a la carga de trabajo un nombre descriptivo.
-Consulte <block ref="8451c8808a80959dcb5e4c769b7fcdd6" category="inline-link-macro-rx"></block>.</block>
   <block id="0d9d7270a47d859e5eb89fd0e5ea1994" category="cell">Habilita la detección de amenazas</block>
   <block id="189c4ff0677fc252921dcedc653aa720" category="cell">Envíe datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas.</block>
   <block id="9d0175bb9dfb4144fb8e893cba94028f" category="cell">Introduzca los detalles del servidor SIEM/XDR para activar la detección de amenazas.
@@ -828,8 +811,6 @@ Para obtener más información, consulte <block ref="9f0b279394cf25f00a608a52b5a
   <block id="b9e02bfe9506fcf186ee622509a30847" category="list-text">En la página Policies, haga clic en la flecha hacia abajo de la política que desea asignar para revisar los detalles.</block>
   <block id="bb5447070c795a6e8d29fa9cd98a5127" category="list-text">Seleccione la política que desea asignar.</block>
   <block id="427a5dfbb09ab1cc6737506e06431570" category="list-text">Selecciona *Proteger* para finalizar el cambio.</block>
-  <block id="f3d0cde08790f065a5bc8c494e512b95" category="section-title">Gestionar las estrategias de protección frente al ransomware</block>
-  <block id="48701b73898e137282fdd2544d5e559e" category="paragraph">Puedes editar o eliminar una estrategia de ransomware.</block>
   <block id="9c419334983210e051ee2cf0145c087e" category="paragraph">Para utilizar la protección contra ransomware de BlueXP, necesitarás estos requisitos previos:</block>
   <block id="2f20a7fd799c5d7115c448ff505763ce" category="list-text">Un entorno de trabajo de BlueXP con almacenamiento en las instalaciones de NetApp (mediante protocolos NAS o CIFS)</block>
   <block id="ffc0b4bc890e2f8eb6eccccf7295e80e" category="doc">Notas de la versión: Novedades de la protección frente al ransomware de BlueXP</block>
@@ -852,8 +833,6 @@ Para obtener más información, consulte <block ref="9f0b279394cf25f00a608a52b5a
   <block id="df142910ec0f256cf3fe94834edd616c" category="paragraph"><block ref="2db9e604787e93c0ca53ebeb4c1a3e79" category="inline-link-rx"></block>.</block>
   <block id="ca8c09727e8b36d15981c9455d697516" category="inline-link">Obtenga más información sobre la descarga de archivos CSV desde el panel de control y otras páginas</block>
   <block id="db81907bf6476a20c8b94b94556f627f" category="paragraph"><block ref="29cf990dea934b0f767d4567074aaff5" category="inline-link-rx"></block>.</block>
-  <block id="cd336e06464d96c3b5ece4caa37cc727" category="list-text">*Ver documentación* el enlace ahora está incluido en la interfaz de usuario. Puede acceder a esta documentación desde la vertical de Dasbhoard *Acciones* <block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block> opción. Selecciona *Novedades* para ver los detalles en las notas de la versión o *Documentación* para ver la página principal de la documentación de protección contra ransomware de BlueXP.</block>
-  <block id="d8689490b3697bc11eb889288d616515" category="list-text">*Proceso de recuperación*. Se mejoró el proceso de recuperación. Ahora puede recuperar volumen por volumen, todos los volúmenes para una carga de trabajo o incluso algunos archivos del volumen, todo en un único flujo de trabajo.<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>.</block>
   <block id="97f0f6f42727f3dac1719d7b22f2111b" category="list-text">Si SnapCenter gestiona la aplicación o las máquinas virtuales, la protección contra ransomware BlueXP restaura la aplicación o la máquina virtual a su estado anterior y la última transacción mediante el proceso consistente con las aplicaciones o consistente con máquinas virtuales.</block>
   <block id="bf2e85fdfd662459fd1c8c44e308e695" category="list-text">Si la aplicación o la máquina virtual están _not_ gestionadas por SnapCenter, la protección contra ransomware de BlueXP restaura la aplicación o la máquina virtual, puede restaurar la carga de trabajo seleccionando todos los volúmenes, volúmenes o archivos.</block>
   <block id="b5ccdb3dc0dc7a8afa4ba1ad3929e36a" category="admonition">La recuperación de las cargas de trabajo puede afectar a las cargas de trabajo Deberá coordinar los procesos de recuperación con las partes interesadas adecuadas.</block>
@@ -866,7 +845,6 @@ Para obtener más información, consulte <block ref="9f0b279394cf25f00a608a52b5a
   <block id="ad7fb327f4193be83424f1fc4c25d4fd" category="list-text">Seleccione la ubicación original o una alternativa.</block>
   <block id="accfbb7c139fd416a120a640d6c1590a" category="list-text">Si el destino original no dispone de espacio suficiente para restaurar la carga de trabajo, aparecerá una fila de almacenamiento temporal. Puede seleccionar el almacenamiento temporal para restaurar los datos de la carga de trabajo. Los datos restaurados se copiarán del almacenamiento temporal a la ubicación original. Haga clic en la flecha hacia abajo * en la fila de almacenamiento temporal y establezca el clúster de destino, la VM de almacenamiento y el nivel local.</block>
   <block id="f0266c70abac9ef71bb56a1eb183c0b0" category="section-title">Restaure una carga de trabajo no gestionada por SnapCenter</block>
-  <block id="872ab4495a0ed317b81e8ee40b06b94b" category="paragraph">Descargue una lista de archivos afectados* antes de restaurar una carga de trabajo de aplicación a nivel de archivo. Ahora puede acceder a la página Alertas para descargar una lista de archivos afectados y, a continuación, utilizar la página Recuperación para cargar la lista y elegir los archivos que desea restaurar.</block>
   <block id="79278cee556b0d17fea04a0fcf1bd761" category="paragraph">Puede configurar un destino de copia de seguridad o activar la detección de amenazas revisando las recomendaciones en el panel de control.</block>
   <block id="95b3c5c7bf00e3023abdf81f992e1ac0" category="paragraph">Habilitar la detección de amenazas envía automáticamente datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas.</block>
   <block id="21ac48d249c1ab1c27c4b3d2da7dae12" category="paragraph">Puede enviar datos automáticamente a un sistema de gestión de eventos y seguridad (SIEM) para analizar y detectar amenazas.</block>
@@ -974,7 +952,6 @@ Actualmente, solo son compatibles los volúmenes NFS y CIFS. Los volúmenes iSCS
   <block id="f57adceb51c997eacafcca8e75cffdeb" category="list-text">En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical <block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>... opción en la parte superior derecha.</block>
   <block id="cef97f26739390b86216c115ee7b7cbb" category="list-text">En el menú, selecciona *Ajustes*.</block>
   <block id="cd4cb523b15d5f9c009df1bf65987434" category="list-text">Para agregar un destino de copia de seguridad, seleccione *Agregar*.</block>
-  <block id="55216c58ed237a1c104dab665bcdbc62" category="paragraph"><block ref="55216c58ed237a1c104dab665bcdbc62" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0616a207fc5ca7b12d52f652afab488b" category="paragraph"><block ref="0616a207fc5ca7b12d52f652afab488b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d12d2643aef9b1e9c87feb8221ada2b4" category="section-title">Añada Microsoft Azure como destino de backup</block>
   <block id="6aca8bb3d0f4710440538d2eeece0805" category="paragraph">Para configurar Azure como destino de backup, introduzca la siguiente información.</block>
@@ -1029,7 +1006,6 @@ Actualmente, solo son compatibles los volúmenes NFS y CIFS. Los volúmenes iSCS
   <block id="1bb6c5e87f81a4dfb176e1e6591f70fd" category="admonition">Se te envía un correo electrónico que incluye el número de serie de la protección contra ransomware de BlueXP e indica que la protección contra ransomware de BlueXP está suscrita en Azure Marketplace.</block>
   <block id="d40bb36908e07a46fbc5880def372b77" category="cell">Añade una política de protección contra ransomware.</block>
   <block id="a3b50e444d5d5789130de78ddb2b3e45" category="cell">Preparar &lt;backup provider&gt; como destino de backup para realizar un backup de los datos de carga de trabajo.</block>
-  <block id="93db68dd0bc5b2393bb456c1498d321d" category="cell">Editar el nombre de la carga de trabajo.</block>
   <block id="3dcdd70b853293a2f5c189af583013d7" category="cell">Habilita la detección de amenazas.</block>
   <block id="87179dfbe133b0e5bec8d13398695148" category="cell">Habilite la protección coherente con las cargas de trabajo para aplicaciones o VMware.</block>
   <block id="98ec50a82f77bf6d52cb0d41cd36eb6e" category="cell">Revisar nuevas alertas.</block>
@@ -1062,16 +1038,30 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="8009eebf05fd33b87750f8b4048986f7" category="section-title">10 de junio de 2024</block>
   <block id="4c57408166809e028adf9be27b861c0a" category="paragraph">Esta versión de protección contra ransomware de BlueXP incluye las siguientes actualizaciones:</block>
   <block id="a88e0dc5892d64e5e1293fb97d10e870" category="list-text">*Bloqueo de copia de Snapshot en el almacenamiento primario*: Permite bloquear las copias de Snapshot en el almacenamiento primario para que no se puedan modificar o eliminar durante un cierto período de tiempo, incluso si un ataque de ransomware se dirige al destino de almacenamiento de copia de seguridad.</block>
-  <block id="e7a842258074f2de90e691c24356d38a" category="inline-link-macro">Obtén más información sobre la protección de cargas de trabajo y cómo habilitar el backup bloqueando una estrategia de protección frente al ransomware</block>
-  <block id="9a4202dea794d370332161c0d5856e1f" category="paragraph"><block ref="0f055d4ee027e78627c60044683c67c0" category="inline-link-macro-rx"></block>.</block>
   <block id="1c73f6fee4ed4d02eabef99de35666d2" category="list-text">*Esta versión es compatible con Cloud Volumes ONTAP para Microsoft Azure* como un entorno de trabajo, además de Cloud Volumes ONTAP para AWS y NAS de ONTAP en las instalaciones.</block>
   <block id="6b9ec885733dcee16db8c4d8dde6312a" category="inline-link">Inicio rápido para Cloud Volumes ONTAP en Azure</block>
   <block id="17223b00f9d3a714622f5df95956564b" category="paragraph"><block ref="17223b00f9d3a714622f5df95956564b" category="inline-link-rx"></block></block>
   <block id="2803032e22b35c4bdcf58b92d42735f5" category="list-text">*Microsoft Azure añadido como destino de copia de seguridad*. Ahora puede añadir Microsoft Azure como destino de backup, junto con AWS y NetApp StorageGRID.</block>
-  <block id="b5f6d5d9ba8e88eba6e3172e96efa6c8" category="inline-link-macro">Consulte Configurar la configuración de protección</block>
-  <block id="b39a89914ee49bccad81b221c933c39b" category="paragraph"><block ref="94ac680a0f271d98e81ad90483f9db0d" category="inline-link-macro-rx"></block>.</block>
   <block id="17b97e69da6dd47e7550f1c8138bab17" category="list-text">*Actualizaciones de licencias*: Puedes registrarte para una prueba gratuita de 90 días. Pronto podrás comprar una suscripción de pago por uso con Amazon Web Services Marketplace o con tu propia licencia de NetApp.</block>
   <block id="8bd256649eef4e917975b7d21e407eee" category="list-text">*Detalles de la carga de trabajo*: Esta versión ahora proporciona más detalles en la información de la carga de trabajo de la Protección y otras páginas para mejorar la evaluación de la protección de la carga de trabajo. Desde los detalles de la carga de trabajo, es posible revisar la política actualmente asignada y revisar los destinos de backup configurados.</block>
   <block id="3c52b5fdb588d57160ac52c4248fa3c0" category="list-text">* Protección y recuperación coherentes con las aplicaciones y con las máquinas virtuales*: Ahora puede realizar una protección coherente con las aplicaciones con el software NetApp SnapCenter y una protección coherente con las máquinas virtuales con el complemento SnapCenter para VMware vSphere, logrando un estado inactivo y consistente para evitar una posible pérdida de datos más adelante si se necesita recuperación. Si se requiere la recuperación, puede restaurar la aplicación o la máquina virtual de nuevo a cualquiera de los estados disponibles anteriormente.</block>
   <block id="b40d9759dcac80d0440a4f4b7e2d3f1a" category="list-text">*Descargar archivos CSV* desde las páginas de Protección, Alertas y Recuperación.</block>
+  <block id="fe3f4461c233a8ac4062f3d5f2af86f7" category="paragraph"><block ref="fe3f4461c233a8ac4062f3d5f2af86f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="42af6072d9f6b15575af87c244abaa0a" category="section-title">Restaure un recurso compartido de archivos o un almacén de datos</block>
+  <block id="1dd6a4919bb3486348521d221ec659ba" category="list-text">Después de seleccionar un recurso compartido de archivos o un almacén de datos para restaurar, en la página Restaurar, en Restore Scope, seleccione *by volume*.</block>
+  <block id="2ee50d53d7474747be1bcd118f94fa54" category="inline-link-macro">Prepare NetApp StorageGRID, Amazon Web Services o Microsoft Azure como destino de backup</block>
+  <block id="1ba64763d51f8c1aa85b17f2c5d95a50" category="list-text"><block ref="e4ac2374a696381099055121381c8366" category="inline-link-macro-rx"></block>.</block>
+  <block id="827541907ba6873ebf770b4e03175c3f" category="cell">Añada destinos de backup a esta carga de trabajo para protegerla.
+Consulte <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block>.
+Consulte <block ref="8451c8808a80959dcb5e4c769b7fcdd6" category="inline-link-macro-rx"></block>.</block>
+  <block id="e7c81f7323ce88fb040e5538bda0ea2a" category="paragraph">Los ataques de ransomware pueden bloquear el acceso a tus datos, y los atacantes pueden solicitar un rescate a cambio de la liberación de los datos o el descifrado. Según IDC, no es raro que las víctimas de ransomware sufran múltiples ataques de ransomware. El ataque puede interrumpir el acceso a los datos entre un día y varias semanas.</block>
+  <block id="3bc7f17536f804ec9b3bc76d03bfd36b" category="list-text">*Protege* tus cargas de trabajo habilitando copias de seguridad, copias Snapshot y estrategias de protección contra ransomware en tus datos.</block>
+  <block id="dface268a2071eff798d124445615938" category="list-text">* Recuperar* sus cargas de trabajo que ayudan a acelerar el tiempo de actividad de la carga de trabajo mediante la orquestación de varias tecnologías de NetApp. Puede optar por Recuperar volúmenes específicos. El servicio ofrece recomendaciones sobre las mejores opciones.</block>
+  <block id="693cf7ee0375c87d1ecc02615f651ebe" category="inline-link">Obtén más información sobre la protección de cargas de trabajo y cómo habilitar el backup bloqueando una estrategia de protección frente al ransomware</block>
+  <block id="d9e97b4dacf8789a452df06f4739d3b7" category="paragraph"><block ref="691f168695c0ebf6c9e1bf6093933aac" category="inline-link-rx"></block>.</block>
+  <block id="8e84b1daf78912b246a0f51f49a81be6" category="inline-link">Obtenga más información sobre cómo configurar las opciones de protección</block>
+  <block id="a5074ce00bd12388aded816f7d17bc0b" category="paragraph"><block ref="8490e5084c846c3f615579ffada71b2e" category="inline-link-rx"></block>.</block>
+  <block id="9863ce048fc9f300b1fbc248aa66783e" category="list-text">*Ver documentación* el enlace ahora está incluido en la interfaz de usuario. Puede acceder a esta documentación desde el tablero vertical *Acciones* <block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block> opción. Selecciona *Novedades* para ver los detalles en las notas de la versión o *Documentación* para ver la página principal de la documentación de protección contra ransomware de BlueXP.</block>
+  <block id="56b38de12238825d4032ca408bf71807" category="list-text">*Gestión de políticas de protección*: Además de usar políticas predefinidas, ahora puedes crear políticas.<block ref="b9442a8e5462552f8e91e8150e2b9935" category="inline-link-rx"></block>.</block>
+  <block id="bdf0c88a77cd9c31482e0fe8ce0cfb56" category="list-text">*Proceso de recuperación*. Se mejoró el proceso de recuperación. Ahora puede recuperar volumen por volumen o todos los volúmenes de una carga de trabajo.<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>.</block>
 </blocks>
