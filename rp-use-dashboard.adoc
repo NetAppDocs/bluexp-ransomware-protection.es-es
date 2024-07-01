@@ -33,14 +33,28 @@ image:screen-dashboard.png["Consola"]
 ** *Protección de datos de carga de trabajo*: Haga clic en *Ver todo* para ver todas las cargas de trabajo que están en riesgo o protegidas en la página Protección. Las cargas de trabajo están en riesgo cuando los niveles de protección no coinciden con una política de protección. Consulte link:rp-use-protect.html["Proteja las cargas de trabajo"].
 ** *Alertas y recuperación de datos de carga de trabajo*: Haga clic en *Ver todo* para ver los incidentes activos que han impactado en su carga de trabajo, están listos para la recuperación después de que los incidentes se neutralizan o están en recuperación. Consulte link:rp-use-alert.html["Responder a una alerta detectada"].
 +
-Un incidente se clasifica en uno de los siguientes estados:
-
+*** Un incidente se clasifica en uno de los siguientes estados:
 +
-*** Afectado (se muestra en la página Alertas)
-*** Listo para la recuperación (se muestra en la página Recuperación)
-*** Recuperando (se muestra en la página Recovery)
-*** Recovery Failed (se muestra en la página Recovery)
-*** Recuperado (se muestra en la página Recovery)
+**** Nuevo
+**** Desestimada
+**** Descartando
+**** Resuelto
+
+
+*** Una alerta puede tener uno de los siguientes estados:
++
+**** Nuevo
+**** Inactivo
+
+
+*** Una carga de trabajo puede tener uno de los siguientes estados de restauración:
++
+**** Restauración necesaria
+**** En curso
+**** Restaurado
+**** Con errores
+
+
 
 
 ** *Acciones recomendadas*: Para aumentar la protección, revise cada recomendación y haga clic en *Revisar y arreglar*.
@@ -78,11 +92,6 @@ Aquí hay una muestra de las recomendaciones que ofrece el servicio.
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 
 
-| Preparar <backup provider> como destino de backup para realizar un backup de los datos de carga de trabajo. | La carga de trabajo no tiene ningún destino de backup. | Añada destinos de backup a esta carga de trabajo para protegerla.
-Consulte link:rp-use-settings.html["Configure las opciones de protección"].
-Consulte link:rp-use-manage.html["Gestionar cargas de trabajo"]. 
-
-
 | Habilita la detección de amenazas. | Envíe datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas. | Introduzca los detalles del servidor SIEM/XDR para activar la detección de amenazas.
 Consulte link:rp-use-settings.html["Configure las opciones de protección"].
 Consulte link:rp-use-settings.html["Configure las opciones de protección"]. 
@@ -96,12 +105,21 @@ Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques 
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 
 
+| Preparar <backup provider> como destino de backup para realizar un backup de los datos de carga de trabajo. | La carga de trabajo no tiene ningún destino de backup. | Añada destinos de backup a esta carga de trabajo para protegerla. Consulte link:rp-use-settings.html["Configure las opciones de protección"]. 
+
+
 | Protege las cargas de trabajo de aplicaciones cruciales o muy importantes contra el ransomware. | La página Proteger muestra las cargas de trabajo de la aplicación críticas o muy importantes (según el nivel de prioridad asignado) que no están protegidas. | Asigne una política a estas cargas de trabajo.
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 
 
 | Protege las cargas de trabajo de archivos compartidos cruciales o muy importantes contra el ransomware. | La página Protección muestra cargas de trabajo críticas o muy importantes del tipo Archivo Compartido o Almacén de Datos que no están protegidos. | Asigne una política a cada una de las cargas de trabajo.
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
+
+
+| Registre el complemento de SnapCenter disponible para VMware vSphere (SCV) con BlueXP | No está protegida una carga de trabajo de máquina virtual. | Asigne protección consistente con la máquina virtual a la carga de trabajo de la máquina virtual habilitando el complemento SnapCenter para VMware vSphere. Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
+
+
+| Regístrate Servidor SnapCenter disponible con BlueXP | Una aplicación no está protegida. | Asigne protección coherente con las aplicaciones a la carga de trabajo habilitando SnapCenter Server. Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 
 
 | Revisar nuevas alertas. | Existen nuevas alertas. | Revise las nuevas alertas.
@@ -123,13 +141,12 @@ TIP: Más adelante, puede cambiar un elemento despedido a un elemento de tarea. 
 
 
 
-== Descargar archivos CSV
+== Exportar datos de protección a archivos CSV
 
-Es posible descargar archivos CSV que muestren detalles de la protección, las alertas y la recuperación.
+Es posible exportar datos y descargar archivos CSV que muestren detalles de protección, alertas y recuperación.
 
 Puede descargar archivos CSV desde cualquiera de las opciones del menú principal:
 
-* *Dashboard:* contiene toda la información de resumen para todas las cargas de trabajo.
 * *Protección*: Contiene el estado y los detalles de todas las cargas de trabajo, incluido el número total protegido y en riesgo.
 * *Alertas*: Incluye el estado y los detalles de todas las alertas, incluyendo el número total de alertas y Snapshots automatizados.
 * *Recuperación*: Incluye el estado y los detalles de todas las cargas de trabajo que necesitan ser restauradas, incluyendo el número total de cargas de trabajo marcadas como “Restauración necesaria”, “En curso”, “Restauración fallida” y “Restaurada exitosamente”.
@@ -144,24 +161,29 @@ Los archivos CSV incluyen datos para todas las cargas de trabajo en todos los en
 +
 image:screen-dashboard.png["Consola"]
 
-. Desde el Panel de Control u otra página, seleccione la opción *Actualizar* image:button-refresh.png["Opción Refrescar"] opción en la parte superior derecha para actualizar los datos que aparecerán en los archivos.
+. En la página, selecciona la opción *Refrescar* image:button-refresh.png["Opción Refrescar"] en la parte superior derecha para actualizar los datos que aparecerán en los archivos.
 . Debe realizar una de las siguientes acciones:
 +
-** Desde el Panel de Control u otra página, seleccione la opción *Descargar* image:button-download.png["Opción de descarga"] opción.
+** En la página, selecciona la opción *Descargar* image:button-download.png["Opción de descarga"] .
 ** En el menú de protección contra ransomware de BlueXP, selecciona *Informes*.
 
 
-. Si seleccionó la opción *Informes*, seleccione uno de los archivos con nombre preconfigurados y seleccione *Descargar (CSV)*.
+. Si seleccionó la opción *Informes*, seleccione uno de los archivos con nombre preconfigurados y seleccione *Descargar (CSV)* o *Descargar (JSON)*.
 
 
 
 
 == Acceda a la documentación técnica
 
-Puedes acceder a la documentación técnica en docs.netapp.com o desde dentro del servicio de protección contra ransomware de BlueXP.
+Puedes acceder a esta documentación técnica desde docs.netapp.com o desde dentro del servicio de protección contra ransomware de BlueXP.
 
 .Pasos
 . En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
 . En el Panel de Control, seleccione la *Acciones* vertical image:button-actions-vertical.png["Acciones verticales"] opción.
-. Selecciona *Novedades* para ver los detalles en las notas de la versión o *Documentación* para ver la página principal de la documentación de protección contra ransomware de BlueXP.
+. Seleccione una de estas opciones:
++
+** *Novedades* para ver información sobre las características de las versiones actuales o anteriores en las Notas de la versión.
+** *Documentación* para ver la página principal de documentación de protección contra ransomware de BlueXP y esta documentación.
+
+
 

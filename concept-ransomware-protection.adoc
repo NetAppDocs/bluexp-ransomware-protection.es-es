@@ -26,7 +26,7 @@ El servicio de protección frente a ransomware de BlueXP proporciona un uso comp
 
 * *Identifica* todas las cargas de trabajo basadas en aplicaciones, de uso compartido o gestionadas por VMware en el NAS on-premises de NetApp con entornos de trabajo NFS o CIFS en BlueXP, en cuentas de BlueXP, espacios de trabajo y conectores BlueXP. A continuación, el servicio categoriza la prioridad de los datos y te ofrece recomendaciones para llevar a cabo mejoras en la protección frente a ransomware.
 * *Protege* tus cargas de trabajo habilitando copias de seguridad, copias Snapshot y estrategias de protección contra ransomware en tus datos.
-* *Detectar* anomalías que podrían ser ataques de ransomware.
+* *Detectar* anomalías que podrían ser ataques de ransomware.Nota:[Ningún sistema de detección o prevención de ransomware puede garantizar completamente la seguridad de un ataque de ransomware. Aunque es posible que un ataque no se detecte, la tecnología de NetApp actúa como una importante capa adicional de defensa.]
 * * Responde* a posibles ataques de ransomware iniciando automáticamente una instantánea de NetApp ONTAP a prueba de manipulaciones que está bloqueada para que la copia no se pueda eliminar accidentalmente o maliciosamente. Tus datos de backup permanecerán inalterables y protegidos de forma integral frente a ataques de ransomware en el origen y en el destino.
 * * Recuperar* sus cargas de trabajo que ayudan a acelerar el tiempo de actividad de la carga de trabajo mediante la orquestación de varias tecnologías de NetApp. Puede optar por Recuperar volúmenes específicos. El servicio ofrece recomendaciones sobre las mejores opciones.
 * *Govern*: Implementa tu estrategia de protección contra ransomware y monitorea los resultados.
@@ -60,7 +60,7 @@ NetApp no te cobra por usar la versión de prueba de la protección contra ranso
 
 == Licencia
 
-Con la protección contra ransomware de BlueXP, puedes utilizar diferentes planes de licencia, como una prueba gratuita, una suscripción de pago por uso pronto, o traer tu propia licencia pronto.
+Con la protección contra ransomware de BlueXP, puedes utilizar diferentes planes de licencia, como una prueba gratuita, una suscripción de pago por uso pronto o BYOL.
 
 El servicio de protección contra ransomware de BlueXP requiere una licencia de NetApp ONTAP.
 
@@ -138,7 +138,7 @@ Utiliza la protección de ransomware de BlueXP para ver cómo son resilientes tu
 
 *Entornos de trabajo soportados*
 
-* NAS de ONTAP en las instalaciones (con protocolos NFS y CIFS)
+* NAS de ONTAP en las instalaciones (que utiliza los protocolos NFS y CIFS) con ONTAP versión 9.11.1 y posteriores
 * Cloud Volumes ONTAP para AWS (con protocolos NFS y CIFS)
 * Cloud Volumes ONTAP para Azure (con protocolos NFS y CIFS)
 

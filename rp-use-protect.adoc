@@ -18,6 +18,7 @@ Puedes proteger las cargas de trabajo contra ataques de ransomware completando l
 * Habilite la protección coherente con las cargas de trabajo, que funciona con el software SnapCenter o el complemento SnapCenter para VMware vSphere.
 * Cree o gestione estrategias de protección frente al ransomware que incluyan políticas que cree en copias Snapshot, backups y detección de ransomware.
 * Importe una estrategia y ajústela.
+* Eliminar una estrategia de protección.
 
 
 
@@ -160,7 +161,7 @@ image:screen-protection-sc-columns2.png["Protección"]
 
 
 
-NOTE: Para las cargas de trabajo que ya poseen una política de protección con un servicio de backup y recuperación de datos de SnapCenter o BlueXP, no se puede editar la protección. Para estas cargas de trabajo, el ransomware de BlueXP permite la protección autónoma frente a ransomware o la protección de FPolicy si ya están activados en otros servicios. Más información acerca de https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protección autónoma de ransomware"^] y.. https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup y recuperación de BlueXP"^], y. https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy de ONTAP"^].
+NOTE: Para las cargas de trabajo que ya poseen una política de protección con un servicio de backup y recuperación de datos de SnapCenter o BlueXP, no se puede editar la protección. Para estas cargas de trabajo, el ransomware de BlueXP permite la protección autónoma frente a ransomware o la protección de FPolicy si ya están activados en otros servicios. Más información sobre https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protección autónoma de ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup y recuperación de BlueXP"^]y https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy de ONTAP"^].
 
 
 
@@ -177,8 +178,6 @@ image:screen-protection-details3.png["Detalles de las cargas de trabajo en la p�
 +
 En la página de detalles de la carga de trabajo, es posible asignar una política a una carga de trabajo, ver alertas, ver destinos de backups y ver información de recuperación.
 
-
-
 . Para ver la política asociada a la carga de trabajo, en el panel Protección de la página Detalles de carga de trabajo, haga clic en *Ver política*.
 . Para ver los destinos de copia de seguridad de la carga de trabajo, en el panel Protección de la página Detalles de la carga de trabajo, haga clic en el *Ver destino de copia de seguridad*.
 +
@@ -193,39 +192,28 @@ Para obtener más información, consulte link:rp-use-settings.html["Configure la
 
 La habilitación de la protección coherente con la aplicación o las máquinas virtuales ayuda a proteger las cargas de trabajo de sus aplicaciones o máquinas virtuales de una forma coherente, lo que consigue un estado inactivo y consistente para evitar la pérdida potencial de datos posteriormente si es necesario la recuperación.
 
-Este proceso inicia la instalación del software SnapCenter para aplicaciones o el plugin de SnapCenter para VMware vSphere para máquinas virtuales.
+Este proceso inicia el registro del servidor de software de SnapCenter para aplicaciones o el plugin de SnapCenter para VMware vSphere para máquinas virtuales mediante el backup y la recuperación de BlueXP.
 
 Después de habilitar la protección consistente con la carga de trabajo, podrás gestionar las estrategias de protección en la protección frente al ransomware de BlueXP. La estrategia de protección incluye las políticas de Snapshot y backup que se gestionan en otras partes, junto con una política de detección de ransomware que se gestiona en la protección frente al ransomware de BlueXP.
 
-Para obtener más información sobre SnapCenter, consulte la siguiente información:
+Para obtener más información sobre el registro de SnapCenter o el plugin de SnapCenter para VMware vSphere mediante el backup y la recuperación de BlueXP, consulte la siguiente información:
 
-* https://docs.netapp.com/us-en/snapcenter/index.html["Software SnapCenter"^]
-* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html["Plugin de SnapCenter para VMware vSphere"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapcenter-server.html["Registre el software del servidor SnapCenter"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["Registre el plugin de SnapCenter para VMware vSphere"^]
 
 
 .Pasos
-. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
-. En la página Protection, seleccione una carga de trabajo.
+. En el menú de protección contra ransomware de BlueXP, selecciona *Dashboard*.
+. En el panel Recomendaciones, busque una de las siguientes recomendaciones y seleccione *Revisar y corregir*:
 +
-image:screen-protection-sc-columns.png["Protección"]
-
-. En la página Protección, selecciona las *Acciones* image:screenshot_horizontal_more_button.gif["Botón Acciones"] Y en el menú desplegable, seleccione *Habilitar protección consistente con la carga de trabajo* para habilitar SnapCenter.
-+
-
-TIP: Si elige una carga de trabajo basada en máquina virtual, aparece el vínculo para instalar el complemento de SnapCenter para VMware vSphere en lugar de «Instalar SnapCenter».
-
-+
-image:screen-protection-enable-sc.png["Habilite la página de protección consistente con las cargas de trabajo"]
-
-. En el campo Ubicación de carga de trabajo, seleccione *Copiar* para copiar la ubicación de la carga de trabajo en el portapapeles para su uso en la instalación de SnapCenter. Desplácese hacia abajo para ver el resto de los detalles de la carga de trabajo.
-. Selecciona *Instalar SnapCenter*.
-+
-** Si seleccionó una carga de trabajo basada en aplicaciones, se muestra la información del software SnapCenter.
-** Si seleccionó una carga de trabajo basada en máquina virtual, se muestra la información del plugin de SnapCenter para VMware vSphere.
+** Regístrate Servidor SnapCenter disponible con BlueXP
+** Registre el plugin de SnapCenter para VMware vSphere (SCV) con BlueXP
 
 
-. Siga la información para instalar SnapCenter.
-. Vuelve a la protección contra el ransomware de BlueXP. Selecciona *Protección* para ver la página Protección.
+. Siga la información para registrar el host de SnapCenter o el plugin de SnapCenter para VMware vSphere con el backup y la recuperación de BlueXP.
+. Vuelve a la protección contra el ransomware de BlueXP.
+. En la protección contra ransomware de BlueXP, accede a la consola e inicia de nuevo el proceso de detección.
+. En Protección contra ransomware de BlueXP, selecciona *Protección* para ver la página Protección.
 . Revise los detalles de la columna Snapshot and backup policies de la página Protection para ver que las políticas se gestionan en otros lugares.
 
 
@@ -242,14 +230,14 @@ Si las políticas Snapshot o de backup no existen en la carga de trabajo, puede 
 
 .Pasos para crear una estrategia de protección contra el ransomware
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
+. En la página Protección, selecciona *Administrar estrategias de protección*.
 +
-image:screen-protection-sc-columns.png["Protección"]
-
-. En la página Protección, selecciona *Administrar estrategias de protección contra ransomware*.
-+
-image:screen-protection-strategy-manage2.png["Gestionar la página de estrategia"]
+image:screen-protection-strategy-manage3.png["Gestionar la página de estrategia"]
 
 . En la página Estrategias de protección contra ransomware, selecciona *Agregar*.
++
+image:screen-protection-strategy-add.png["Página Agregar estrategia que muestra la sección Instantánea"]
+
 . Introduzca un nuevo nombre de estrategia o introduzca un nombre existente para copiarlo. Si introduce un nombre existente, elija el que desea copiar y seleccione *Copiar*.
 +
 
@@ -269,7 +257,7 @@ Si desea cambiar las extensiones de archivo bloqueadas, edítelas en System Mana
 
 ** *Política de Snapshot*:
 +
-*** *Nombre de la política de Snapshot*: Introduzca un nombre para la política de Snapshot.
+*** *Nombre base de la política de Snapshot*: Seleccione una política o seleccione *Crear* e introduzca un nombre para la política de Snapshot.
 *** * Bloqueo de instantáneas*: Permite que esto bloquee las copias snapshot en el almacenamiento primario para que no puedan ser modificadas o eliminadas durante un cierto período de tiempo, incluso si un ataque de ransomware se dirige al destino de almacenamiento de la copia de seguridad. Esto también se denomina _almacenamiento inmutable_. Esto permite acelerar el tiempo de restauración.
 +
 Cuando una snapshot está bloqueada, la hora de caducidad del volumen se establece en la hora de caducidad de la copia Snapshot.
@@ -282,12 +270,15 @@ ONTAP 9.12.1 y las versiones posteriores ofrecen el bloqueo de copias de SnapVau
 
 ** *Política de respaldo*:
 +
-*** *Nombre de la política de copia de seguridad*: Introduzca un nombre nuevo o existente.
-*** *Bloqueo de respaldo*: Elija esta opción para evitar que las copias de seguridad en el almacenamiento secundario se modifiquen o eliminen durante un cierto período de tiempo. Esto también se denomina _almacenamiento inmutable_.
+*** *Backup policy basename*: Introduce un nombre nuevo o elige un nombre existente.
 *** *Horarios de copia de seguridad*: Elija opciones de programación para el almacenamiento secundario y habilite el horario.
 
 
 
+
++
+
+TIP: Para habilitar el bloqueo de copia de seguridad en el almacenamiento secundario, configure sus destinos de copia de seguridad usando la opción *Settings*. Para obtener más información, consulte link:rp-use-settings.html["Configurar ajustes"].
 
 . Seleccione *Agregar*.
 
@@ -308,7 +299,7 @@ Otros servicios, como el backup y recuperación de BlueXP y SnapCenter, usan los
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
 +
-image:screen-protection-sc-columns.png["Protección"]
+image:screen-protection-strategy-manage3.png["Gestionar la página de estrategia"]
 
 . En la página Protección, seleccione una carga de trabajo y seleccione *Proteger*.
 +
@@ -344,4 +335,17 @@ Puede asignar una política de protección diferente a la actual.
 . En la página Policies, haga clic en la flecha hacia abajo de la política que desea asignar para revisar los detalles.
 . Seleccione la política que desea asignar.
 . Selecciona *Proteger* para finalizar el cambio.
+
+
+
+
+=== Elimina una estrategia de protección contra ransomware
+
+Es posible eliminar una estrategia de protección que actualmente no esté asociada a ninguna carga de trabajo.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
+. En la página Protección, selecciona *Administrar estrategias de ransomware*.
+. En la página Administrar estrategias, selecciona la opción *Acciones* image:screenshot_horizontal_more_button.gif["Botón Acciones"] para la estrategia que deseas eliminar.
+. En el menú Acciones, selecciona *Eliminar estrategia*.
 

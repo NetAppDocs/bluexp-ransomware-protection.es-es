@@ -23,11 +23,20 @@ El servicio evalúa el nivel de protección existente, incluida la protección a
 
 .Pasos
 . En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
-. Seleccione *Descubrir cargas de trabajo* en la página de destino inicial.
++
+Si es la primera vez que inicia sesión en este servicio, aparecerá la página de destino.
+
++
+image:screen-landing.png["Captura de pantalla de la página de destino para la protección frente al ransomware de BlueXP"]
+
+. En la página de destino inicial, selecciona *Comenzar por detectar cargas de trabajo*.
 +
 El servicio detecta los datos de la carga de trabajo y muestra el estado de la protección de datos en la consola.
 
 +
 image:screen-dashboard.png["Consola de protección contra ransomware de BlueXP"]
+
++
+link:rp-use-dashboard.html["Descubra lo que le muestra el panel de control."]
 
 

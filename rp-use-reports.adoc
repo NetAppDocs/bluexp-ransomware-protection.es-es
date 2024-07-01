@@ -12,15 +12,16 @@ summary: Con la protección contra ransomware de BlueXP, puedes descargar inform
 
 
 [role="lead"]
-Puede descargar archivos CSV que muestren detalles de protección, alertas y recuperación y guardarlos como . Archivos CSV.
+Es posible exportar datos de protección y descargar los archivos CSV o JSON que muestran detalles de la protección, las alertas y la recuperación.
 
-Antes de descargar los archivos CSV, debe actualizar los datos, que también actualiza los datos que aparecerán en los archivos.
+Antes de descargar los archivos CSV o JSON, debe actualizar los datos, que también actualiza los datos que aparecerán en los archivos.
 
-Puede descargar archivos CSV desde cualquiera de las opciones del menú principal:
+Puede descargar archivos desde cualquiera de las opciones del menú principal:
 
 * *Protección*: Contiene el estado y los detalles de todas las cargas de trabajo, incluido el número total protegido y en riesgo.
 * *Alertas*: Incluye el estado y los detalles de todas las alertas, incluyendo el número total de alertas y Snapshots automatizados.
 * *Recuperación*: Incluye el estado y los detalles de todas las cargas de trabajo que necesitan ser restauradas, incluyendo el número total de cargas de trabajo marcadas como “Restauración necesaria”, “En curso”, “Restauración fallida” y “Restaurada exitosamente”.
+* *Informes*: Puedes exportar datos desde cualquiera de las páginas y descargar los archivos.
 
 
 Si descarga archivos CSV de la página Protection, Alerts o Recovery, los datos solo muestran los datos de esa página.
@@ -35,7 +36,7 @@ image:screen-dashboard.png["Consola"]
 . Desde el Panel de Control u otra página, seleccione la opción *Actualizar* image:button-refresh.png["Opción Refrescar"] en la parte superior derecha para actualizar los datos que aparecerán en los informes.
 . Debe realizar una de las siguientes acciones:
 +
-** Desde el Panel de Control u otra página, seleccione la opción *Descargar* image:button-download.png["Opción de descarga"] opción.
+** En la página, selecciona la opción *Descargar* image:button-download.png["Opción de descarga"] .
 ** En el menú de protección contra ransomware de BlueXP, selecciona *Informes*.
 
 

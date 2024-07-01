@@ -83,15 +83,6 @@ image:screen-settings-backup-destination.png["Destinos de backup"]
 *** El espacio IP es el clúster donde residen los volúmenes del que se desea incluir en un backup. Las LIF entre clústeres de este espacio IP deben tener acceso a Internet saliente.
 
 
-** * Bloqueo de respaldo*: Elija si desea que el servicio proteja las copias de seguridad de ser modificadas o eliminadas. Esta opción utiliza la tecnología DataLock de NetApp. Cada copia de seguridad se bloqueará durante el período de retención, o durante un mínimo de 30 días, más un período de búfer de hasta 14 días.
-+
-
-CAUTION: Si configura ahora el ajuste de bloqueo de copia de seguridad, no es posible cambiarlo más tarde después de configurar el destino de copia de seguridad.
-
-+
-*** *Modo de cumplimiento*: Los usuarios no pueden sobrescribir ni eliminar los archivos de copia de seguridad protegidos durante el período de retención.
-
-
 
 
 . Seleccione *Agregar*.
@@ -196,16 +187,6 @@ Los datos de la cuenta se cifran con claves gestionadas por Microsoft de forma p
 +
 Si desea utilizar Azure PrivateLink, consulte https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^].
 
-
-
-** * Bloqueo de respaldo*: Elija si desea que el servicio proteja las copias de seguridad de ser modificadas o eliminadas. Esta opción utiliza la tecnología DataLock de NetApp. Cada copia de seguridad se bloqueará durante el período de retención, o durante un mínimo de 30 días, más un período de búfer de hasta 14 días.
-+
-
-CAUTION: Si configura ahora el ajuste de bloqueo de copia de seguridad, no es posible cambiarlo más tarde después de configurar el destino de copia de seguridad.
-
-+
-*** *Desbloqueado*: Usuarios específicos pueden sobrescribir o eliminar archivos protegidos durante el período de retención.
-*** *Bloqueado*: Los usuarios no pueden sobrescribir o eliminar los archivos de copia de seguridad protegidos durante el período de retención. Esta opción satisface el cumplimiento normativo completo.
 
 
 
