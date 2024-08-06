@@ -30,10 +30,6 @@ indexpage:
       url: "/rp-start-prerequisites.html"
     - title: Inicio rápido
       url: "/rp-start-quick-start.html"
-    - title: Configura la protección contra el ransomware de BlueXP
-      url: "/rp-start-setup.html"
-    - title: Accede a la protección frente al ransomware de BlueXP
-      url: "/rp-start-login.html"
     - title: Configurar destinos de copia de seguridad y activar la detección de amenazas
       url: "/rp-use-settings.html"
     - title: PREGUNTAS FRECUENTES

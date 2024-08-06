@@ -28,9 +28,13 @@ Después de la detección, la consola muestra el estado de la protección de dat
 +
 image:screen-dashboard.png["Consola"]
 
-. En Dashboard, puede ver y realizar cualquiera de las siguientes acciones en cada uno de los paneles:
+. En Dashboard, puede realizar las siguientes acciones en cada uno de los paneles:
 +
 ** *Protección de datos de carga de trabajo*: Haga clic en *Ver todo* para ver todas las cargas de trabajo que están en riesgo o protegidas en la página Protección. Las cargas de trabajo están en riesgo cuando los niveles de protección no coinciden con una política de protección. Consulte link:rp-use-protect.html["Proteja las cargas de trabajo"].
++
+
+TIP: Haga clic en la nota i para ver sugerencias sobre estos datos. Para aumentar el límite de carga de trabajo, haga clic en *Aumentar límite de carga de trabajo* dentro de esta nota. Al hacer clic en esto, accederá a la página Soporte de BlueXP , donde podrá crear un ticket de caso.
+
 ** *Alertas y recuperación de datos de carga de trabajo*: Haga clic en *Ver todo* para ver los incidentes activos que han impactado en su carga de trabajo, están listos para la recuperación después de que los incidentes se neutralizan o están en recuperación. Consulte link:rp-use-alert.html["Responder a una alerta detectada"].
 +
 *** Un incidente se clasifica en uno de los siguientes estados:
@@ -92,9 +96,7 @@ Aquí hay una muestra de las recomendaciones que ofrece el servicio.
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 
 
-| Habilita la detección de amenazas. | Envíe datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas. | Introduzca los detalles del servidor SIEM/XDR para activar la detección de amenazas.
-Consulte link:rp-use-settings.html["Configure las opciones de protección"].
-Consulte link:rp-use-settings.html["Configure las opciones de protección"]. 
+| Conéctese a SEIM para la generación de informes de amenazas. | Envíe datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas. | Introduzca los detalles del servidor SIEM/XDR para activar la detección de amenazas. Consulte link:rp-use-settings.html["Configure las opciones de protección"]. 
 
 
 | Habilite la protección coherente con las cargas de trabajo para aplicaciones o VMware. | Estas cargas de trabajo no están gestionadas por el software SnapCenter o el plugin de SnapCenter para VMware vSphere. | Para que sean administradas por SnapCenter, habilite la protección consistente con las cargas de trabajo.

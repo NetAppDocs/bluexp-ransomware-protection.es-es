@@ -14,7 +14,6 @@ summary: Puedes proteger las cargas de trabajo contra ataques de ransomware medi
 [role="lead"]
 Puedes proteger las cargas de trabajo contra ataques de ransomware completando las siguientes acciones mediante la protección contra ransomware de BlueXP.
 
-* Cambiar los detalles de la protección de cargas de trabajo existentes.
 * Habilite la protección coherente con las cargas de trabajo, que funciona con el software SnapCenter o el complemento SnapCenter para VMware vSphere.
 * Cree o gestione estrategias de protección frente al ransomware que incluyan políticas que cree en copias Snapshot, backups y detección de ransomware.
 * Importe una estrategia y ajústela.
@@ -23,14 +22,41 @@ Puedes proteger las cargas de trabajo contra ataques de ransomware completando l
 
 
 
-== Información de protección
+== Políticas de protección Puede cambiar en función de la cobertura existente
+
+Puede cambiar las políticas de protección en función de la protección de las cargas de trabajo que tenga:
+
+* *Las cargas de trabajo no están protegidas por aplicaciones NetApp*: Estas cargas de trabajo no están gestionadas por SnapCenter, el complemento SnapCenter para VMware vSphere o la copia de seguridad y recuperación de BlueXP . Estas cargas de trabajo pueden tener copias Snapshot realizadas como parte de ONTAP u otros productos. Si existe protección de ONTAP FPolicy, puede cambiar la protección de FPolicy mediante ONTAP.
+* *Cargas de trabajo con protección existente de aplicaciones NetApp*: Estas cargas de trabajo tienen políticas de copias de seguridad o instantáneas administradas por SnapCenter, SnapCenter para VMware vSphere o copias de seguridad y recuperación de BlueXP .
++
+** Si SnapCenter, SnapCenter para VMware o el sistema de backup y recuperación de datos de BlueXP  gestionan las políticas de Snapshot o de backup, seguirán siendo gestionadas por estas aplicaciones. Con la protección frente al ransomware de BlueXP , también puedes aplicar una política de detección de ransomware a esas cargas de trabajo.
+** Si la protección autónoma de ransomware (ARP) y FPolicy en ONTAP gestionan una política de detección de ransomware, esas cargas de trabajo estarán protegidas y seguirán gestionándolas por ARP y FPolicy.
+
+
+
+
+
+
+== ¿Qué políticas se necesitan en una estrategia de protección contra ransomware?
+
+Las siguientes políticas son necesarias en la estrategia de protección contra ransomware:
+
+* Política de detección de ransomware
+* Política de Snapshot
+
+
+No es necesaria una política de backup en la estrategia de protección frente a ransomware de BlueXP .
+
+
+
+== Detalles de protección en la página Protection
 
 En la página Protection, se muestra la siguiente información sobre la protección de cargas de trabajo:
 
 *Estado de protección*: Una carga de trabajo puede mostrar uno de los siguientes estados de protección para indicar si se aplica o no una política:
 
-* *Protegido*: Se aplica una política.
-* *En riesgo*: No se aplica ninguna política.
+* *Protegido*: Se aplica una política. ARP está habilitado en todos los volúmenes relacionados con la carga de trabajo.
+* *En riesgo*: No se aplica ninguna política. Si una carga de trabajo no tiene activada una política de detección primaria, está «en riesgo» aunque tenga activada una política de instantáneas y de backup.
 * *En progreso*: Se está aplicando una política pero aún no se ha completado.
 * *Fallo*: Se aplica una política pero no funciona.
 
@@ -41,6 +67,10 @@ En la página Protection, se muestra la siguiente información sobre la protecci
 * *Activo*: Se asigna una política de protección de detección de ransomware.
 * *No establecido*: No se asigna una política de protección de detección de ransomware.
 * *Error*: Se asignó una política de detección de ransomware, pero el servicio encontró un error.
++
+
+TIP: Cuando se habilita la protección en la protección frente a ransomware de BlueXP , la detección de alertas y la generación de informes se inician después de que el estado de la política de detección de ransomware cambie del modo de aprendizaje al modo activo.
+
 
 
 *Política de detección*: Aparece el nombre de la política de detección de ransomware, si se ha asignado una. Si la política de detección no se ha asignado, aparece N/A.
@@ -165,19 +195,27 @@ NOTE: Para las cargas de trabajo que ya poseen una política de protección con 
 
 
 
-== Revisar los detalles de protección de cargas de trabajo
+== Revise y actualice los detalles de la carga de trabajo
 
-Es posible revisar detalles de protección como la prioridad de la carga de trabajo, las políticas de protección y la información del almacenamiento.
+Es posible revisar detalles de la carga de trabajo, como el nombre de la carga de trabajo, las políticas de protección y la información de almacenamiento.
 
-.Pasos
+Es posible cambiar el nombre de la carga de trabajo, si esa carga de trabajo no se gestiona mediante el backup y recuperación de SnapCenter o BlueXP .
+
+.Pasos de la página Protección
+. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
+. En la página Protection, seleccione la opción *Actions* image:screenshot_horizontal_more_button.gif["Botón Acciones"] para la carga de trabajo que desea actualizar.
+. En el menú Acciones, seleccione *Editar nombre de carga de trabajo*.
+. Introduzca el nombre de la carga de trabajo nueva.
+. Seleccione *Guardar*.
+
+
+.Pasos de la página de detalles Workload
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
 . En la página Protection, seleccione una carga de trabajo.
 +
 image:screen-protection-details3.png["Detalles de las cargas de trabajo en la página Protection"]
 
-+
-En la página de detalles de la carga de trabajo, es posible asignar una política a una carga de trabajo, ver alertas, ver destinos de backups y ver información de recuperación.
-
+. Para cambiar el nombre de una carga de trabajo, haga clic en el icono *Lápiz* image:button_pencil.png["Lápiz"] junto al nombre de la carga de trabajo y cambie el nombre.
 . Para ver la política asociada a la carga de trabajo, en el panel Protección de la página Detalles de carga de trabajo, haga clic en *Ver política*.
 . Para ver los destinos de copia de seguridad de la carga de trabajo, en el panel Protección de la página Detalles de la carga de trabajo, haga clic en el *Ver destino de copia de seguridad*.
 +
@@ -339,13 +377,13 @@ Puede asignar una política de protección diferente a la actual.
 
 
 
-=== Elimina una estrategia de protección contra ransomware
+== Elimina una estrategia de protección contra ransomware
 
 Es posible eliminar una estrategia de protección que actualmente no esté asociada a ninguna carga de trabajo.
 
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
-. En la página Protección, selecciona *Administrar estrategias de ransomware*.
+. En la página Protección, selecciona *Administrar estrategias de protección contra ransomware*.
 . En la página Administrar estrategias, selecciona la opción *Acciones* image:screenshot_horizontal_more_button.gif["Botón Acciones"] para la estrategia que deseas eliminar.
 . En el menú Acciones, selecciona *Eliminar estrategia*.
 

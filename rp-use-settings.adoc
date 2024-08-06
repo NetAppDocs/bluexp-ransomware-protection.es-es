@@ -12,9 +12,25 @@ summary: Puedes configurar varias opciones, incluido un destino de backup, en el
 
 
 [role="lead"]
-Puede configurar un destino de copia de seguridad o activar la detección de amenazas revisando las recomendaciones en el panel de control.
+Puede configurar un destino de copia de seguridad o habilitar la detección de amenazas revisando las recomendaciones en el Panel de Control o accediendo a la opción *Configuración*.
 
-Habilitar la detección de amenazas envía automáticamente datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas.
+Habilitar la detección de amenazas envía automáticamente datos a su sistema de gestión de eventos y seguridad (SIEM) para el análisis de amenazas.
+
+
+
+== Acceda a la página Configuración directamente
+
+Puede acceder fácilmente a la página Configuración desde la opción Acciones cerca del menú superior.
+
+. En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical image:button-actions-vertical.png["Acciones verticales"]... opción en la parte superior derecha.
+. En el menú desplegable, selecciona *Ajustes*.
+. En la página Settings, puede realizar lo siguiente:
++
+** Agregue un destino de copia de seguridad.
+** Conecte su sistema de seguridad y gestión de eventos (SIEM) para el análisis y la detección de amenazas.
+
+
+
 
 
 
@@ -49,12 +65,12 @@ image:screen-dashboard.png["Consola"]
 
 
 
-=== Acceda a la página Configuración desde el menú
+=== Acceda a las opciones de destino de copia de seguridad del menú desplegable Acciones
 
-Puede acceder fácilmente a la página Configuración desde el menú.
+Puede acceder fácilmente a la página Configuración desde la opción Acciones cerca del menú superior.
 
 . En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical image:button-actions-vertical.png["Acciones verticales"]... opción en la parte superior derecha.
-. En el menú, selecciona *Ajustes*.
+. En el menú desplegable, selecciona *Ajustes*.
 . Para agregar un destino de copia de seguridad, seleccione *Agregar*.
 
 
@@ -203,9 +219,83 @@ image:screen-settings-backup-destinations-list-azure.png["Backup destinations pa
 
 == Habilita la detección de amenazas
 
-Puede enviar datos automáticamente a un sistema de gestión de eventos y seguridad (SIEM) para analizar y detectar amenazas.
+Puede enviar datos automáticamente a su sistema de gestión de eventos y seguridad (SIEM) para analizar y detectar amenazas. Puede seleccionar AWS Security Hub o Splunk Cloud como su SIEM.
 
-. En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
+Antes de habilitar SIEM en la protección contra ransomware de BlueXP , deberá configurar AWS Security Hub o Splunk Cloud.
+
+
+
+=== Configure AWS Security Hub para la detección de amenazas
+
+Antes de habilitar AWS Security Hub en la protección contra ransomware de BlueXP , deberá realizar los siguientes pasos de alto nivel en AWS Security Hub:
+
+* Configure los permisos en AWS Security Hub.
+* Configure la clave de acceso de autenticación y la clave secreta en AWS Security Hub. (Estos pasos no se proporcionan aquí.)
+
+
+.Pasos para configurar permisos en AWS Security Hub
+. Vaya a *AWS IAM console*.
+. Selecciona *Políticas*.
+. Cree una política utilizando el siguiente código en formato JSON:
++
+[listing]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NetAppSecurityHubFindings",
+      "Effect": "Allow",
+      "Action": [
+        "securityhub:BatchImportFindings",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": [
+        "arn:aws:securityhub:*:*:product/*/default",
+        "arn:aws:securityhub:*:*:hub/default"
+      ]
+    }
+  ]
+}
+----
+
+
+
+
+=== Configurar Splunk Cloud para la detección de amenazas
+
+Antes de habilitar Splunk Cloud en la protección contra ransomware de BlueXP , tendrá que hacer los siguientes pasos de alto nivel en Splunk Enterprise:
+
+* Habilite un recopilador de eventos HTTP en Splunk Cloud para recibir datos de eventos a través de HTTP o HTTPS de BlueXP .
+* Cree un token de Event Collector en Splunk Cloud.
+
+
+.Pasos para activar un recopilador de eventos HTTP en Splunk
+. Vaya a Splunk Cloud.
+. Selecciona *Ajustes* > *Entradas de datos*.
+. Selecciona *HTTP Event Collector* > *Ajustes globales*.
+. En el botón Todos los tokens, seleccione *Activado*.
+. Para que el recopilador de eventos escuche y se comunique a través de HTTPS en lugar de HTTP, seleccione *Habilitar SSL*.
+. Introduzca un puerto en *Número de puerto HTTP* para el recopilador de eventos HTTP.
+
+
+.Pasos para crear un token de Event Collector en Splunk
+. Vaya a Splunk Cloud.
+. Selecciona *Ajustes* > *Añadir datos*.
+. Selecciona *Monitor* > *HTTP Event Collector*.
+. Ingrese un Nombre para el token y seleccione *Siguiente*.
+. Selecciona un *Índice por Defecto* donde los eventos serán empujados, luego selecciona *Revisar*.
+. Confirme que todos los ajustes para el punto final son correctos y, a continuación, seleccione *Enviar*.
+. Copie el token y péguelo en otro documento para tenerlo listo para el paso Autenticación.
+
+
+
+
+=== Conecta SIEM en la protección frente al ransomware de BlueXP 
+
+Al habilitar SIEM, se envían datos de la protección contra ransomware de BlueXP  a su servidor SIEM para el análisis de amenazas y la generación de informes.
+
+. En el menú BlueXP , selecciona *Protección* > *Protección contra ransomware*.
 . En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical image:button-actions-vertical.png["Acciones verticales"]... opción en la parte superior derecha.
 . Selecciona *Ajustes*.
 +
@@ -215,9 +305,27 @@ Aparece la página Configuración.
 image:screen-settings-threat-detection3.png["Configuración"]
 
 . En la página Configuración, seleccione *Conectar* en el panel de conexión SIEM.
-. Introduzca los detalles del servidor SIEM para activar la detección de amenazas.
+. Introduzca los detalles de token y autenticación configurados en AWS Security Hub o Splunk Cloud.
++
+
+NOTE: La información que introduzca dependerá del SIEM seleccionado.
+
 . Selecciona *Activar*.
 +
 En la página Configuración se muestra «Conectado».
 
+
+
+
+
+=== Desconecte el SIEM
+
+La desconexión de SIEM detiene el servicio de enviar datos al servidor SIEM.
+
+.Pasos
+. En el menú BlueXP , selecciona *Protección* > *Protección contra ransomware*.
+. En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical image:button-actions-vertical.png["Acciones verticales"]... opción en la parte superior derecha.
+. Selecciona *Ajustes*.
+. En el panel de conexión SIEM, seleccione *Desconectar*.
+. En la página de confirmación, selecciona *Desconectar*.
 
