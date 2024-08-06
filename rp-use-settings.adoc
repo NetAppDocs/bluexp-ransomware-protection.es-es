@@ -264,7 +264,7 @@ Antes de habilitar AWS Security Hub en la protección contra ransomware de BlueX
 
 === Configurar Splunk Cloud para la detección de amenazas
 
-Antes de habilitar Splunk Cloud en la protección contra ransomware de BlueXP , tendrá que hacer los siguientes pasos de alto nivel en Splunk Enterprise:
+Antes de habilitar Splunk Cloud en la protección contra ransomware de BlueXP , tendrá que hacer los siguientes pasos de alto nivel en Splunk Cloud:
 
 * Habilite un recopilador de eventos HTTP en Splunk Cloud para recibir datos de eventos a través de HTTP o HTTPS de BlueXP .
 * Cree un token de Event Collector en Splunk Cloud.

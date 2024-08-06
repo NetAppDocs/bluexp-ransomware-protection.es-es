@@ -1240,7 +1240,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">Selecciona *Políticas*.</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">Cree una política utilizando el siguiente código en formato JSON:</block>
   <block id="9ccf45c8190b08c78e0be70f31ab71c4" category="section-title">Configurar Splunk Cloud para la detección de amenazas</block>
-  <block id="e215e0c1eb10681907a819d2fd1344c9" category="paragraph">Antes de habilitar Splunk Cloud en la protección contra ransomware de BlueXP , tendrá que hacer los siguientes pasos de alto nivel en Splunk Enterprise:</block>
   <block id="2023b8ec64adfca5ffadf54679575f52" category="list-text">Habilite un recopilador de eventos HTTP en Splunk Cloud para recibir datos de eventos a través de HTTP o HTTPS de BlueXP .</block>
   <block id="a0df7816503d32b52e0b8eaf94868e56" category="list-text">Cree un token de Event Collector en Splunk Cloud.</block>
   <block id="2c65d4e0cdac9c48880857277c1bc9e3" category="list-title">Pasos para activar un recopilador de eventos HTTP en Splunk</block>
@@ -1271,4 +1270,5 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="11f5c2b9557e3c8b41afc65159260e17" category="list-text">* Detección de amenazas con Splunk Cloud*: Puede enviar datos automáticamente a su sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas. Con las versiones anteriores, solo podía seleccionar AWS Security Hub como su SIEM. Con esta versión, puede seleccionar AWS Security Hub o Splunk Cloud como su SIEM.</block>
   <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">Obtén más información sobre cómo configurar las opciones de protección frente al ransomware de BlueXP </block>
   <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block>.</block>
+  <block id="38f076b49309ac077a903c6521bcf590" category="paragraph">Antes de habilitar Splunk Cloud en la protección contra ransomware de BlueXP , tendrá que hacer los siguientes pasos de alto nivel en Splunk Cloud:</block>
 </blocks>
