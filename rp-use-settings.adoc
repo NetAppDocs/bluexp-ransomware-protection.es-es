@@ -42,6 +42,7 @@ Para proteger esas cargas de trabajo, debe añadir un destino de backup. Es posi
 
 * StorageGRID de NetApp
 * Amazon Web Services (AWS)
+* Google Cloud Platform
 * Microsoft Azure
 
 
@@ -107,7 +108,7 @@ image:screen-settings-backup-destination.png["Destinos de backup"]
 .Resultado
 El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia de seguridad.
 
-image:screen-settings-backup-destinations-list-azure.png["Backup destinations para la página Settings"]
+image:screen-settings-backup-destinations-list2.png["Backup destinations para la página Settings"]
 
 
 
@@ -165,7 +166,47 @@ CAUTION: Si configura ahora el ajuste de bloqueo de copia de seguridad, no es po
 .Resultado
 El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia de seguridad.
 
-image:screen-settings-backup-destinations-list-azure.png["Backup destinations para la página Settings"]
+image:screen-settings-backup-destinations-list2.png["Backup destinations para la página Settings"]
+
+
+
+=== Añada Google Cloud Platform como destino de backup
+
+Para configurar Google Cloud Platform (GCP) como destino de backup, introduzca la siguiente información.
+
+Para obtener más información sobre la gestión de su almacenamiento de GCP en BlueXP , consulte https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Opciones de instalación del conector en Google Cloud"^] .
+
+. En la página *Configuración > Destinos de copia de seguridad*, seleccione *Agregar*.
+. Introduzca un nombre para el destino de la copia de seguridad.
++
+image:screen-settings-backup-destination-gcp.png["Destinos de backup"]
+
+. Seleccione *Google Cloud Platform*.
+. Seleccione la flecha hacia abajo junto a cada ajuste e introduzca o seleccione valores:
++
+** *Configuración del proveedor*:
++
+*** Cree un nuevo cucharón. Introduzca la clave de acceso y la clave secreta.
+*** Ingresa o selecciona tu proyecto y región de Google Cloud Platform.
+
+
+** *Cifrado*: Si está creando un nuevo depósito, introduzca la información de clave de cifrado que le haya proporcionado el proveedor. Si eligió un depósito existente, la información de cifrado ya estará disponible.
++
+De forma predeterminada, los datos del bloque se cifran con claves gestionadas por Google. Puede seguir utilizando las claves administradas por Google.
+
+** *Redes*: Elige el espacio IP y si vas a usar un Punto Final Privado.
++
+*** El espacio IP es el clúster donde residen los volúmenes del que se desea incluir en un backup. Las LIF entre clústeres de este espacio IP deben tener acceso a Internet saliente.
+*** Opcionalmente, seleccione si va a utilizar un punto final privado de GCP (PrivateLink) que haya configurado previamente.
+
+
+
+
+. Seleccione *Agregar*.
+
+
+.Resultado
+El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia de seguridad.
 
 
 
@@ -213,7 +254,7 @@ Si desea utilizar Azure PrivateLink, consulte https://azure.microsoft.com/en-us/
 .Resultado
 El nuevo destino de copia de seguridad se agrega a la lista de destinos de copia de seguridad.
 
-image:screen-settings-backup-destinations-list-azure.png["Backup destinations para la página Settings"]
+image:screen-settings-backup-destinations-list2.png["Backup destinations para la página Settings"]
 
 
 

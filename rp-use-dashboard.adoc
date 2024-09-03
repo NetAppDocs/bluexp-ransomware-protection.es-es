@@ -103,6 +103,9 @@ Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques 
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 
 
+| Mejore la postura de seguridad en el entorno de trabajo | El asesor digital de NetApp ha identificado al menos un riesgo de seguridad alto o crítico. | Revisa todos los riesgos de seguridad en el asesor digital de NetApp. Consulte https://docs.netapp.com/us-en/active-iq/index.html["Documentación de Digital Advisor"^]. 
+
+
 | Haga una política más fuerte. | Es posible que algunas cargas de trabajo no tengan suficiente protección. Refuerce la protección en las cargas de trabajo con una política. | Aumenta la retención, agrega copias de seguridad, aplica copias de seguridad inmutables, bloquea extensiones de archivos sospechosos, habilita la detección en el almacenamiento secundario y mucho más.
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 

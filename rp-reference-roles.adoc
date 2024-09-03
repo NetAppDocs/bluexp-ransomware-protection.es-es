@@ -1,0 +1,225 @@
+---
+sidebar: sidebar 
+permalink: rp-reference-roles.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights 
+summary: Puedes configurar varias opciones, incluido un destino de backup, en el servicio de protección contra ransomware de BlueXP. 
+---
+= Privileges de control de acceso basado en roles de protección contra ransomware de BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media
+
+
+[role="lead"]
+La protección contra ransomware de BlueXP  usa el control de acceso basado en roles (RBAC) para gobernar el acceso que tiene cada usuario a funciones y acciones específicas. El servicio utiliza las funciones principales de BlueXP  de Administrador y Visor de Cuentas (no de Cuenta Admin0.
+
+La siguiente tabla indica qué acciones puede realizar cada rol.
+
+[cols="40,20a,20a"]
+|===
+| Característica y acción | Administrador de cuenta de BlueXP  | No Admin (Visor) 
+
+
+| Inicie una prueba gratuita  a| 
+Y
+ a| 
+N
+
+
+
+| Consola de visualización  a| 
+Y
+ a| 
+Y
+
+
+
+| Ver pestaña Protección  a| 
+Y
+ a| 
+Y
+
+
+
+| Ver pestaña Alertas  a| 
+Y
+ a| 
+Y
+
+
+
+| Ver pestaña Recuperar  a| 
+Y
+ a| 
+Y
+
+
+
+| Ver ficha Informes  a| 
+Y
+ a| 
+Y
+
+
+
+| Pestaña Ver configuración  a| 
+Y
+ a| 
+Y
+
+
+
+| Inicie la detección de las cargas de trabajo  a| 
+Y
+ a| 
+N
+
+
+
+| Proteger: Modifique o elimine políticas  a| 
+Y
+ a| 
+N
+
+
+
+| Proteger: Añada políticas  a| 
+Y
+ a| 
+N
+
+
+
+| Proteger: Proteja las cargas de trabajo  a| 
+Y
+ a| 
+N
+
+
+
+| Proteger: Identifique los datos confidenciales  a| 
+Y
+ a| 
+N
+
+
+
+| Proteger: Edite la protección de la carga de trabajo  a| 
+Y
+ a| 
+N
+
+
+
+| Proteger: Ver los detalles de la carga de trabajo  a| 
+Y
+ a| 
+Y
+
+
+
+| Proteger: Descargue los datos  a| 
+Y
+ a| 
+Y
+
+
+
+| Alertas: Ver detalles de alerta  a| 
+Y
+ a| 
+Y
+
+
+
+| Alertas: Edite el estado del incidente  a| 
+Y
+ a| 
+N
+
+
+
+| Alertas: Permite ver los detalles de los incidentes  a| 
+Y
+ a| 
+Y
+
+
+
+| Alertas: Obtenga una lista completa de los archivos afectados  a| 
+Y
+ a| 
+N
+
+
+
+| Alertas: Descargar datos de alertas  a| 
+Y
+ a| 
+Y
+
+
+
+| Recuperar: Descargar archivos afectados  a| 
+Y
+ a| 
+N
+
+
+
+| Recuperar: Restaure la carga de trabajo  a| 
+Y
+ a| 
+N
+
+
+
+| Recuperar: Descargar datos de recuperación  a| 
+Y
+ a| 
+Y
+
+
+
+| Recuperar: Descargue los informes  a| 
+Y
+ a| 
+Y
+
+
+
+| Configuración: Agregar o modificar destinos de copia de seguridad  a| 
+Y
+ a| 
+N
+
+
+
+| Configuración: Agregue o modifique destinos de SIEM  a| 
+Y
+ a| 
+N
+
+
+
+| Informes: Descargue los informes  a| 
+Y
+ a| 
+Y
+
+
+
+| Documentación: Vea la documentación sobre el producto  a| 
+Y
+ a| 
+Y
+
+
+
+| Documentación: Vea la documentación sobre las novedades del producto  a| 
+Y
+ a| 
+Y
+
+|===
