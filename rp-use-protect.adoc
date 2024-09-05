@@ -17,8 +17,8 @@ Puedes proteger las cargas de trabajo contra ataques de ransomware completando l
 * Habilite la protección coherente con las cargas de trabajo, que funciona con el software SnapCenter o el complemento SnapCenter para VMware vSphere.
 * Cree o gestione estrategias de protección frente al ransomware que incluyan políticas que cree para snapshots, backups y detección de ransomware.
 * Importe una estrategia y ajústela.
-* Edite una estrategia de protección.
-* Eliminar una estrategia de protección.
+* Edita una estrategia de protección frente al ransomware.
+* Elimina una estrategia de protección contra ransomware.
 
 
 
@@ -253,77 +253,6 @@ Para obtener más información sobre el registro de SnapCenter o el plugin de Sn
 . En Protección contra ransomware de BlueXP, selecciona *Protección* para ver la página Protección.
 . Revise los detalles de la columna Snapshot y backup policies de la página Protection para ver que las políticas se gestionan en otros lugares.
 
-
-
-
-== Utilice la clasificación BlueXP  para buscar información de identificación personal
-
-En el servicio de protección contra ransomware de BlueXP , puedes utilizar la clasificación BlueXP , un componente fundamental de la familia BlueXP , para analizar y clasificar tus datos en una carga de trabajo de recurso compartido de archivos. La clasificación de datos te ayuda a identificar si tus datos incluyen información personal o privada, lo que puede aumentar los riesgos de seguridad.
-
-
-
-=== Habilite la clasificación BlueXP 
-
-Antes de usar la clasificación de BlueXP  dentro del servicio de protección contra ransomware de BlueXP , debe habilitar la clasificación BlueXP  para analizar sus datos.
-
-.Pasos
-. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
-. En la página Protection, busque una carga de trabajo para compartir archivos en la columna Workload.
-+
-image:screen-protection-exposure-link.png["Pantalla de protección que muestra la columna Exposición de privacidad"]
-
-. En la columna Exposición de privacidad, seleccione *Identificar exposición*.
-+
-image:screen-protection-sensitive-data.png["Identifique la pantalla de datos confidenciales"]
-
-. Revise la información sobre la clasificación BlueXP .
-. Selecciona *Identificar*.
-
-
-.Resultado
-La clasificación BlueXP  se conecta de forma remota a sus datos de cargas de trabajo y los analiza en el cloud de NetApp. Solo las estadísticas y métricas identificadas permanecen en el cloud de NetApp, pero tus datos no.
-
-La página Protección muestra que la clasificación BlueXP  identifica archivos y le indica el número de archivos que está escaneando.
-
-
-
-=== Revise la exposición a la privacidad
-
-Después de que la clasificación BlueXP  escanea para obtener información de identificación personal (PII), puede ver el riesgo de los datos de PII.
-
-Los datos de PII pueden tener uno de los siguientes estados de riesgo:
-
-* *Alto*: Xnumber o más archivos con PII
-* *Bajo*:
-
-
-.Pasos
-. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
-. En la página Protection, busque la carga de trabajo compartida de archivos en la columna Workload que muestra un estado en la columna Privacy Exposure.
-+
-image:screen-protection-exposure-link.png["Pantalla de protección que muestra la columna Exposición de privacidad"]
-
-. Seleccione el enlace de carga de trabajo de la columna Workload para ver los detalles de la carga de trabajo.
-+
-image:screen-protection-workload-details-privacy-exposure.png["Pantalla de detalles de la carga de trabajo que muestra el panel Exposición de privacidad"]
-
-. En la página de detalles Workload, revise la información en el panel Privacy Exposure.
-. Para investigar la exposición en la clasificación BlueXP , seleccione *Investigar*.
-. ¿QUÉ SUCEDE? ¿Vas a Clasificación ahora? ¿Para qué se utiliza la opción de marcha?
-
-
-Para obtener más información sobre la clasificación de BlueXP , consulte los siguientes temas de clasificación de BlueXP :
-
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Más información sobre la clasificación de BlueXP"^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Categorías de datos privados"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Investigue los datos almacenados en su organización"^]
-
-
-
-
-=== Permite ver los cambios en la prioridad de la carga de trabajo en función de los datos de confidencialidad
-
-POR CONFIRMAR
 
 
 
