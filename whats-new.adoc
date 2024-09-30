@@ -18,6 +18,15 @@ Descubre las novedades de la protección frente al ransomware de BlueXP.
 
 
 
+== 30 de septiembre de 2024
+
+Esta versión de la protección contra ransomware de BlueXP  incluye la siguiente actualización.
+
+* * Agrupación personalizada de cargas de trabajo de archivos compartidos*: Con esta versión, ahora puede agrupar los recursos compartidos de archivos en grupos para facilitar la protección de su patrimonio de datos. El servicio puede proteger todos los volúmenes de un grupo a la vez. Anteriormente, era necesario proteger cada volumen por separado. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Obtén más información sobre la agrupación de cargas de trabajo de recursos compartidos de archivos en estrategias de protección frente al ransomware"].
+
+
+
+
 == 2 de septiembre de 2024
 
 Esta versión de protección contra ransomware de BlueXP  incluye las siguientes actualizaciones.

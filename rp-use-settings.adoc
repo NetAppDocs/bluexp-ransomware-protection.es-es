@@ -262,7 +262,7 @@ image:screen-settings-backup-destinations-list2.png["Backup destinations para la
 
 Puede enviar datos automáticamente a su sistema de gestión de eventos y seguridad (SIEM) para analizar y detectar amenazas. Puede seleccionar AWS Security Hub o Splunk Cloud como su SIEM.
 
-Antes de habilitar SIEM en la protección contra ransomware de BlueXP , deberá configurar AWS Security Hub o Splunk Cloud.
+Antes de habilitar SIEM en la protección contra ransomware de BlueXP , debe configurar su sistema SIEM.
 
 
 
@@ -346,7 +346,8 @@ Aparece la página Configuración.
 image:screen-settings-threat-detection3.png["Configuración"]
 
 . En la página Configuración, seleccione *Conectar* en el panel de conexión SIEM.
-. Introduzca los detalles de token y autenticación configurados en AWS Security Hub o Splunk Cloud.
+. Elija uno de los sistemas SIEM.
+. Introduzca el token y los detalles de autenticación configurados en AWS Security Hub o Splunk Cloud.
 +
 
 NOTE: La información que introduzca dependerá del SIEM seleccionado.

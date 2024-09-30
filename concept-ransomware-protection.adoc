@@ -192,6 +192,6 @@ Además, si se usa SnapCenter o SnapCenter para VMware, todas las cargas de trab
 
 Te puedes beneficiar si comprendes alguna terminología en lo que respecta a la protección contra ransomware.
 
-* *Protección*: La protección en la protección contra ransomware de BlueXP significa garantizar que las copias Snapshot y las copias de seguridad inmutables se produzcan de forma regular en un dominio de seguridad diferente mediante políticas de protección.
+* *Protección*: La protección en la protección contra ransomware de BlueXP  significa garantizar que las instantáneas y las copias de seguridad inmutables se produzcan de forma regular en un dominio de seguridad diferente mediante políticas de protección.
 * *Carga de trabajo*: Una carga de trabajo en la protección contra ransomware de BlueXP puede incluir bases de datos MySQL u Oracle, almacenes de datos de VMware o recursos compartidos de archivos.
 

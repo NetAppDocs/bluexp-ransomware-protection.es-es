@@ -43,7 +43,10 @@ sidebar:
     - title: Ver el estado de las cargas de trabajo mediante la consola
       url: "/rp-use-dashboard.html"
     - title: Proteja las cargas de trabajo
-      url: "/rp-use-protect.html"
+      entries:
+      - title: Proteger cargas de trabajo con estrategias de protección frente al
+          ransomware
+        url: "/rp-use-protect.html"
     - title: Responder a una alerta detectada
       url: "/rp-use-alert.html"
     - title: Recuperarse de un ataque de ransomware
