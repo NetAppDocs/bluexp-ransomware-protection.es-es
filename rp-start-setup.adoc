@@ -72,4 +72,4 @@ Debe ponerse en contacto con su representante de ventas de NetApp para probar o 
 Para crear un conector en BlueXP antes de utilizar el servicio, consulte la documentación de BlueXP que se describe https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Cómo crear un conector BlueXP"^].
 
 
-NOTE: Si tienes varios BlueXP Connectors, el servicio analizará los datos en todos los conectores más allá de los que se muestren actualmente en la interfaz de usuario de BlueXP. Este servicio detecta todos los espacios de trabajo y todos los conectores asociados a esta cuenta.
+NOTE: Si tienes varios BlueXP Connectors, el servicio analizará los datos en todos los conectores más allá de los que se muestren actualmente en la interfaz de usuario de BlueXP. Este servicio detecta todos los proyectos y todos los conectores asociados a esta organización.

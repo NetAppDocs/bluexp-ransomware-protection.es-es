@@ -4,21 +4,21 @@ indexpage:
   summary: La protección frente al ransomware de BlueXP es un servicio de orquestación
     para la protección, detección y recuperación de ransomware. El servicio protege
     las cargas de trabajo basadas en aplicaciones de Oracle, MySQL, almacenes de datos
-    de máquinas virtuales, también se pueden compartir archivos en el almacenamiento
+    de máquinas virtuales y recursos compartidos de archivos en el almacenamiento
     NAS en las instalaciones, así como Cloud Volumes ONTAP en Amazon Web Services
-    (mediante los protocolos NFS y CIFS) a través de cada cuenta de BlueXP y se realiza
-    un backup de los datos en el almacenamiento en cloud de Amazon Web Services (AWS)
-    o en NetApp StorageGRID.
+    (utilizando los protocolos NFS y CIFS) en organizaciones de BlueXP  y realiza
+    backups de datos en el almacenamiento en cloud de Amazon Web Services (AWS) o
+    en NetApp StorageGRID.
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
     web services, aws, storagegrid
   lead: La protección frente al ransomware de BlueXP es un servicio de orquestación
     para la protección, detección y recuperación de ransomware. El servicio protege
     las cargas de trabajo basadas en aplicaciones de Oracle, MySQL, almacenes de datos
-    de máquinas virtuales, también se pueden compartir archivos en el almacenamiento
+    de máquinas virtuales y recursos compartidos de archivos en el almacenamiento
     NAS en las instalaciones, así como Cloud Volumes ONTAP en Amazon Web Services
-    (mediante los protocolos NFS y CIFS) a través de cada cuenta de BlueXP y se realiza
-    un backup de los datos en el almacenamiento en cloud de Amazon Web Services (AWS)
-    o en NetApp StorageGRID.
+    (utilizando los protocolos NFS y CIFS) en organizaciones de BlueXP  y realiza
+    backups de datos en el almacenamiento en cloud de Amazon Web Services (AWS) o
+    en NetApp StorageGRID.
   tiles:
   - title: Manos a la obra
     links:

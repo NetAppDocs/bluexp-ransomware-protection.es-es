@@ -20,8 +20,8 @@ Para usar la protección contra ransomware de BlueXP , necesitarás estos requi
 
 == En BlueXP 
 
-* Una cuenta de usuario de BlueXP  con Privileges de administración de cuentas para detectar recursos.
-* Una cuenta de BlueXP  con al menos un conector BlueXP  activo que se conecta a clústeres de ONTAP en las instalaciones o se conecta a Cloud Volumes ONTAP en AWS o en Azure.
+* Cuenta de usuario de BlueXP  con Privileges de administrador de organización para detectar recursos.
+* Una organización de BlueXP  con al menos un conector BlueXP  activo que se conecta a clústeres de ONTAP en las instalaciones o se conecta a Cloud Volumes ONTAP en AWS o Azure.
 * Al menos un entorno de trabajo BlueXP  con un clúster ONTAP de NetApp en las instalaciones o Cloud Volume ONTAP en AWS o Azure (mediante protocolos NAS o CIFS).
 +
 ** Se admiten clústeres de ONTAP o Cloud Volume ONTAP con el sistema operativo ONTAP 9.11.1 o posterior.
@@ -31,7 +31,7 @@ Consulte https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.htm
 
 +
 
-NOTE: Si tienes varios conectores BlueXP  en una sola cuenta de BlueXP , el servicio de protección contra ransomware de BlueXP  analizará los recursos de ONTAP en todos los conectores más allá del seleccionado actualmente en la interfaz de usuario de BlueXP .
+NOTE: Si tiene varios conectores BlueXP  en una única organización de BlueXP , el servicio de protección contra ransomware de BlueXP  analizará los recursos de ONTAP en todos los conectores más allá de los seleccionados actualmente en la interfaz de usuario de BlueXP .
 
 
 
@@ -73,7 +73,7 @@ El servicio de protección frente a ransomware de BlueXP ayuda a configurar un d
 
 Si necesita actualizar los permisos de usuarios que no son administradores para un entorno de trabajo en particular, complete estos pasos.
 
-. Inicie sesión en la cuenta de BlueXP  y busque el entorno de trabajo que necesite actualizar sus permisos de usuario de ONTAP.
+. Inicie sesión en BlueXP  y busque el entorno de trabajo que necesita sus permisos de usuario de ONTAP actualizados.
 . Haga doble clic en el entorno de trabajo para ver los detalles.
 . Haga clic en *Ver información adicional* que muestra el nombre de usuario.
 . Inicie sesión en la CLI del clúster de ONTAP con el usuario de administrador.
