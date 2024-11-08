@@ -8,7 +8,7 @@ summary: Puedes proteger las cargas de trabajo contra ataques de ransomware medi
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -75,7 +75,7 @@ Uno de los primeros pasos para proteger las cargas de trabajo es visualizar las 
 ** En el panel Protección de datos del panel, seleccione *Ver todo*.
 ** En el menú, selecciona *Protección*.
 +
-image:screen-protection3.png["Protección"]
+image:screen-protection.png["Protección"]
 
 
 
@@ -253,14 +253,14 @@ Puedes añadir una estrategia de protección contra ransomware a las cargas de t
 Si las copias Snapshot o las políticas de backup no existen en la carga de trabajo, puede crear una estrategia de protección contra ransomware, que puede incluir las siguientes políticas que crea en la protección contra ransomware de BlueXP :
 
 * Política de Snapshot
-* política de backup
+* Política de backup
 * Política de detección de ransomware
 
 
 .Pasos para crear una estrategia de protección contra el ransomware
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
 +
-image:screen-protection3.png["Gestionar la página de estrategia"]
+image:screen-protection.png["Gestionar la página de estrategia"]
 
 . En la página Protección, selecciona *Administrar estrategias de protección*.
 +
@@ -331,7 +331,7 @@ Otros servicios, como el backup y recuperación de BlueXP y SnapCenter, usan los
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
 +
-image:screen-protection3.png["Gestionar la página de estrategia"]
+image:screen-protection.png["Gestionar la página de estrategia"]
 
 . En la página Protección, seleccione una carga de trabajo y seleccione *Proteger*.
 +
@@ -378,7 +378,7 @@ La agrupación de recursos compartidos de archivos facilita la protección del p
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
 +
-image:screen-protection3.png["Gestionar la página de estrategia"]
+image:screen-protection.png["Gestionar la página de estrategia"]
 
 . En la página Protección, seleccione la pestaña *Grupos de protección*.
 +
@@ -418,52 +418,6 @@ image:screen-protection-groups-policy.png["Página Agregar grupo de protección 
 . Seleccione *Siguiente*.
 . Revise las selecciones del grupo de protección.
 . Seleccione *Agregar*.
-
-
-
-
-=== Añada más cargas de trabajo a un grupo
-
-Es posible que más adelante deba agregar más cargas de trabajo a un grupo existente.
-
-Si el grupo incluye cargas de trabajo gestionadas solo mediante la protección contra ransomware de BlueXP  (y no mediante el backup y recuperación de datos de SnapCenter o BlueXP ), debería usar grupos separados para cargas de trabajo que gestionen solo con la protección contra ransomware de BlueXP  y otro grupo para cargas de trabajo gestionadas por otros servicios.
-
-.Pasos
-. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
-. En la página Protección, seleccione la pestaña *Grupos de protección*.
-+
-image:screen-protection-groups.png["Grupos de protección"]
-
-. Seleccione el grupo al que desea añadir más cargas de trabajo.
-+
-image:screen-protection-groups-more-workloads.png["Página de detalles del grupo de protección"]
-
-. En la página del grupo de protección seleccionado, seleccione *Agregar*.
-+
-La protección frente a ransomware de BlueXP  muestra que solo las cargas de trabajo que no se encuentran en el grupo que usan las mismas políticas de snapshot y backup que el grupo.
-
-+
-
-TIP: La parte superior de la página muestra qué servicio mantiene las políticas de instantánea, copia de seguridad y detección.
-
-. Seleccione las cargas de trabajo adicionales que se deben añadir al grupo.
-. Seleccione *Guardar*.
-
-
-
-
-=== Editar protección de grupo
-
-Puede cambiar la política de detección en un grupo existente. Si la política de detección aún no se ha agregado a este grupo, puede agregarla ahora.
-
-.Pasos
-. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
-. En la página Protección, seleccione la pestaña *Grupos de protección*.
-+
-image:screen-protection-groups-edit.png["La página Grupos de protección muestra la opción Editar"]
-
-. En el panel Protección, seleccione *Editar protección*.
-. Seleccione o agregue una política de detección a este grupo.
 
 
 

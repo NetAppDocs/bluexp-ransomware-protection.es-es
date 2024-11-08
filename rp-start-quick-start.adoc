@@ -8,7 +8,7 @@ summary: Empieza a usar el servicio de protección frente a ransomware de NetApp
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

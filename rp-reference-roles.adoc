@@ -1,24 +1,24 @@
 ---
 sidebar: sidebar 
 permalink: rp-reference-roles.html 
-keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights 
-summary: Puedes configurar varias opciones, incluido un destino de backup, en el servicio de protección contra ransomware de BlueXP. 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
+summary: 'La protección contra ransomware de BlueXP  usa el control de acceso basado en roles (RBAC) para gobernar el acceso que tiene cada usuario a funciones y acciones específicas. El servicio utiliza los roles principales de BlueXP  de Administrador y Visor de Organización (no Administrador de Organización).' 
 ---
 = Privileges de control de acceso basado en roles de protección contra ransomware de BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
-La protección contra ransomware de BlueXP  usa el control de acceso basado en roles (RBAC) para gobernar el acceso que tiene cada usuario a funciones y acciones específicas. El servicio utiliza las funciones principales de BlueXP  de Administrador y Visor de Cuentas (no de Cuenta Admin0.
+La protección contra ransomware de BlueXP  usa el control de acceso basado en roles (RBAC) para gobernar el acceso que tiene cada usuario a funciones y acciones específicas. El servicio utiliza los roles principales de BlueXP  de Administrador y Visor de Organización (no Administrador de Organización).
 
 La siguiente tabla indica qué acciones puede realizar cada rol.
 
 [cols="40,20a,20a"]
 |===
-| Característica y acción | Administrador de cuenta de BlueXP  | No Admin (Visor) 
+| Característica y acción | Administrador de la organización de BlueXP  | No Admin (Visor) 
 
 
 | Inicie una prueba gratuita  a| 
