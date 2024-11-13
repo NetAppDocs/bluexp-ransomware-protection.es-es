@@ -1,0 +1,49 @@
+= Habilitar la clasificación de datos y el escaneo para información de identificación personal (PII)
+:allow-uri-read: 
+
+
+
+
+=== Habilitar la clasificación de datos y el escaneo para información de identificación personal (PII)
+
+Con este lanzamiento, puedes habilitar la clasificación BlueXP , un componente fundamental de la familia BlueXP , para analizar y clasificar datos en las cargas de trabajo de tus recursos compartidos de archivos. La clasificación de datos te ayuda a identificar si tus datos incluyen información personal o privada, lo que puede aumentar los riesgos de seguridad. Este proceso también afecta la importancia de la carga de trabajo y le ayuda a asegurarse de que las cargas de trabajo se protegen con el nivel de protección adecuado.
+
+El análisis de los datos PII en la protección frente al ransomware de BlueXP  está generalmente disponible para los clientes que implementaron la clasificación BlueX. La clasificación de BlueXP  está disponible como parte de la plataforma BlueXP  sin coste adicional y se puede implementar on-premises o en la nube del cliente.
+
+La clasificación de BlueXP  también puede implementarse como modelo SaaS como parte de una vista previa tecnológica. Para habilitar las funciones de Vista previa, use la opción de protección contra ransomware de BlueXP  *Configuración*. Si habilita Vista previa, aparecerá una etiqueta de “Vista previa” junto a la columna *Exposición de privacidad* en la página Protección junto con otras ubicaciones.
+
+Consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configura las opciones de protección contra ransomware de BlueXP"].
+
+Para iniciar el escaneo, en la página Protección, haga clic en *Identificar exposición* en la columna Exposición de privacidad.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Busque datos confidenciales de identificación personal con la clasificación BlueXP "].
+
+
+
+=== Pruebe las siguientes funciones de Vista previa antes de que se publiquen
+
+Ahora puede probar algunas características etiquetadas como “Vista previa” antes de que se liberen. Para ello, utilice la opción *Ajustes* para mostrar estas características, que están etiquetadas con una etiqueta de “Vista previa”.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Obtén más información sobre cómo configurar las opciones de protección frente al ransomware de BlueXP "].
+
+
+
+=== Integración de SIEM con Microsoft Sentinel
+
+Ahora puede enviar datos a su sistema de gestión de eventos y seguridad (SIEM) para analizar y detectar amenazas con Microsoft Sentinel. Anteriormente, podía seleccionar AWS Security Hub o Splunk Cloud como su SIEM.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Obtén más información sobre cómo configurar las opciones de protección frente al ransomware de BlueXP "].
+
+
+
+=== Prueba gratuita ahora 30 días
+
+Con este lanzamiento, las nuevas puestas en marcha de protección contra ransomware de BlueXP  ahora tienen 30 días para una prueba gratuita. Anteriormente, la protección frente a ransomware de BlueXP  proporcionaba 90 días como prueba gratuita. Si ya está en la prueba gratuita de 90 días, esa oferta continúa durante los 90 días.
+
+
+
+=== Restaure la carga de trabajo de la aplicación en el nivel de archivo para Podman
+
+Antes de restaurar una carga de trabajo de una aplicación en el nivel de archivos, ahora puede ver una lista de archivos que pueden haberse visto afectados por un ataque e identificar aquellos que desea restaurar. Anteriormente, si los conectores BlueXP  de una organización (anteriormente una cuenta) utilizaban Podman, esta función estaba desactivada. Ahora está habilitado para Podman. Puede dejar que la protección contra ransomware de BlueXP elija los archivos que desea restaurar, puede cargar un archivo CSV que enumere todos los archivos afectados por una alerta, o puede identificar manualmente los archivos que desea restaurar.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Obtén más información sobre cómo recuperarte de un ataque de ransomware"].
