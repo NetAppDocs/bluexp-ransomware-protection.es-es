@@ -15,9 +15,6 @@ summary: En el servicio de protección contra ransomware de BlueXP , puedes uti
 En el servicio de protección contra ransomware de BlueXP , puedes utilizar la clasificación BlueXP , un componente fundamental de la familia BlueXP , para analizar y clasificar tus datos en una carga de trabajo de recurso compartido de archivos. La clasificación de datos le ayuda a identificar si sus datos incluyen información de identificación personal (PII), lo que puede aumentar los riesgos de seguridad.
 
 
-IMPORTANT: La clasificación de BlueXP  puede ponerse en marcha en las instalaciones, en el cloud (puestas en marcha no SaaS) o como modelo de SaaS en una vista previa de tecnología. Cuando se usan implementaciones que no son SaaS o implementaciones existentes, el análisis de los datos PII en la protección contra ransomware de BlueXP  está disponible generalmente, no en la versión preliminar. Para habilitar las funciones de Vista previa, use la opción de protección contra ransomware de BlueXP  *Configuración*. Consulte link://rp-use-settings-html["Configura las opciones de protección contra ransomware de BlueXP"].
-
-
 TIP: Este proceso puede afectar la importancia de la carga de trabajo para ayudarle a garantizar que cuenta con la protección adecuada.
 
 
@@ -26,12 +23,9 @@ TIP: Este proceso puede afectar la importancia de la carga de trabajo para ayuda
 
 Antes de usar la clasificación de BlueXP  dentro del servicio de protección contra ransomware de BlueXP , debe habilitar la clasificación BlueXP  para analizar sus datos.
 
-
-TIP: Haga esto solo una vez; no tiene que volver a activar la clasificación BlueXP  si elige otra carga de trabajo del recurso compartido de archivos en la que identificar la exposición.
-
 Si utiliza la interfaz de usuario de clasificación de BlueXP  como método alternativo, un administrador puede habilitar la clasificación BlueXP  en la protección frente a ransomware de BlueXP .
 
-Para obtener detalles sobre la clasificación BlueXP  antes de empezar a usar el servicio, puede resultar útil revisar estos recursos.
+Puede que le resulte útil revisar estos recursos de clasificación de BlueXP  antes de empezar a usar el servicio:
 
 * https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Más información sobre la clasificación de BlueXP"^]
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Categorías de datos privados"^]
@@ -45,11 +39,6 @@ Para obtener detalles sobre la clasificación BlueXP  antes de empezar a usar e
 image:screen-protection-sensitive-preview-column.png["Página de protección que muestra la columna de exposición de privacidad"]
 
 . Para habilitar la clasificación BlueXP  para escanear sus datos para datos de identificación personal, en la columna *Exposición a la privacidad*, seleccione *Identificar exposición*.
-+
-image:screen-protection-sensitive-data.png["Identifique la pantalla de datos confidenciales"]
-
-. Revise la información sobre la clasificación BlueXP .
-. Selecciona *Identificar*.
 
 
 .Resultado
@@ -79,19 +68,11 @@ Los datos de PII pueden tener uno de los siguientes estados de riesgo de exposic
 +
 image:screen-protection-sensitive-preview-column-medium.png["Página de protección que muestra la columna de exposición de privacidad"]
 
-+
-
-TIP: Si el estado cambia, aparecerá una flecha hacia arriba o hacia abajo en la columna Exposición a la privacidad para indicar el cambio Exposición a la privacidad.
-
 . Seleccione el enlace de carga de trabajo de la columna Workload para ver los detalles de la carga de trabajo.
 +
 image:screen-protection-workload-details-privacy-exposure.png["Pantalla de detalles de la carga de trabajo que muestra el icono Exposición de privacidad"]
 
 . En la página de detalles Workload, revise la información en el icono Privacy Exposure.
-+
-
-TIP: Si el cambio en la exposición a la privacidad afecta a la importancia de la carga de trabajo, aparece una flecha hacia arriba o hacia abajo junto al estado Importancia de la carga de trabajo.
-
 
 
 
@@ -102,7 +83,7 @@ Los cambios en la exposición a la privacidad pueden afectar a la importancia de
 
 [cols="15,20a,20,20"]
 |===
-| Cuando la exposición a la privacidad: | De esta exposición a la privacidad | A esta exposición a la privacidad | Entonces, la importancia de la carga de trabajo lo hace: . 
+| Cuando la exposición a la privacidad: | De esta exposición a la privacidad: | A esta exposición a la privacidad: | Entonces, la importancia de la carga de trabajo lo hace: . 
 
 
 | *Disminuye*  a| 
@@ -124,34 +105,6 @@ Mediano
 Alto
 | Cambios de Estándar o Importante a Crítico 
 |===
-
-
-== Investigue la exposición a la privacidad directamente en la clasificación BlueXP 
-
-Desde una protección contra ransomware de BlueXP , puedes seleccionar una carga de trabajo, ver sus detalles e investigar la exposición en la clasificación BlueXP .
-
-.Pasos
-. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
-. En la página Protection, busque la carga de trabajo compartida de archivos en la columna Workload que muestra un estado en la columna Privacy Exposure.
-+
-image:screen-protection-sensitive-preview-column-medium.png["Página de protección que muestra la columna de exposición de privacidad"]
-
-. Seleccione la carga de trabajo en la columna Workload para ver sus detalles.
-+
-image:screen-protection-workload-details-privacy-exposure.png["Pantalla de detalles de la carga de trabajo que muestra el panel Exposición de privacidad"]
-
-. En la página de detalles Workload, revise la información en el icono Privacy Exposure.
-. Para investigar la exposición en la clasificación BlueXP , seleccione *Investigar*.
-+
-El servicio de clasificación BlueXP  se abre para mostrar la pestaña Investigación.
-
-+
-image:screen-protection-classification-investigation.png["Clasificación de BlueXP"]
-
-. Revise la información en la pestaña Investigación.
-. Para volver al servicio de protección contra ransomware de BlueXP , selecciona *Volver a la protección contra ransomware de BlueXP *.
-
-
 
 
 == Si quiere más información

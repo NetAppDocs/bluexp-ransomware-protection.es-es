@@ -12,7 +12,7 @@ summary: Puedes configurar varias opciones, incluido un destino de backup, en el
 
 
 [role="lead"]
-Puede configurar un destino de copia de seguridad o habilitar la detección de amenazas revisando las recomendaciones en el Panel de Control o accediendo a la opción *Configuración*. También puede visualizar las futuras operaciones de Vista preliminar.
+Puede configurar un destino de copia de seguridad o habilitar la detección de amenazas revisando las recomendaciones en el Panel de Control o accediendo a la opción *Configuración*.
 
 Habilitar la detección de amenazas envía automáticamente datos a su sistema de gestión de eventos y seguridad (SIEM) para el análisis de amenazas.
 
@@ -28,7 +28,6 @@ Puede acceder fácilmente a la página Configuración desde la opción Acciones 
 +
 ** Agregue un destino de copia de seguridad.
 ** Conecte su sistema de seguridad y gestión de eventos (SIEM) para el análisis y la detección de amenazas.
-** Mostrar las siguientes funciones de vista previa.
 
 
 
@@ -477,24 +476,4 @@ NOTE: La información que introduzca dependerá del SIEM seleccionado.
 +
 En la página Configuración se muestra «Conectado».
 
-
-
-
-
-== Visualizar operaciones de vista preliminar
-
-Puedes probar las siguientes funciones etiquetadas como “Vista previa” antes de que se publiquen. Estas funciones aparecen en la interfaz de usuario con una etiqueta de vista previa.
-
-.Antes de empezar
-Necesitará una clave del equipo de productos de protección contra ransomware de BlueXP  para mostrar las funciones de vista previa. Para obtener la clave, envíe un correo electrónico a mailto:ng-rps-key@NetApp.com.
-
-.Pasos
-. En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical image:button-actions-vertical.png["Acciones verticales"]... opción en la parte superior derecha.
-. Selecciona *Ajustes*.
-+
-image:screen-settings2.png["Configuración"]
-
-. En el mosaico * Características de vista previa *, seleccione * Mostrar *.
-. Introduzca la clave.
-. Selecciona *Mostrar*.
 
