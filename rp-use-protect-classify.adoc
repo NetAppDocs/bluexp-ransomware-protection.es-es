@@ -42,10 +42,7 @@ image:screen-protection-sensitive-preview-column.png["Página de protección que
 
 
 .Resultado
-La clasificación BlueXP  instala un conector BlueXP , se conecta de forma remota a los datos de la carga de trabajo y los escanea en la nube de NetApp (Amazon Web Services, us-west-1). Solo los conocimientos y métricas identificados siguen siendo en el cloud de NetApp.
-
-
-NOTE: El escaneo puede tardar varios minutos dependiendo de la cantidad de datos. La página Protección muestra que la clasificación BlueXP  identifica archivos y le indica el número de archivos que está escaneando.
+El escaneo puede tardar varios minutos dependiendo de la cantidad de datos. La página Protección muestra que la clasificación BlueXP  identifica archivos y le indica el número de archivos que está escaneando.
 
 Una vez finalizada la exploración, la columna Exposición de privacidad muestra el nivel de exposición como Bajo, Medio o Alto.
 
