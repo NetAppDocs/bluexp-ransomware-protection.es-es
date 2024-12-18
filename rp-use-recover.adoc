@@ -78,6 +78,7 @@ TIP: La protección frente al ransomware de BlueXP identifica el mejor punto de 
 
 
 . Si el destino original no dispone de espacio suficiente para restaurar la carga de trabajo, aparecerá una fila de almacenamiento temporal. Puede seleccionar el almacenamiento temporal para restaurar los datos de la carga de trabajo. Los datos restaurados se copiarán del almacenamiento temporal a la ubicación original. Haga clic en la flecha hacia abajo * en la fila de almacenamiento temporal y establezca el clúster de destino, la VM de almacenamiento y el nivel local.
+. *Ubicación de cuarentena*: Opcionalmente, seleccione dónde desea almacenar los datos potencialmente infectados antes de iniciar el proceso de restauración para un análisis posterior a la recuperación.
 . Seleccione *Guardar*.
 . Seleccione *Siguiente*.
 . Revise las selecciones.
@@ -152,6 +153,7 @@ TIP: El nombre del volumen nuevo aparece como prefijo + nombre del volumen origi
 
 
 
+. *Ubicación de cuarentena*: Opcionalmente, seleccione dónde desea almacenar los datos potencialmente infectados antes de iniciar el proceso de restauración para un análisis posterior a la recuperación.
 . Seleccione *Guardar*.
 . Seleccione *Siguiente*.
 . Revise las selecciones.
@@ -192,6 +194,7 @@ TIP: El nombre del volumen nuevo aparece como nombre del volumen original + nomb
 
 
 
+. *Ubicación de cuarentena*: Opcionalmente, seleccione dónde desea almacenar los datos potencialmente infectados antes de iniciar el proceso de restauración para un análisis posterior a la recuperación.
 . Seleccione *Guardar*.
 . Seleccione *Siguiente*.
 . Revise las selecciones.
@@ -269,6 +272,7 @@ TIP: Si no especifica una ruta para la restauración, los archivos se restaurar�
 .. Seleccione si desea que los nombres de los archivos o directorios restaurados sean los mismos que la ubicación actual o nombres diferentes.
 
 
+. *Ubicación de cuarentena*: Opcionalmente, seleccione dónde desea almacenar los datos potencialmente infectados antes de iniciar el proceso de restauración para un análisis posterior a la recuperación.
 . Seleccione *Siguiente*.
 . Revise las selecciones.
 . Seleccione *Restaurar*.

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP, netapp' 
 summary: Descubre las novedades de la protección frente al ransomware de BlueXP. 
 ---
 = Novedades de la protección frente al ransomware de BlueXP 
@@ -15,6 +15,35 @@ summary: Descubre las novedades de la protección frente al ransomware de BlueXP
 
 [role="lead"]
 Descubre las novedades de la protección frente al ransomware de BlueXP.
+
+
+
+== 16 de diciembre de 2024
+
+
+
+=== Detectar comportamientos anómalos de usuarios con la seguridad de carga de trabajo de almacenamiento de Data Infrastructure Insights
+
+Con esta versión, puedes utilizar Data Infrastructure Insights Storage Workload Security para detectar comportamientos anómalos de los usuarios en tus cargas de trabajo de almacenamiento. Esta función te ayuda a identificar posibles amenazas de seguridad y a bloquear usuarios potencialmente maliciosos para proteger tus datos.
+
+Para obtener más información, consulte link://rp-use-alert.html["Responder a una alerta de ransomware detectada"].
+
+Antes de usar la seguridad de la carga de trabajo de almacenamiento de información de la infraestructura de datos para detectar un comportamiento anómalo del usuario, debe configurar la opción mediante la opción *Configuración* de protección contra ransomware de BlueXP .
+
+Consulte link://rp-use-settings-html["Configura las opciones de protección contra ransomware de BlueXP"].
+
+
+
+=== Seleccione las cargas de trabajo que desea detectar y proteger
+
+Con esta versión, ahora puede hacer lo siguiente:
+
+* Dentro de cada conector, seleccione los entornos de trabajo donde desea detectar las cargas de trabajo. Esta función puede beneficiarse si desea proteger cargas de trabajo específicas en su entorno y no para otras.
+* Durante la detección de cargas de trabajo, puede habilitar la detección automática de cargas de trabajo por conector. Esta función permite seleccionar las cargas de trabajo que se desean proteger.
+* Detectar las cargas de trabajo recién creadas para los entornos de trabajo seleccionados anteriormente.
+
+
+Consulte link://rp-start-discover-html["Detectar cargas de trabajo"].
 
 
 

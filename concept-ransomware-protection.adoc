@@ -41,7 +41,7 @@ El servicio de protección frente a ransomware de BlueXP proporciona un uso comp
 
 * * Identificar* todas las cargas de trabajo basadas en aplicaciones, compartidas de archivos o gestionadas por VMware en el NAS local de NetApp con entornos de trabajo NFS o CIFS en BlueXP , en organizaciones de BlueXP , proyectos y conectores BlueXP . A continuación, el servicio categoriza la prioridad de los datos y te ofrece recomendaciones para llevar a cabo mejoras en la protección frente a ransomware.
 * *Protege* tus cargas de trabajo habilitando copias de seguridad, copias Snapshot y estrategias de protección contra ransomware en tus datos.
-* *Detectar* anomalías que podrían ser ataques de ransomware.Nota:[Ningún sistema de detección o prevención de ransomware puede garantizar completamente la seguridad de un ataque de ransomware. Aunque es posible que un ataque no se detecte, la tecnología de NetApp actúa como una importante capa adicional de defensa.]
+* *Detectar* anomalías que podrían ser ataques de ransomware.Nota:[Aunque es posible que un ataque no se detecte, nuestra investigación indica que la tecnología NetApp ha dado lugar a un alto grado de detección para ciertos ataques de ransomware basados en cifrado de archivos.]
 * * Responde* a posibles ataques de ransomware iniciando automáticamente una instantánea de NetApp ONTAP a prueba de manipulaciones que está bloqueada para que la copia no se pueda eliminar accidentalmente o maliciosamente. Tus datos de backup permanecerán inalterables y protegidos de forma integral frente a ataques de ransomware en el origen y en el destino.
 * * Recuperar* sus cargas de trabajo que ayudan a acelerar el tiempo de actividad de la carga de trabajo mediante la orquestación de varias tecnologías de NetApp. Puede optar por Recuperar volúmenes específicos. El servicio ofrece recomendaciones sobre las mejores opciones.
 * *Govern*: Implementa tu estrategia de protección contra ransomware y monitorea los resultados.
@@ -91,6 +91,8 @@ El servicio de protección frente a ransomware de BlueXP  requiere una licencia
 
 La licencia de protección contra ransomware de BlueXP  no incluye productos adicionales de NetApp. La protección frente a ransomware de BlueXP  puede usar el backup y la recuperación de datos de BlueXP  incluso si no tienes una licencia.
 
+Para detectar comportamientos anómalos de usuario, la protección frente a ransomware de BlueXP  usa la protección autónoma frente a ransomware de NetApp, un modelo de aprendizaje automático (ML) de ONTAP que detecta actividad de archivos maliciosa. Este modelo está incluido en la licencia de protección frente a ransomware de BlueXP . Además, puede utilizar Data Infrastructure Insights (anteriormente Cloud Insights) Workload Security (se requiere licencia) para investigar el comportamiento de los usuarios y bloquear la actividad de usuarios específicos.
+
 Para obtener más información, consulte link:rp-start-licenses.html["Configurar la licencia"].
 
 
@@ -127,7 +129,7 @@ Más información acerca de https://docs.netapp.com/us-en/ontap/anti-ransomware/
 | *DETECTAR*  a| 
 * Detecta posibles ataques con un modelo de aprendizaje automático (ML) integrado que detecta actividad y cifrado potencialmente anómalos.
 * Proporciona detección de doble capa que comienza con la detección de posibles ataques de ransomware en el almacenamiento principal y la respuesta a actividades anormales realizando copias Snapshot adicionales automatizadas para crear los puntos de restauración de datos más cercanos. El servicio ofrece la capacidad de obtener más información para identificar posibles ataques con mayor precisión sin que ello afecte al rendimiento de las cargas de trabajo principales.
-* Determina los archivos y mapas sospechosos específicos que atacan a las cargas de trabajo asociadas mediante las tecnologías ONTAP, protección autónoma contra ransomware y FPolicy.
+* Determina los archivos y mapas específicos sospechosos que atacan a las cargas de trabajo asociadas mediante las tecnologías ONTAP, protección autónoma contra ransomware, seguridad para cargas de trabajo de Data Infrastructure Insights (anteriormente Cloud Insights) y FPolicy.
 
 
 
