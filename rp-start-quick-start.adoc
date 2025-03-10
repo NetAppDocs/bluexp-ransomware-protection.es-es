@@ -22,9 +22,11 @@ link:rp-start-prerequisites.html["Asegúrese de que su entorno cumpla estos requ
 [role="quick-margin-list"]
 * link:rp-start-setup.html["Prepare NetApp StorageGRID, Amazon Web Services o Microsoft Azure como destino de backup"].
 * link:rp-start-setup.html["Configura un conector en BlueXP"].
+* link:rp-start-licenses.html["Configurar la licencia"].
+* link:rp-start-discover.html["Detecta cargas de trabajo en BlueXP"].
 * link:rp-start-setup.html["Configurar destinos de copia de seguridad"].
 * link:rp-start-setup.html["Opcionalmente habilita la detección de amenazas"].
-* link:rp-start-discover.html["Detecta cargas de trabajo en BlueXP"].
+* link:rp-start-simulate.html["Opcionalmente, realiza un simulacro de preparación para los ataques de ransomware"].
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tres"] El futuro

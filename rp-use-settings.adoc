@@ -12,13 +12,15 @@ summary: Puedes configurar varias opciones, como un destino de backup, la detecc
 
 
 [role="lead"]
-Puede configurar un destino de copia de seguridad, habilitar la detección de amenazas o configurar la conexión a la seguridad de carga de trabajo de Data Infrastructure Insights accediendo a la opción *Settings*. Habilitar la detección de amenazas envía automáticamente datos a su sistema de gestión de eventos y seguridad (SIEM) para el análisis de amenazas.
+Puede configurar destinos de copia de seguridad, habilitar la detección de amenazas, realizar un simulacro de preparación para ataques, configurar la detección de cargas de trabajo o configurar la conexión a la seguridad de la carga de trabajo de Data Infrastructure Insights accediendo a la opción *Configuración*.
 
 En la página Settings, puede realizar lo siguiente:
 
+* Simular un ataque de ransomware llevando a cabo un ejercicio de preparación y responder a una alerta simulada de ransomware. Para obtener más información, consulte link:rp-start-simulate.html["Haz un simulacro de preparación para los ataques de ransomware"].
+* Configurar la detección de cargas de trabajo.
 * Configure la conexión a la seguridad de carga de trabajo de información de la infraestructura de datos para ver la información de usuario sospechosa en las alertas de ransomware.
 * Agregue un destino de copia de seguridad.
-* Conecte su sistema de seguridad y gestión de eventos (SIEM) para el análisis y la detección de amenazas.
+* Habilite la detección de amenazas y conecte su sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas. Habilitar la detección de amenazas envía automáticamente datos a su SIEM para el análisis de amenazas.
 
 
 
@@ -33,7 +35,33 @@ Puede acceder fácilmente a la página Configuración desde la opción Acciones 
 
 
 
-== Conéctese a la seguridad de las cargas de trabajo de información sobre la infraestructura de datos para ver el comportamiento anómalo de los usuarios
+== Simular un ataque de ransomware
+
+Lleve a cabo un simulacro de ataque de ransomware en una carga de trabajo de muestra recién creada. A continuación, investigue el ataque simulado y recupere la carga de trabajo de muestra. Esta función te ayuda a saber que estás preparado en caso de un ataque real de ransomware mediante la prueba de los procesos de notificación de alertas, respuesta y recuperación. Puede realizar un simulacro de preparación contra el ransomware en varias ocasiones.
+
+Para obtener más información, consulte link:rp-start-simulate.html["Haz un simulacro de preparación para los ataques de ransomware"].
+
+
+
+== Configurar la detección de cargas de trabajo
+
+Es posible configurar la detección de cargas de trabajo para detectar automáticamente nuevas cargas de trabajo en su entorno.
+
+. En la página Configuración, localice el mosaico *Detección de carga de trabajo*.
+. En el mosaico *Workload discovery*, seleccione *Discover Workloads*.
++
+Esta página muestra los conectores BlueXP  con entornos de trabajo que no se seleccionaron anteriormente, los conectores BlueXP  recién disponibles y los entornos de trabajo recién disponibles. Esta página no muestra los entornos de trabajo seleccionados previamente.
+
+. Seleccione el conector donde desee detectar las cargas de trabajo.
+. Revise la lista de entornos de trabajo.
+. Active los entornos de trabajo en los que desea detectar cargas de trabajo o active la casilla situada en la parte superior de la tabla para detectar cargas de trabajo en todos los entornos de carga de trabajo detectados.
+. Haga esto para otros entornos de trabajo según sea necesario.
+. Selecciona *Descubrir* para que la protección contra ransomware de BlueXP  detecte automáticamente nuevas cargas de trabajo en el conector seleccionado.
+
+
+
+
+== Conoce el comportamiento anómalo de un usuario sospechoso conectándote a la seguridad de las cargas de trabajo de Data Infrastructure Insights
 
 Para poder ver detalles del comportamiento sospechoso de usuario en la protección contra ransomware de BlueXP , tendrá que configurar la conexión con el sistema de seguridad de las cargas de trabajo de información de la infraestructura de datos.
 
@@ -56,7 +84,7 @@ image:../media/screen-alerts-ci-api-access-token.png["Página API Access de Data
 
 === Conéctate a la seguridad de las cargas de trabajo de Infrastructure Insights
 
-. En el menú Configuración de protección contra ransomware de BlueXP , selecciona *Conexión de seguridad de carga de trabajo*.
+. En el menú Configuración de protección contra ransomware de BlueXP , localice el icono *Conexión de seguridad de carga de trabajo*.
 . Seleccione *conectar*.
 . Introduzca la URL para la interfaz de usuario de seguridad de carga de trabajo de infraestructura de datos.
 . Introduzca el token de acceso de API que proporciona acceso a la seguridad de la carga de trabajo.

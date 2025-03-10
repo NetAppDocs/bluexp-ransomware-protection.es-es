@@ -1,0 +1,229 @@
+---
+sidebar: sidebar 
+permalink: rp-start-simulate.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
+summary: Lleve a cabo un simulacro de ataque de ransomware en una carga de trabajo de muestra recién creada. A continuación, investigue el ataque simulado y recupere la carga de trabajo de muestra. Puede realizar un simulacro de preparación contra el ransomware en varias ocasiones. 
+---
+= Simule un ataque de ransomware simulando el estado de preparación
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Lleve a cabo un simulacro de ataque de ransomware en una carga de trabajo de muestra recién creada. A continuación, investigue el ataque simulado y recupere la carga de trabajo de muestra. Esta función te ayuda a saber que estás preparado en caso de un ataque real de ransomware mediante la prueba de los procesos de notificación de alertas, respuesta y recuperación. Puede realizar un simulacro de preparación contra el ransomware en varias ocasiones.
+
+
+TIP: No se verá afectada su información de carga de trabajo real.
+
+
+
+== Configurar un simulacro de preparación para el ataque de ransomware
+
+Antes de realizar una simulación, debe configurar un cambio de nivel mediante la página Configuración. Puede acceder fácilmente a la página Configuración desde la opción Acciones cerca del menú superior.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical image:button-actions-vertical.png["Acciones verticales"]... opción en la parte superior derecha.
+. En el menú desplegable, selecciona *Ajustes*.
+. En la tarjeta de perforación de preparación de la página Configuración, seleccione *Configurar*.
++
+Aparecerá la página Configurar detalle de preparación.
+
++
+image:screen-settings-alert-drill-configure.png["Configurar página de detalle de preparación"]
+
+. Seleccione el conector BlueXP  que desea utilizar para el detalle de preparación.
+. Seleccione un entorno de trabajo de prueba.
+. Seleccione la nueva carga de trabajo de prueba que se creará.
+. Seleccione *Guardar*.
++
+Aparece un mensaje que indica que el entorno de detalle de preparación está configurado. En ese mensaje, seleccione *Iniciar ejercicio de preparación* para iniciar el ejercicio.
+
+
+
+
+TIP: Puede editar la configuración de cambio de nivel de preparación más tarde mediante la página Configuración.
+
+
+
+== Iniciar un ejercicio de preparación
+
+Después de configurar el cambio de nivel de disponibilidad, puede iniciar el cambio de nivel.
+
+.Pasos
+. Debe realizar una de las siguientes acciones:
++
+** En el menú Configuración de protección contra ransomware de BlueXP , selecciona *Iniciar ejercicio de preparación*.
+** O bien, en la página Configuración, en la tarjeta de perforación de preparación, seleccione *Iniciar taladro de preparación*.
+
+
+. Debe realizar una de las siguientes acciones:
++
+** Si aún no ha configurado el cambio de nivel de disponibilidad, aparecerá un mensaje indicando que primero debe configurar el cambio de nivel de preparación.
++
+image:screen-settings-alert-drill-needtoconfigure.png["Página de valores que muestra el mensaje de detalle de disponibilidad que necesita para configurar el cambio de nivel de disponibilidad"]
+
++
+*** Seleccione *Configure ready drill test environment*.
+*** Continúe con las instrucciones de la sección anterior para configurar el entorno de prueba de perforación en la opción Configuración.
+
+
+** Si ya ha configurado el cambio de nivel de preparación, aparecerá la página Iniciar cambio de nivel de preparación:
++
+image:screen-settings-alert-drill-start.png["Iniciar página de detalle de preparación"]
+
+
+
+. Seleccione *Iniciar*.
+
+
+
+NOTE: Una vez iniciado el cambio de nivel, no puede editar la configuración de cambio de nivel de disponibilidad. En su lugar, puedes detenerlo.
+
+
+
+== Limpie y detenga un taladro de preparación
+
+Si necesita detener un ejercicio de preparación, puede hacerlo en cualquier momento. Cuando detienes el simulacro, la protección contra ransomware de BlueXP  limpia la carga de trabajo de prueba y elimina los archivos de prueba.
+
+.Pasos
+. Debe realizar una de las siguientes acciones:
++
+** En el menú Configuración de protección contra ransomware de BlueXP , pase el ratón sobre la opción Editar en el icono de ejercicio de preparación y seleccione *Limpiar ejercicio de preparación*.
+** En el menú de protección contra ransomware de BlueXP , selecciona image:button-actions-vertical.png["Acciones verticales"]la opción vertical... en la parte superior derecha y selecciona *clean up ready drill*.
++
+image:screen-settings-alert-drill-cleanup.png["Página de configuración que muestra la opción de parada de detalle de disponibilidad"]
+
++
+
+NOTE: También puede detener o limpiar un cambio de nivel de disponibilidad desde la página Configuración que muestra la tarjeta de nivel de preparación.
+
+
+
+. Revise la información de detalle de preparación de la carga de trabajo.
+. Selecciona *clean up*.
+
+
+
+
+== Responder a una alerta de detalle de disponibilidad
+
+Pruebe su preparación respondiendo a una alerta de disponibilidad detallada.
+
+.Pasos
+. Debe realizar una de las siguientes acciones:
++
+** En el menú de protección contra ransomware de BlueXP, selecciona *Alertas*.
+** O bien, en el menú, seleccione el icono de *Notificaciones*, seleccione *Ver alerta* junto a la alerta de detalle de disponibilidad.
++
+image:screen-notifications-alert-drill.png["Sección de notificaciones que muestra la alerta de detalle de disponibilidad"]
+
++
+Aparece la página Alertas. En la columna ID de alerta de la página Alertas, aparece el indicador de disponibilidad junto al ID.
+
++
+image:screen-alerts-readiness.png["Página Alertas que muestra la alerta de detalle de disponibilidad"]
+
+
+
+. Seleccione el incidente con la indicación de detalle de preparación.
++
+image:screen-alerts-readiness-incidents.png["Página Incidente en la que se muestra la alerta de detalle de disponibilidad"]
+
+. Revise los detalles de la alerta.
++
+Aquí hay algunas cosas a buscar:
+
++
+** Mira el tipo de ataque potencial. Si el Tipo indica que se sospecha que un usuario tiene actividad maliciosa, revise el nombre de usuario.
++
+*** Es posible que desee bloquear al usuario seleccionando *Bloquear usuario*.
+*** También es posible que desee investigar más al usuario en Data Infrastructure Insights Workload Security seleccionando *Investigar en Workload Security*.
+
+
+** Observe la actividad de los archivos y los posibles procesos:
++
+*** Observe los datos entrantes detectados en comparación con los datos esperados.
+*** Observe la tasa de creación de los archivos que se detectan en comparación con la tasa esperada.
+*** Observe la tasa de cambio de nombre de archivo que se detecta en comparación con la tasa esperada.
+*** Observe la tasa de eliminación en comparación con la tasa esperada.
+
+
+** Consulte la lista de archivos afectados. Mira las extensiones que podrían estar causando el ataque.
+** Determine el impacto y la amplitud del ataque revisando el número de archivos y directorios afectados.
+
+
+
+
+
+
+== Restaure la carga de trabajo de prueba
+
+Después de revisar la alerta de detalle de disponibilidad, es posible que desee restaurar la carga de trabajo de prueba.
+
+.Pasos
+. Vuelva a la página Detalles de Alerta.
+. Si se debe restaurar la carga de trabajo de prueba, haga lo siguiente:
++
+** Seleccione *Mark restore needed*.
+** Revise la confirmación y seleccione *Mark restore needed* en el cuadro de confirmación.
++
+*** En el menú de protección contra ransomware de BlueXP, selecciona *Recuperación*.
+*** Seleccione la carga de trabajo de prueba que desea restaurar.
+*** Seleccione *Restaurar*.
+*** En la página Restore, proporcione información para el restauración:
+
+
+** Seleccione la copia Snapshot de origen.
+** Seleccione el volumen de destino.
+
+
+. En la página Restaurar revisión, seleccione *Restaurar*.
++
+La página Recuperación muestra el estado de la restauración de detalles de preparación como en curso.
+
++
+Una vez completada la restauración, el estado de la carga de trabajo cambia a *restored*.
+
+. Revise la carga de trabajo restaurada.
+
+
+
+TIP: Para obtener detalles sobre el proceso de restauración, consulte link:rp-use-recover.html["Recuperarse de un ataque de ransomware (después de neutralizar los incidentes)"].
+
+
+
+== Cambie el estado de las alertas después del cambio de nivel de disponibilidad
+
+Después de revisar la alerta de detalle de disponibilidad y restaurar la carga de trabajo, es posible que desee cambiar el estado de la alerta.
+
+.Pasos
+. Vuelva a la página Detalles de Alerta.
+. Seleccione de nuevo la alerta.
+. Indique el estado seleccionando *Editar* y cambie el estado a uno de los siguientes:
++
+** Descartado: Si sospecha que la actividad no es un ataque de ransomware, cambie el estado a Descartado.
++
+
+IMPORTANT: Después de que descartes un ataque, no puedes cambiarlo de nuevo. Si descarta una carga de trabajo, todas las copias de snapshots realizadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente. Si descarta la alerta, se considera finalizado el detalle de disponibilidad.
+
+** En curso
+** Resuelto: El incidente ha sido mitigado.
+
+
+
+
+
+
+== Permite revisar informes sobre el detalle de disponibilidad
+
+Una vez finalizada la profundización de preparación, es posible que desee revisar y guardar un informe en la profundización.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Informes*.
++
+image:screen-reports.png["Página Informes en la que se muestra el informe de detalles de preparación"]
+
+. Seleccione *Taladros de preparación* y *Descargar* para descargar el informe de ejercicios de preparación.
+

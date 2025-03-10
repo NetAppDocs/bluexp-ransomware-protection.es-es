@@ -33,7 +33,10 @@ sidebar:
       url: "/rp-start-licenses.html"
     - title: Detectar cargas de trabajo
       url: "/rp-start-discover.html"
-    - title: Configurar destinos de copia de seguridad y activar la detección de amenazas
+    - title: Simular un ataque de ransomware
+      url: "/rp-start-simulate.html"
+    - title: Configure copias de seguridad, detección de amenazas y simulaciones de
+        ataques en Configuración
       url: "/rp-use-settings.html"
     - title: PREGUNTAS FRECUENTES
       url: "/rp-start-faq.html"

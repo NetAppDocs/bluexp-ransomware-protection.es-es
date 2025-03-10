@@ -32,8 +32,8 @@ indexpage:
       url: "/rp-start-quick-start.html"
     - title: Configurar destinos de copia de seguridad y activar la detección de amenazas
       url: "/rp-use-settings.html"
-    - title: PREGUNTAS FRECUENTES
-      url: "/rp-start-faq.html"
+    - title: Simular un ataque de ransomware
+      url: "/rp-start-simulate.html"
   - title: Usa la protección frente al ransomware de BlueXP
     links:
     - title: Usa la información general sobre la protección frente a ransomware de

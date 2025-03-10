@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-reference-roles.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
-summary: 'La protección contra ransomware de BlueXP  usa el control de acceso basado en roles (RBAC) para gobernar el acceso que tiene cada usuario a funciones y acciones específicas. El servicio utiliza los roles principales de BlueXP  de Administrador y Visor de Organización (no Administrador de Organización).' 
+summary: 'La protección contra ransomware de BlueXP  usa el control de acceso basado en roles (RBAC) para gobernar el acceso que tiene cada usuario a funciones y acciones específicas. El servicio utiliza roles específicos de la protección contra ransomware de BlueXP  (RPS).' 
 ---
-= Privileges de control de acceso basado en roles de protección contra ransomware de BlueXP 
+= Acceso a funciones basado en roles de protección frente al ransomware de BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,13 +12,19 @@ summary: 'La protección contra ransomware de BlueXP  usa el control de acceso 
 
 
 [role="lead"]
-La protección contra ransomware de BlueXP  usa el control de acceso basado en roles (RBAC) para gobernar el acceso que tiene cada usuario a funciones y acciones específicas. El servicio utiliza los roles principales de BlueXP  de Administrador y Visor de Organización (no Administrador de Organización).
+La protección frente al ransomware de BlueXP  emplea roles para gobernar el acceso que cada usuario tiene a funciones y acciones específicas.
 
-La siguiente tabla indica qué acciones puede realizar cada rol.
+La protección frente a ransomware de BlueXP  usa los siguientes roles:
+
+* Administrador de la organización
+* Visor (administrador no de organización)
+
+
+La siguiente tabla indica que cada rol de protección contra ransomware de BlueXP  puede realizar acciones.
 
 [cols="40,20a,20a"]
 |===
-| Característica y acción | Administrador de la organización de BlueXP  | No Admin (Visor) 
+| Característica y acción | Administrador de la organización | Visionador 
 
 
 | Inicie una prueba gratuita  a| 

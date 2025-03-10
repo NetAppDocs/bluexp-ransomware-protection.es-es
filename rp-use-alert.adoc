@@ -28,6 +28,7 @@ El servicio proporciona información llamada _Evidence_ sobre qué causó que se
 * Las extensiones de archivo se han creado o cambiado
 * Se ha producido la creación del archivo y se ha aumentado en un porcentaje mostrado
 * Se ha suprimido el archivo y se ha aumentado en un porcentaje mostrado
+* Cuando el cifrado es alto, sin cambios de extensión de archivo
 
 
 Una alerta se basa en los siguientes tipos de comportamiento:
@@ -93,17 +94,17 @@ image:screen-alerts.png["Alertas"]
 Si mira la pestaña Alertas, puede identificar si hay actividad maliciosa. Los detalles que aparecen dependen de cómo se activó la alerta:
 
 * Desencadenado por la función autónoma de protección frente a ransomware de ONTAP. De esta forma, se detecta la actividad maliciosa según el comportamiento de los archivos en el volumen.
-* Desencadenado por la seguridad de la carga de trabajo de Data Infrastructure Insights. Esto requiere una licencia para la seguridad de cargas de trabajo de información de la infraestructura de datos y que la habilita en la protección frente al ransomware de BlueXP . Esta función detecta un comportamiento anómalo de los usuarios en tus cargas de trabajo de almacenamiento y te permite bloquear a ese usuario para que no permita continuar accediendo.
+* Desencadenado por la seguridad de las cargas de trabajo de Data Infrastructure Insights. Esto requiere una licencia para la seguridad de cargas de trabajo de información de la infraestructura de datos y que la habilites en la protección frente al ransomware de BlueXP . Esta función detecta un comportamiento anómalo de los usuarios en tus cargas de trabajo de almacenamiento y te permite bloquear a ese usuario para que no permita continuar accediendo.
 +
-Para habilitar la Seguridad de carga de trabajo en la protección contra ransomware de BlueXP , vaya a la página *Configuración* y seleccione la opción *Conexión de seguridad de carga de trabajo*.
+Para habilitar la seguridad de la carga de trabajo en la protección contra ransomware de BlueXP , vaya a la página *Configuración* y seleccione la opción *Conexión de seguridad de carga de trabajo*.
 
 +
-Para obtener información general sobre la seguridad de la carga de trabajo de la información sobre la infraestructura de datos, revise https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Acerca de Workload Security"^]
+Para obtener una visión general de la seguridad de la carga de trabajo de Data Infrastucture Insights, consulte https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Acerca de la seguridad de la carga de trabajo"^].
 
 
 
 
-TIP: Si no tiene una licencia para Seguridad de carga de trabajo de la infraestructura de datos y no la habilita en la protección contra ransomware de BlueXP , no verá información anómala sobre el comportamiento de los usuarios.
+TIP: Si no tiene una licencia para la seguridad de carga de trabajo de infraestructura de datos y no la habilita en la protección contra ransomware de BlueXP , no verá la información anómala sobre el comportamiento de los usuarios.
 
 Cuando se produce una actividad maliciosa, se genera una alerta y se realiza una instantánea automatizada.
 
@@ -117,6 +118,7 @@ Cuando la protección autónoma contra ransomware activa una alerta en la protec
 * Tasa de creación esperada de nuevos archivos en comparación con la tasa detectada
 * Tasa de eliminación esperada de los archivos en comparación con la velocidad detectada
 * Tasa de cambio de nombre esperada de los archivos en comparación con la velocidad detectada
+* Archivos y directorios afectados
 
 
 .Pasos
@@ -127,22 +129,19 @@ Cuando la protección autónoma contra ransomware activa una alerta en la protec
 image:screen-alerts-incidents3.png["Página Incidentes de Alertas"]
 
 . Seleccione un incidente para revisar los detalles del incidente.
-+
-image:screen-alerts-incidents-details-arp.png["Página de detalles del incidente"]
 
 
 
 
+=== Vea el comportamiento anómalo de un usuario en la seguridad de las cargas de trabajo de información de la infraestructura de datos
 
-=== Vea el comportamiento anómalo de un usuario en Seguridad de cargas de trabajo de información de la infraestructura de datos
-
-Cuando la seguridad de las cargas de trabajo de información de la infraestructura de datos activa una alerta en la protección contra ransomware de BlueXP , puedes ver el usuario sospechoso, bloquearlo e investigar la actividad del usuario directamente en Seguridad de las cargas de trabajo de información de la infraestructura de datos.
+Cuando la seguridad de la carga de trabajo de información de la infraestructura de datos activa una alerta en la protección contra ransomware de BlueXP , puedes ver al usuario sospechoso, bloquearlo e investigar la actividad del usuario directamente en la seguridad de la carga de trabajo de información de la infraestructura de datos.
 
 
 TIP: Estas características son además de los detalles disponibles en Protección autónoma contra ransomware.
 
 .Antes de empezar
-Esta opción requiere una licencia para la seguridad de cargas de trabajo de información de la infraestructura de datos y que la habilite en la protección contra ransomware de BlueXP .
+Esta opción requiere una licencia para la seguridad de cargas de trabajo de información de Infraestructura de datos y que la habilite en la protección frente al ransomware de BlueXP .
 
 Para habilitar la seguridad de las cargas de trabajo en la protección contra ransomware de BlueXP , haga lo siguiente:
 
@@ -163,11 +162,8 @@ image:screen-alerts-incidents-diiws.png["Página Incidentes de Alerta en la que 
 . Para bloquear a un usuario sospechoso de acceso adicional en su entorno que es monitoreado por BlueXP , seleccione el enlace *Bloquear usuario*.
 . Investigue la alerta o un incidente en la alerta:
 +
-.. Para investigar más a fondo la alerta en Data Infrastructure Insights Workload Security, seleccione el enlace *Investigar en seguridad de carga de trabajo*.
+.. Para investigar más a fondo la alerta en Seguridad de carga de trabajo de Data Infrastructure Insights, seleccione el enlace *Investigar en seguridad de carga de trabajo*.
 .. Seleccione un incidente para revisar los detalles del incidente.
-+
-image:screen-alerts-incidents-details-arp-diiws.png["Página de detalles de incidente que muestra los detalles de seguridad de carga de trabajo"]
-
 +
 Información sobre la infraestructura de datos Workload Security se abre en una nueva pestaña.
 
@@ -222,7 +218,7 @@ image:screen-alerts.png["Alertas"]
 
 . En la página Alerts, seleccione la alerta.
 +
-image:screen-alerts-incidents2.png["Página Incidentes de Alertas"]
+image:screen-alerts-incidents3.png["Página Incidentes de Alertas"]
 
 . Seleccione uno o más incidentes. O bien, seleccione todos los incidentes seleccionando el cuadro ID de incidente en la parte superior izquierda de la tabla.
 . Si usted determina que el incidente no es una amenaza, descarte como un falso positivo:
