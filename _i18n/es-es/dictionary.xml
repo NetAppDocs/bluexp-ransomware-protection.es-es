@@ -1527,8 +1527,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="1ad499ee6cba4f056f735fb9eae4b5ce" category="paragraph">Dentro de cada conector, seleccione los entornos de trabajo donde desea detectar las cargas de trabajo.</block>
   <block id="98ab4e23cce41ca38b39c7baf6ef4567" category="admonition">Este proceso puede tardar unos minutos.</block>
   <block id="18eb5242d6e5ac768698e677b047a0eb" category="inline-image-macro">Captura de pantalla para detectar cargas de trabajo</block>
-  <block id="d79f191c2ec9abafe65a74f3afd2fd3e" category="paragraph"><block ref="d79f191c2ec9abafe65a74f3afd2fd3e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="db2242d67fcc7ed40d59b104f2d8d0b1" category="list-text">Seleccione los entornos de trabajo en los que desea detectar la carga de trabajo o seleccione el cuadro en la parte superior de la tabla para detectar cargas de trabajo en todos los entornos de carga de trabajo detectados.</block>
   <block id="6717014f0e48b7ab08c9846925b42c93" category="list-text">Seleccione *Discover*.</block>
   <block id="39d30ea27067e18c7724603fcd547e90" category="paragraph">El servicio detecta datos de carga de trabajo sólo para aquellos conectores con entornos de trabajo seleccionados.</block>
   <block id="d816d69cfca30588b735f0def37770e3" category="inline-image-macro">Captura de pantalla de cargas de trabajo detectadas</block>
@@ -1602,7 +1600,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="61541c0b99aec5f11fccef5bcb3fe5a1" category="paragraph">Esta versión incluye mejoras en los procesos selectivos de detección y redetección:</block>
   <block id="cb3c0a83218c46d38ab0842ce49a7e6e" category="list-text">Con esta versión, puede detectar las cargas de trabajo recién creadas que se agregaron a los entornos de trabajo seleccionados anteriormente.</block>
   <block id="6a4c9cc76f7f432efa274c3ff0dae3dd" category="list-text">También puede seleccionar entornos de trabajo _NEW_ en esta versión. Esta función le ayuda a proteger las nuevas cargas de trabajo añadidas a su entorno.</block>
-  <block id="3b7810e8427f006590b006af43d016ef" category="list-text">Si desea elegir todas las cargas de trabajo detectadas, puede hacerlo utilizando la opción *Seleccionar todo*.</block>
   <block id="28573ff4f820730a3eeae9cdd51b54d4" category="list-text">Es posible realizar estos procesos de detección durante el proceso de detección inicial o dentro de la opción Configuración.</block>
   <block id="16e3b92f9b1f5d1c29b18c748e6a228e" category="inline-link">Configure los fetaures con la opción Configuración</block>
   <block id="98e6e30b63e5242616c686684a17c03b" category="paragraph">Para obtener más información, consulte<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block> y.<block ref="026d9da5e400c1054ac1084b0f63056d" category="inline-link-rx"></block></block>
@@ -1620,18 +1617,14 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="06135c09643e0b875311a4989ef81443" category="paragraph">El servicio evalúa el nivel de protección existente, incluida la protección actual de backup, las copias Snapshot y las opciones de protección autónoma frente a ransomware de NetApp. Según la evaluación, el servicio te recomienda cómo mejorar tu protección frente al ransomware.</block>
   <block id="bcd1f982603e49ee85ee4aa3816ec786" category="list-text">Seleccione _new_ entornos de trabajo. Esta función le ayuda a proteger las nuevas cargas de trabajo añadidas a su entorno.</block>
   <block id="ea84e987da35b78faef15d182ea98e25" category="paragraph">El servicio encuentra entornos de trabajo en los conectores BlueXP .</block>
-  <block id="1fe55988352f69acacdb9b10814fc08e" category="list-text">Para seleccionar entornos de trabajo para todos los conectores, seleccione *Seleccionar todos los entornos de trabajo*.</block>
   <block id="656ebea707f2c709a19d8f845b2477e7" category="list-text">Para descubrir cargas de trabajo para un conector específico, selecciona *Buscar nuevos entornos de trabajo* junto al conector donde quieres detectar cargas de trabajo.</block>
   <block id="4c21761c15d83552dd8cd3a0a8db257d" category="paragraph">Aparece una lista de entornos de trabajo.</block>
   <block id="546750f8dfe95d6b98eb842b8bf02faf" category="paragraph"><block ref="546750f8dfe95d6b98eb842b8bf02faf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="683b598a3c2decc48c00425ef8b86635" category="paragraph"><block ref="683b598a3c2decc48c00425ef8b86635" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c02e66aaa8def7a1b94dfd795479c114" category="paragraph">Si ya ha seleccionado entornos de trabajo para la detección, puede detectar las cargas de trabajo recién creadas para esos entornos desde la consola.</block>
   <block id="70b4939004396411f22f03d5d20bd5e4" category="list-text">Para identificar la fecha del último descubrimiento, desde el Panel de Control, mire la marca de fecha y hora junto al icono *Actualizar* en la parte superior derecha.</block>
-  <block id="0b60c421fc6bce0a5ff3b730591a0ac5" category="list-text">En el Panel de Control, seleccione el icono *Actualizar* y en la información sobre herramientas que aparece, seleccione *Descubrir cargas de trabajo*.</block>
   <block id="e8d91f884eae05c3d90259b4c84b75d2" category="section-title">Descubra los entornos de trabajo recién creados</block>
   <block id="a1b34a4244cd73e84bed71e0bf383360" category="paragraph">Si ya ha detectado entornos de trabajo, puede detectar cualquier entorno de trabajo recién creado desde el panel de control.</block>
-  <block id="a048ca602eaaea1a6182ff74398a9c85" category="list-text">En el panel, seleccione *Añadir nuevo* y en la información sobre herramientas que aparece, seleccione *Añadir nuevos entornos de trabajo*.</block>
-  <block id="63a31ad1e15ab514cc2378a692e2c8db" category="list-text">En el menú de la protección contra ransomware de BlueXP , seleccione <block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>la opción vertical... en la parte superior derecha. En el menú desplegable, selecciona *Ajustes*. En la tarjeta de detección de carga de trabajo, seleccione *Descubrir cargas de trabajo*.</block>
   <block id="0e6eeee847f00d7ef1cb454555892f49" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block>.</block>
   <block id="63de46c3feae8642d94945ea3e056fed" category="inline-link-macro">Opcionalmente, realiza un simulacro de preparación para los ataques de ransomware</block>
   <block id="39bdb514f38135f0ca92651ade127954" category="list-text"><block ref="2280163364b5b58f435fe47eab713eb2" category="inline-link-macro-rx"></block>.</block>
@@ -1647,44 +1640,21 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="4733f8632e3639026823ab315aa1fde4" category="paragraph"><block ref="4733f8632e3639026823ab315aa1fde4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8d3b4eb775e09a46424412f734068b0" category="list-text">Seleccione el conector BlueXP  que desea utilizar para el detalle de preparación.</block>
   <block id="03e372e5a12da124a082cb418529a0c7" category="list-text">Seleccione un entorno de trabajo de prueba.</block>
-  <block id="83d67ad1d05b6c81b83e16e427218874" category="list-text">Seleccione la nueva carga de trabajo de prueba que se creará.</block>
   <block id="000346285fa0b7654e9ce18381bba66f" category="paragraph">Aparece un mensaje que indica que el entorno de detalle de preparación está configurado. En ese mensaje, seleccione *Iniciar ejercicio de preparación* para iniciar el ejercicio.</block>
   <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">Puede editar la configuración de cambio de nivel de preparación más tarde mediante la página Configuración.</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">Iniciar un ejercicio de preparación</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">Después de configurar el cambio de nivel de disponibilidad, puede iniciar el cambio de nivel.</block>
-  <block id="948feeea05a56419435cc007ac7abd68" category="list-text">En el menú Configuración de protección contra ransomware de BlueXP , selecciona *Iniciar ejercicio de preparación*.</block>
-  <block id="f577e0a326d286f796539335e08e4b68" category="list-text">O bien, en la página Configuración, en la tarjeta de perforación de preparación, seleccione *Iniciar taladro de preparación*.</block>
   <block id="48c1e999e8171604f472f6a173e90a06" category="list-text">Si aún no ha configurado el cambio de nivel de disponibilidad, aparecerá un mensaje indicando que primero debe configurar el cambio de nivel de preparación.</block>
   <block id="2bad3a1005ba6708ddbc592b74412409" category="inline-image-macro">Página de valores que muestra el mensaje de detalle de disponibilidad que necesita para configurar el cambio de nivel de disponibilidad</block>
   <block id="fbb94dad4d4b0b642b9e4bcfccb31a40" category="paragraph"><block ref="fbb94dad4d4b0b642b9e4bcfccb31a40" category="inline-image-macro-rx" type="image"></block></block>
   <block id="648815687f26cfff9af80401c05502e1" category="list-text">Seleccione *Configure ready drill test environment*.</block>
   <block id="2e80fabefee51d121eee410fb4a3be19" category="list-text">Continúe con las instrucciones de la sección anterior para configurar el entorno de prueba de perforación en la opción Configuración.</block>
-  <block id="e920bf03ef2a5c4203f6db8e43f9ca34" category="list-text">Si ya ha configurado el cambio de nivel de preparación, aparecerá la página Iniciar cambio de nivel de preparación:</block>
-  <block id="65a0085cbf921f3e953b8693c2b63281" category="inline-image-macro">Iniciar página de detalle de preparación</block>
-  <block id="3c118708db99643af58b322e8633f99e" category="paragraph"><block ref="3c118708db99643af58b322e8633f99e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cc99cd6550a548e2a6a10be11a7acf67" category="list-text">Seleccione *Iniciar*.</block>
   <block id="8c5a9997ae160f52e3c8ede0e2590504" category="admonition">Una vez iniciado el cambio de nivel, no puede editar la configuración de cambio de nivel de disponibilidad. En su lugar, puedes detenerlo.</block>
-  <block id="c0c593ce47c0b08a83ed2122000f2d53" category="section-title">Limpie y detenga un taladro de preparación</block>
-  <block id="4a19556f13e6b47441abc553ac3daf39" category="paragraph">Si necesita detener un ejercicio de preparación, puede hacerlo en cualquier momento. Cuando detienes el simulacro, la protección contra ransomware de BlueXP  limpia la carga de trabajo de prueba y elimina los archivos de prueba.</block>
-  <block id="4ee662381f867d717a479a810920b73a" category="list-text">En el menú Configuración de protección contra ransomware de BlueXP , pase el ratón sobre la opción Editar en el icono de ejercicio de preparación y seleccione *Limpiar ejercicio de preparación*.</block>
-  <block id="629c4b84903c512b14e9482c870995ec" category="list-text">En el menú de protección contra ransomware de BlueXP , selecciona <block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>la opción vertical... en la parte superior derecha y selecciona *clean up ready drill*.</block>
-  <block id="a068ddd4cd9819d66507b988292a9d04" category="inline-image-macro">Página de configuración que muestra la opción de parada de detalle de disponibilidad</block>
-  <block id="05a4ec5098b9bce4d19d3e7fecddeac2" category="paragraph"><block ref="05a4ec5098b9bce4d19d3e7fecddeac2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f8a4bf2c70949bcbe79cf9fdb34e3b9c" category="admonition">También puede detener o limpiar un cambio de nivel de disponibilidad desde la página Configuración que muestra la tarjeta de nivel de preparación.</block>
-  <block id="220dce46cde86e50505d7d6717501507" category="list-text">Revise la información de detalle de preparación de la carga de trabajo.</block>
-  <block id="15462a9fa9524dab33f93bd1451cd0fd" category="list-text">Selecciona *clean up*.</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Responder a una alerta de detalle de disponibilidad</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Pruebe su preparación respondiendo a una alerta de disponibilidad detallada.</block>
-  <block id="845eb30eb602283ce1d22c4b4cbe210f" category="list-text">O bien, en el menú, seleccione el icono de *Notificaciones*, seleccione *Ver alerta* junto a la alerta de detalle de disponibilidad.</block>
-  <block id="b4076ebb4154aa074b806f8ad5c2e03e" category="inline-image-macro">Sección de notificaciones que muestra la alerta de detalle de disponibilidad</block>
-  <block id="511db98909b9ae56251aa794f36145bd" category="paragraph"><block ref="511db98909b9ae56251aa794f36145bd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ef3efb89176a9b4600c400e3cafc6bc3" category="paragraph">Aparece la página Alertas. En la columna ID de alerta de la página Alertas, aparece el indicador de disponibilidad junto al ID.</block>
   <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">Página Alertas que muestra la alerta de detalle de disponibilidad</block>
   <block id="fd9f53769c15c2cf878c35f4cbc5a081" category="paragraph"><block ref="fd9f53769c15c2cf878c35f4cbc5a081" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2eaecc134241ebd3fe43cec088fc9216" category="list-text">Seleccione el incidente con la indicación de detalle de preparación.</block>
   <block id="bf6725ca3f9665491e02c1818a34d256" category="inline-image-macro">Página Incidente en la que se muestra la alerta de detalle de disponibilidad</block>
-  <block id="e4bcff284aee2a73455b69a73101cec5" category="paragraph"><block ref="e4bcff284aee2a73455b69a73101cec5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8fccaa7f058711628b8a8a2f5f4ccc9c" category="list-text">Revise los detalles de la alerta.</block>
   <block id="dba36383db70a071d84d9ad78273ce43" category="paragraph">Aquí hay algunas cosas a buscar:</block>
   <block id="b780e790d05aeda37075d8fd4a6d9b89" category="list-text">Mira el tipo de ataque potencial. Si el Tipo indica que se sospecha que un usuario tiene actividad maliciosa, revise el nombre de usuario.</block>
   <block id="8b558629c5c33cde93683d61a4115e2d" category="list-text">Es posible que desee bloquear al usuario seleccionando *Bloquear usuario*.</block>
@@ -1702,7 +1672,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="1428f7ff07a53448ce6c5a848493a542" category="list-text">Si se debe restaurar la carga de trabajo de prueba, haga lo siguiente:</block>
   <block id="402892b652810818eb61e703ca333d06" category="list-text">Seleccione *Mark restore needed*.</block>
   <block id="f1a43a1191cd8e11a5db942f4175b31f" category="list-text">Revise la confirmación y seleccione *Mark restore needed* en el cuadro de confirmación.</block>
-  <block id="428f9aacf80ab1666e7e9a35356b08be" category="list-text">Seleccione la carga de trabajo de prueba que desea restaurar.</block>
   <block id="98576e747c7efb09ca0d1e50a58ae308" category="list-text">En la página Restore, proporcione información para el restauración:</block>
   <block id="05e2304cb46b92601ea1e826aa3fec0b" category="list-text">Seleccione la copia Snapshot de origen.</block>
   <block id="773018347112b716b659352d9f401251" category="list-text">Seleccione el volumen de destino.</block>
@@ -1755,4 +1724,19 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="574f730f175872b7e8ae030664be0b63" category="list-text">En el menú Configuración de protección contra ransomware de BlueXP , localice el icono *Conexión de seguridad de carga de trabajo*.</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 de marzo de 2025</block>
   <block id="a216cb7967dcfa49b3b976657369cd25" category="sidebar">Configure copias de seguridad, detección de amenazas y simulaciones de ataques en Configuración</block>
+  <block id="8e409065d2ff7418c22e196d64a6f17c" category="paragraph"><block ref="8e409065d2ff7418c22e196d64a6f17c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="28f4eac4cfa4a0f9f4579a8d7853aa5d" category="list-text">Seleccione los entornos de trabajo en los que desea detectar cargas de trabajo o seleccione el cuadro de la parte superior de la tabla para detectar cargas de trabajo en todos los entornos de carga de trabajo detectados.</block>
+  <block id="6cd7d81917c9dbf1647c62c550c7a4a0" category="list-text">En el Panel de control, seleccione el icono *Actualizar* que inicia la detección de nuevas cargas de trabajo.</block>
+  <block id="ce5939b4e8126f1cd90a90e246bba04d" category="list-text">En el menú de la protección contra ransomware de BlueXP , seleccione <block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>la opción vertical... en la parte superior derecha. En el menú desplegable, selecciona *Ajustes*.</block>
+  <block id="7834f1609389d2dc0ac0789a0ac2db2f" category="list-text">En la tarjeta de detección de carga de trabajo, seleccione *Descubrir cargas de trabajo*.</block>
+  <block id="25c2a18f9bef5efa05b349a8a6bf472f" category="list-text">Introduzca el nombre de una nueva carga de trabajo de prueba que se creará.</block>
+  <block id="ccf00254ed4dd27ce3cb568ef11757f1" category="list-text">En el menú Configuración de protección contra ransomware de BlueXP , selecciona *Perforación de preparación* y, a continuación, en la página de perforación de preparación, selecciona *Inicio*.</block>
+  <block id="8d2bd4422410271303c0633a19aefea9" category="list-text">O bien, en la página Configuración, en la tarjeta de perforación de preparación, seleccione *Inicio*.</block>
+  <block id="f54a2552361ef76d1d69e95fc2f63e90" category="list-text">Si ya ha configurado el taladro de preparación, después de seleccionar *Start*, comienza el taladro de preparación.</block>
+  <block id="3764eabaa6dd82955df6528cd4a5a9b7" category="paragraph">Aparece la página Alertas. En la columna ID de alerta, aparece el indicador de disponibilidad junto al ID.</block>
+  <block id="a699ac7dcfe917f4ef6bfe5b42313497" category="list-text">Seleccione la alerta con la indicación de detalle de preparación. Aparece una lista de alertas de incidentes.</block>
+  <block id="c7173a995c95a8992913692d7f8b29a3" category="list-text">Revise los incidentes de alerta.</block>
+  <block id="8094150588327954ce01d91cf529ccfc" category="list-text">Seleccione un incidente de alerta.</block>
+  <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Seleccione la carga de trabajo de prueba marcada con el detalle de preparación que desea restaurar.</block>
 </blocks>
