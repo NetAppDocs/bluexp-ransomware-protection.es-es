@@ -75,7 +75,7 @@ image:screen-settings-alert-drill-needtoconfigure.png["Página de valores que mu
 
 
 
-NOTE: Una vez iniciado el cambio de nivel, no puede editar la configuración de cambio de nivel de disponibilidad. En su lugar, puedes detenerlo.
+NOTE: Una vez iniciado el cambio de nivel, no puede editar la configuración de cambio de nivel de disponibilidad. Puede restablecerla para que comience de nuevo.
 
 
 
@@ -177,18 +177,4 @@ IMPORTANT: Después de que descartes un ataque, no puedes cambiarlo de nuevo. Si
 ** Resuelto: El incidente ha sido mitigado.
 
 
-
-
-
-
-== Permite revisar informes sobre el detalle de disponibilidad
-
-Una vez finalizada la profundización de preparación, es posible que desee revisar y guardar un informe en la profundización.
-
-.Pasos
-. En el menú de protección contra ransomware de BlueXP, selecciona *Informes*.
-+
-image:screen-reports.png["Página Informes en la que se muestra el informe de detalles de preparación"]
-
-. Seleccione *Taladros de preparación* y *Descargar* para descargar el informe de ejercicios de preparación.
 

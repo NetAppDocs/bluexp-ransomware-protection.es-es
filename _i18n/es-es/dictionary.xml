@@ -1649,7 +1649,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="fbb94dad4d4b0b642b9e4bcfccb31a40" category="paragraph"><block ref="fbb94dad4d4b0b642b9e4bcfccb31a40" category="inline-image-macro-rx" type="image"></block></block>
   <block id="648815687f26cfff9af80401c05502e1" category="list-text">Seleccione *Configure ready drill test environment*.</block>
   <block id="2e80fabefee51d121eee410fb4a3be19" category="list-text">Continúe con las instrucciones de la sección anterior para configurar el entorno de prueba de perforación en la opción Configuración.</block>
-  <block id="8c5a9997ae160f52e3c8ede0e2590504" category="admonition">Una vez iniciado el cambio de nivel, no puede editar la configuración de cambio de nivel de disponibilidad. En su lugar, puedes detenerlo.</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Responder a una alerta de detalle de disponibilidad</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Pruebe su preparación respondiendo a una alerta de disponibilidad detallada.</block>
   <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">Página Alertas que muestra la alerta de detalle de disponibilidad</block>
@@ -1687,11 +1686,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Descartado: Si sospecha que la actividad no es un ataque de ransomware, cambie el estado a Descartado.</block>
   <block id="ff8d215b189dca41bf900d6545392594" category="admonition">Después de que descartes un ataque, no puedes cambiarlo de nuevo. Si descarta una carga de trabajo, todas las copias de snapshots realizadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente. Si descarta la alerta, se considera finalizado el detalle de disponibilidad.</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Resuelto: El incidente ha sido mitigado.</block>
-  <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">Permite revisar informes sobre el detalle de disponibilidad</block>
-  <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">Una vez finalizada la profundización de preparación, es posible que desee revisar y guardar un informe en la profundización.</block>
-  <block id="50ca22b8d354f001a742f726d3cf2be9" category="inline-image-macro">Página Informes en la que se muestra el informe de detalles de preparación</block>
-  <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">Seleccione *Taladros de preparación* y *Descargar* para descargar el informe de ejercicios de preparación.</block>
   <block id="7491606097f73ec9ee4cd8649e24e37b" category="list-text">Cuando el cifrado es alto, sin cambios de extensión de archivo</block>
   <block id="0152e4b08d769def55f114d835660cb2" category="list-text">Desencadenado por la seguridad de las cargas de trabajo de Data Infrastructure Insights. Esto requiere una licencia para la seguridad de cargas de trabajo de información de la infraestructura de datos y que la habilites en la protección frente al ransomware de BlueXP . Esta función detecta un comportamiento anómalo de los usuarios en tus cargas de trabajo de almacenamiento y te permite bloquear a ese usuario para que no permita continuar accediendo.</block>
   <block id="900224a7eb4d4424692600ce3e4b5262" category="paragraph">Para habilitar la seguridad de la carga de trabajo en la protección contra ransomware de BlueXP , vaya a la página *Configuración* y seleccione la opción *Conexión de seguridad de carga de trabajo*.</block>
@@ -1739,4 +1733,5 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="8094150588327954ce01d91cf529ccfc" category="list-text">Seleccione un incidente de alerta.</block>
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
   <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Seleccione la carga de trabajo de prueba marcada con el detalle de preparación que desea restaurar.</block>
+  <block id="241197791593ba6fe12006bc7c44e045" category="admonition">Una vez iniciado el cambio de nivel, no puede editar la configuración de cambio de nivel de disponibilidad. Puede restablecerla para que comience de nuevo.</block>
 </blocks>
