@@ -25,7 +25,6 @@ Puede hacer lo siguiente:
 
 * Dentro de cada conector, seleccione los entornos de trabajo donde desea detectar las cargas de trabajo. Esta función puede beneficiarse si desea proteger cargas de trabajo específicas en su entorno y no para otras.
 * Detectar las cargas de trabajo recién creadas para los entornos de trabajo seleccionados anteriormente.
-* Seleccione _new_ entornos de trabajo. Esta función le ayuda a proteger las nuevas cargas de trabajo añadidas a su entorno.
 
 
 
@@ -99,12 +98,16 @@ Si ya ha seleccionado entornos de trabajo para la detección, puede detectar las
 
 
 
-== Descubra los entornos de trabajo recién creados
+== Descubre nuevos entornos de trabajo
 
-Si ya ha detectado entornos de trabajo, puede detectar cualquier entorno de trabajo recién creado desde el panel de control.
+Si ya ha detectado entornos de trabajo, puede detectar entornos de trabajo o entornos de trabajo recién creados que no haya seleccionado anteriormente durante procesos de detección anteriores.
 
 .Pasos
 . En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
 . En el menú de la protección contra ransomware de BlueXP , seleccione image:button-actions-vertical.png["Acciones verticales"]la opción vertical... en la parte superior derecha. En el menú desplegable, selecciona *Ajustes*.
 . En la tarjeta de detección de carga de trabajo, seleccione *Descubrir cargas de trabajo*.
++
+
+TIP: Este proceso puede tardar unos minutos, como indica un icono de carga en proceso.
+
 

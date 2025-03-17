@@ -37,9 +37,6 @@ image:screen-settings-alert-drill-configure.png["Configurar página de detalle d
 . Seleccione un entorno de trabajo de prueba.
 . Introduzca el nombre de una nueva carga de trabajo de prueba que se creará.
 . Seleccione *Guardar*.
-+
-Aparece un mensaje que indica que el entorno de detalle de preparación está configurado. En ese mensaje, seleccione *Iniciar ejercicio de preparación* para iniciar el ejercicio.
-
 
 
 
@@ -58,20 +55,7 @@ Después de configurar el cambio de nivel de disponibilidad, puede iniciar el ca
 ** O bien, en la página Configuración, en la tarjeta de perforación de preparación, seleccione *Inicio*.
 
 
-. Debe realizar una de las siguientes acciones:
-+
-** Si aún no ha configurado el cambio de nivel de disponibilidad, aparecerá un mensaje indicando que primero debe configurar el cambio de nivel de preparación.
-+
-image:screen-settings-alert-drill-needtoconfigure.png["Página de valores que muestra el mensaje de detalle de disponibilidad que necesita para configurar el cambio de nivel de disponibilidad"]
-
-+
-*** Seleccione *Configure ready drill test environment*.
-*** Continúe con las instrucciones de la sección anterior para configurar el entorno de prueba de perforación en la opción Configuración.
-
-
-** Si ya ha configurado el taladro de preparación, después de seleccionar *Start*, comienza el taladro de preparación.
-
-
+. Si ya ha configurado el taladro de preparación, después de seleccionar *Start*, comienza el taladro de preparación.
 
 
 
@@ -103,7 +87,6 @@ Aquí hay algunas cosas a buscar:
 +
 ** Mira el tipo de ataque potencial. Si el Tipo indica que se sospecha que un usuario tiene actividad maliciosa, revise el nombre de usuario.
 +
-*** Es posible que desee bloquear al usuario seleccionando *Bloquear usuario*.
 *** También es posible que desee investigar más al usuario en Data Infrastructure Insights Workload Security seleccionando *Investigar en Workload Security*.
 
 

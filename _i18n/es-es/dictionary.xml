@@ -1615,7 +1615,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="cell">Administrador de la organización</block>
   <block id="fb15c53f22336982a182b84aeb2f42eb" category="cell">Visionador</block>
   <block id="06135c09643e0b875311a4989ef81443" category="paragraph">El servicio evalúa el nivel de protección existente, incluida la protección actual de backup, las copias Snapshot y las opciones de protección autónoma frente a ransomware de NetApp. Según la evaluación, el servicio te recomienda cómo mejorar tu protección frente al ransomware.</block>
-  <block id="bcd1f982603e49ee85ee4aa3816ec786" category="list-text">Seleccione _new_ entornos de trabajo. Esta función le ayuda a proteger las nuevas cargas de trabajo añadidas a su entorno.</block>
   <block id="ea84e987da35b78faef15d182ea98e25" category="paragraph">El servicio encuentra entornos de trabajo en los conectores BlueXP .</block>
   <block id="656ebea707f2c709a19d8f845b2477e7" category="list-text">Para descubrir cargas de trabajo para un conector específico, selecciona *Buscar nuevos entornos de trabajo* junto al conector donde quieres detectar cargas de trabajo.</block>
   <block id="4c21761c15d83552dd8cd3a0a8db257d" category="paragraph">Aparece una lista de entornos de trabajo.</block>
@@ -1623,8 +1622,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="683b598a3c2decc48c00425ef8b86635" category="paragraph"><block ref="683b598a3c2decc48c00425ef8b86635" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c02e66aaa8def7a1b94dfd795479c114" category="paragraph">Si ya ha seleccionado entornos de trabajo para la detección, puede detectar las cargas de trabajo recién creadas para esos entornos desde la consola.</block>
   <block id="70b4939004396411f22f03d5d20bd5e4" category="list-text">Para identificar la fecha del último descubrimiento, desde el Panel de Control, mire la marca de fecha y hora junto al icono *Actualizar* en la parte superior derecha.</block>
-  <block id="e8d91f884eae05c3d90259b4c84b75d2" category="section-title">Descubra los entornos de trabajo recién creados</block>
-  <block id="a1b34a4244cd73e84bed71e0bf383360" category="paragraph">Si ya ha detectado entornos de trabajo, puede detectar cualquier entorno de trabajo recién creado desde el panel de control.</block>
   <block id="0e6eeee847f00d7ef1cb454555892f49" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block>.</block>
   <block id="63de46c3feae8642d94945ea3e056fed" category="inline-link-macro">Opcionalmente, realiza un simulacro de preparación para los ataques de ransomware</block>
   <block id="39bdb514f38135f0ca92651ade127954" category="list-text"><block ref="2280163364b5b58f435fe47eab713eb2" category="inline-link-macro-rx"></block>.</block>
@@ -1640,15 +1637,9 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="4733f8632e3639026823ab315aa1fde4" category="paragraph"><block ref="4733f8632e3639026823ab315aa1fde4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8d3b4eb775e09a46424412f734068b0" category="list-text">Seleccione el conector BlueXP  que desea utilizar para el detalle de preparación.</block>
   <block id="03e372e5a12da124a082cb418529a0c7" category="list-text">Seleccione un entorno de trabajo de prueba.</block>
-  <block id="000346285fa0b7654e9ce18381bba66f" category="paragraph">Aparece un mensaje que indica que el entorno de detalle de preparación está configurado. En ese mensaje, seleccione *Iniciar ejercicio de preparación* para iniciar el ejercicio.</block>
   <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">Puede editar la configuración de cambio de nivel de preparación más tarde mediante la página Configuración.</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">Iniciar un ejercicio de preparación</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">Después de configurar el cambio de nivel de disponibilidad, puede iniciar el cambio de nivel.</block>
-  <block id="48c1e999e8171604f472f6a173e90a06" category="list-text">Si aún no ha configurado el cambio de nivel de disponibilidad, aparecerá un mensaje indicando que primero debe configurar el cambio de nivel de preparación.</block>
-  <block id="2bad3a1005ba6708ddbc592b74412409" category="inline-image-macro">Página de valores que muestra el mensaje de detalle de disponibilidad que necesita para configurar el cambio de nivel de disponibilidad</block>
-  <block id="fbb94dad4d4b0b642b9e4bcfccb31a40" category="paragraph"><block ref="fbb94dad4d4b0b642b9e4bcfccb31a40" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="648815687f26cfff9af80401c05502e1" category="list-text">Seleccione *Configure ready drill test environment*.</block>
-  <block id="2e80fabefee51d121eee410fb4a3be19" category="list-text">Continúe con las instrucciones de la sección anterior para configurar el entorno de prueba de perforación en la opción Configuración.</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Responder a una alerta de detalle de disponibilidad</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Pruebe su preparación respondiendo a una alerta de disponibilidad detallada.</block>
   <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">Página Alertas que muestra la alerta de detalle de disponibilidad</block>
@@ -1656,7 +1647,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="bf6725ca3f9665491e02c1818a34d256" category="inline-image-macro">Página Incidente en la que se muestra la alerta de detalle de disponibilidad</block>
   <block id="dba36383db70a071d84d9ad78273ce43" category="paragraph">Aquí hay algunas cosas a buscar:</block>
   <block id="b780e790d05aeda37075d8fd4a6d9b89" category="list-text">Mira el tipo de ataque potencial. Si el Tipo indica que se sospecha que un usuario tiene actividad maliciosa, revise el nombre de usuario.</block>
-  <block id="8b558629c5c33cde93683d61a4115e2d" category="list-text">Es posible que desee bloquear al usuario seleccionando *Bloquear usuario*.</block>
   <block id="989cf4fcfe1664c1f40afc7abd89c986" category="list-text">También es posible que desee investigar más al usuario en Data Infrastructure Insights Workload Security seleccionando *Investigar en Workload Security*.</block>
   <block id="c7243cc109c65ad504b84c3e805c784c" category="list-text">Observe la actividad de los archivos y los posibles procesos:</block>
   <block id="fdb29353d86a86580fc253dc319e3e0b" category="list-text">Observe los datos entrantes detectados en comparación con los datos esperados.</block>
@@ -1734,4 +1724,7 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
   <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Seleccione la carga de trabajo de prueba marcada con el detalle de preparación que desea restaurar.</block>
   <block id="241197791593ba6fe12006bc7c44e045" category="admonition">Una vez iniciado el cambio de nivel, no puede editar la configuración de cambio de nivel de disponibilidad. Puede restablecerla para que comience de nuevo.</block>
+  <block id="65314129adf0c0a55f929809a17904c9" category="section-title">Descubre nuevos entornos de trabajo</block>
+  <block id="2826595d22ba9331559905631772b32d" category="paragraph">Si ya ha detectado entornos de trabajo, puede detectar entornos de trabajo o entornos de trabajo recién creados que no haya seleccionado anteriormente durante procesos de detección anteriores.</block>
+  <block id="5f214ff0fb35d9a440af52567382d505" category="admonition">Este proceso puede tardar unos minutos, como indica un icono de carga en proceso.</block>
 </blocks>
