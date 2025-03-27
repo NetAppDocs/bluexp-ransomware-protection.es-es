@@ -1646,8 +1646,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="fd9f53769c15c2cf878c35f4cbc5a081" category="paragraph"><block ref="fd9f53769c15c2cf878c35f4cbc5a081" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf6725ca3f9665491e02c1818a34d256" category="inline-image-macro">Página Incidente en la que se muestra la alerta de detalle de disponibilidad</block>
   <block id="dba36383db70a071d84d9ad78273ce43" category="paragraph">Aquí hay algunas cosas a buscar:</block>
-  <block id="b780e790d05aeda37075d8fd4a6d9b89" category="list-text">Mira el tipo de ataque potencial. Si el Tipo indica que se sospecha que un usuario tiene actividad maliciosa, revise el nombre de usuario.</block>
-  <block id="989cf4fcfe1664c1f40afc7abd89c986" category="list-text">También es posible que desee investigar más al usuario en Data Infrastructure Insights Workload Security seleccionando *Investigar en Workload Security*.</block>
   <block id="c7243cc109c65ad504b84c3e805c784c" category="list-text">Observe la actividad de los archivos y los posibles procesos:</block>
   <block id="fdb29353d86a86580fc253dc319e3e0b" category="list-text">Observe los datos entrantes detectados en comparación con los datos esperados.</block>
   <block id="929c013ec98095ed1024dac131501e30" category="list-text">Observe la tasa de creación de los archivos que se detectan en comparación con la tasa esperada.</block>
@@ -1672,7 +1670,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="37eb9cec5c575b48f279378f147d9523" category="section-title">Cambie el estado de las alertas después del cambio de nivel de disponibilidad</block>
   <block id="c5e154a9c9a68a0fdd2cda956aafb0e1" category="paragraph">Después de revisar la alerta de detalle de disponibilidad y restaurar la carga de trabajo, es posible que desee cambiar el estado de la alerta.</block>
   <block id="b707d985234424bd425b96580911950e" category="list-text">Seleccione de nuevo la alerta.</block>
-  <block id="162c9c11fab2a0b1844f31cfa4184c72" category="list-text">Indique el estado seleccionando *Editar* y cambie el estado a uno de los siguientes:</block>
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Descartado: Si sospecha que la actividad no es un ataque de ransomware, cambie el estado a Descartado.</block>
   <block id="ff8d215b189dca41bf900d6545392594" category="admonition">Después de que descartes un ataque, no puedes cambiarlo de nuevo. Si descarta una carga de trabajo, todas las copias de snapshots realizadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente. Si descarta la alerta, se considera finalizado el detalle de disponibilidad.</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Resuelto: El incidente ha sido mitigado.</block>
@@ -1718,7 +1715,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="8d2bd4422410271303c0633a19aefea9" category="list-text">O bien, en la página Configuración, en la tarjeta de perforación de preparación, seleccione *Inicio*.</block>
   <block id="f54a2552361ef76d1d69e95fc2f63e90" category="list-text">Si ya ha configurado el taladro de preparación, después de seleccionar *Start*, comienza el taladro de preparación.</block>
   <block id="3764eabaa6dd82955df6528cd4a5a9b7" category="paragraph">Aparece la página Alertas. En la columna ID de alerta, aparece el indicador de disponibilidad junto al ID.</block>
-  <block id="a699ac7dcfe917f4ef6bfe5b42313497" category="list-text">Seleccione la alerta con la indicación de detalle de preparación. Aparece una lista de alertas de incidentes.</block>
   <block id="c7173a995c95a8992913692d7f8b29a3" category="list-text">Revise los incidentes de alerta.</block>
   <block id="8094150588327954ce01d91cf529ccfc" category="list-text">Seleccione un incidente de alerta.</block>
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
@@ -1727,4 +1723,21 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="65314129adf0c0a55f929809a17904c9" category="section-title">Descubre nuevos entornos de trabajo</block>
   <block id="2826595d22ba9331559905631772b32d" category="paragraph">Si ya ha detectado entornos de trabajo, puede detectar entornos de trabajo o entornos de trabajo recién creados que no haya seleccionado anteriormente durante procesos de detección anteriores.</block>
   <block id="5f214ff0fb35d9a440af52567382d505" category="admonition">Este proceso puede tardar unos minutos, como indica un icono de carga en proceso.</block>
+  <block id="e5c9ae1c3da88c26e9ef5e7a52710eef" category="doc">Limitaciones conocidas de la protección frente al ransomware de BlueXP </block>
+  <block id="1eba71d64e6c5e410e558530711e835b" category="paragraph">Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o cuya interoperabilidad con esta no es óptima. Revise estas limitaciones detenidamente.</block>
+  <block id="e742b92803487dd57d41c5028236224e" category="section-title">Problema de opción de restablecimiento de detalle de preparación</block>
+  <block id="ac36698324cb58e80610e027dc77d907" category="paragraph">Si seleccionas un volumen de ONTAP de 9.11.1 TB para el ejercicio de preparación contra el ataque de ransomware, la protección contra ransomware de BlueXP  te notifica mediante una alerta. Si recupera los datos con la opción «clone-to-volume» y restablece el simulacro, la operación de restablecimiento fallará.</block>
+  <block id="c97840e501e12a9e468c80b3e3aaf1e4" category="list-text">En el menú desplegable, selecciona *Perforación de preparación* o *Configuración*.</block>
+  <block id="0b51810a1136dc1d22b2a572727e3531" category="paragraph">Cuando inicias el simulacro de preparación, la protección contra ransomware de BlueXP  omite el modo de aprendizaje y inicia la simulacro en el modo activo. El estado de detección de la carga de trabajo es Activo.</block>
+  <block id="4210647acc9b0dff8ae60481f5dbae02" category="admonition">Una carga de trabajo puede tener un estado *Modo de aprendizaje* de detección de ransomware que indica que se ha asignado recientemente una política de detección de ransomware a la carga de trabajo y que el servicio está analizando cargas de trabajo. Un estado de detección de *Activo* indica que se ha asignado una política de protección de detección de ransomware.</block>
+  <block id="918afe8d47cac8e65affe228df4d1798" category="list-text">Seleccione la alerta con la indicación de detalle de preparación. Aparece una lista de alertas de incidentes en la página de detalles Alertas.</block>
+  <block id="81ec450a746d2846c599b97e0284672a" category="inline-image-macro">Página de detalles de alertas que muestra la alerta de detalle de disponibilidad</block>
+  <block id="2869923d8a7e4947ee11eff41f3267f2" category="paragraph"><block ref="2869923d8a7e4947ee11eff41f3267f2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7a01e31bb54fb84b5dbc9ee51947a45b" category="list-text">Mira el tipo de ataque potencial.</block>
+  <block id="7d8343c0bc6249f96b5c9e2c1d4f8d8f" category="paragraph">Si el Tipo indica que se sospecha que un usuario tiene actividad maliciosa, revise el nombre de usuario. Es posible que desee investigar más al usuario en Data Infrastructure Insights Workload Security seleccionando *Investigar en Workload Security*.</block>
+  <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">Indique el estado seleccionando *Editar estado* y cambie el estado a uno de los siguientes:</block>
+  <block id="3ce945a70891d1550d3b785a4c8624ed" category="section-title">Descargue el informe de detalles de preparación</block>
+  <block id="153e13288e2e43aabfecd526b2fef2b5" category="paragraph">Una vez finalizada la profundización de preparación, es posible que desee revisar y guardar un informe CSV en la profundización.</block>
+  <block id="bd048471c80988072b8f583ab0ca3a12" category="list-text">Seleccione la alerta y seleccione la flecha *Descargar* para descargar un archivo CSV.</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="sidebar">Limitaciones conocidas</block>
 </blocks>

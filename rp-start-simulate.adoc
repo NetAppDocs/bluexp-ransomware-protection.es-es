@@ -25,7 +25,7 @@ Antes de realizar una simulación, debe configurar un cambio de nivel mediante l
 
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical image:button-actions-vertical.png["Acciones verticales"]... opción en la parte superior derecha.
-. En el menú desplegable, selecciona *Ajustes*.
+. En el menú desplegable, selecciona *Perforación de preparación* o *Configuración*.
 . En la tarjeta de perforación de preparación de la página Configuración, seleccione *Configurar*.
 +
 Aparecerá la página Configurar detalle de preparación.
@@ -47,6 +47,11 @@ TIP: Puede editar la configuración de cambio de nivel de preparación más tard
 == Iniciar un ejercicio de preparación
 
 Después de configurar el cambio de nivel de disponibilidad, puede iniciar el cambio de nivel.
+
+Cuando inicias el simulacro de preparación, la protección contra ransomware de BlueXP  omite el modo de aprendizaje y inicia la simulacro en el modo activo. El estado de detección de la carga de trabajo es Activo.
+
+
+TIP: Una carga de trabajo puede tener un estado *Modo de aprendizaje* de detección de ransomware que indica que se ha asignado recientemente una política de detección de ransomware a la carga de trabajo y que el servicio está analizando cargas de trabajo. Un estado de detección de *Activo* indica que se ha asignado una política de protección de detección de ransomware.
 
 .Pasos
 . Debe realizar una de las siguientes acciones:
@@ -72,36 +77,38 @@ Pruebe su preparación respondiendo a una alerta de disponibilidad detallada.
 +
 Aparece la página Alertas. En la columna ID de alerta, aparece el indicador de disponibilidad junto al ID.
 
-. Seleccione la alerta con la indicación de detalle de preparación. Aparece una lista de alertas de incidentes.
 +
 image:screen-alerts-readiness.png["Página Alertas que muestra la alerta de detalle de disponibilidad"]
+
+. Seleccione la alerta con la indicación de detalle de preparación. Aparece una lista de alertas de incidentes en la página de detalles Alertas.
++
+image:screen-alerts-readiness-details.png["Página de detalles de alertas que muestra la alerta de detalle de disponibilidad"]
 
 . Revise los incidentes de alerta.
 . Seleccione un incidente de alerta.
 +
 image:screen-alerts-readiness-incidents2.png["Página Incidente en la que se muestra la alerta de detalle de disponibilidad"]
 
-+
+
+
 Aquí hay algunas cosas a buscar:
 
+* Mira el tipo de ataque potencial.
 +
-** Mira el tipo de ataque potencial. Si el Tipo indica que se sospecha que un usuario tiene actividad maliciosa, revise el nombre de usuario.
+Si el Tipo indica que se sospecha que un usuario tiene actividad maliciosa, revise el nombre de usuario. Es posible que desee investigar más al usuario en Data Infrastructure Insights Workload Security seleccionando *Investigar en Workload Security*.
+
+
+
+* Observe la actividad de los archivos y los posibles procesos:
 +
-*** También es posible que desee investigar más al usuario en Data Infrastructure Insights Workload Security seleccionando *Investigar en Workload Security*.
+** Observe los datos entrantes detectados en comparación con los datos esperados.
+** Observe la tasa de creación de los archivos que se detectan en comparación con la tasa esperada.
+** Observe la tasa de cambio de nombre de archivo que se detecta en comparación con la tasa esperada.
+** Observe la tasa de eliminación en comparación con la tasa esperada.
 
 
-** Observe la actividad de los archivos y los posibles procesos:
-+
-*** Observe los datos entrantes detectados en comparación con los datos esperados.
-*** Observe la tasa de creación de los archivos que se detectan en comparación con la tasa esperada.
-*** Observe la tasa de cambio de nombre de archivo que se detecta en comparación con la tasa esperada.
-*** Observe la tasa de eliminación en comparación con la tasa esperada.
-
-
-** Consulte la lista de archivos afectados. Mira las extensiones que podrían estar causando el ataque.
-** Determine el impacto y la amplitud del ataque revisando el número de archivos y directorios afectados.
-
-
+* Consulte la lista de archivos afectados. Mira las extensiones que podrían estar causando el ataque.
+* Determine el impacto y la amplitud del ataque revisando el número de archivos y directorios afectados.
 
 
 
@@ -149,15 +156,25 @@ Después de revisar la alerta de detalle de disponibilidad y restaurar la carga 
 .Pasos
 . Vuelva a la página Detalles de Alerta.
 . Seleccione de nuevo la alerta.
-. Indique el estado seleccionando *Editar* y cambie el estado a uno de los siguientes:
+. Indique el estado seleccionando *Editar estado* y cambie el estado a uno de los siguientes:
 +
 ** Descartado: Si sospecha que la actividad no es un ataque de ransomware, cambie el estado a Descartado.
 +
 
 IMPORTANT: Después de que descartes un ataque, no puedes cambiarlo de nuevo. Si descarta una carga de trabajo, todas las copias de snapshots realizadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente. Si descarta la alerta, se considera finalizado el detalle de disponibilidad.
 
-** En curso
 ** Resuelto: El incidente ha sido mitigado.
 
 
+
+
+
+
+== Descargue el informe de detalles de preparación
+
+Una vez finalizada la profundización de preparación, es posible que desee revisar y guardar un informe CSV en la profundización.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Alertas*.
+. Seleccione la alerta y seleccione la flecha *Descargar* para descargar un archivo CSV.
 
