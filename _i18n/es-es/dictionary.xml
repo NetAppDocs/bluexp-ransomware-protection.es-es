@@ -601,7 +601,6 @@ Te recomendamos que realices cambios de política en el servicio de protección 
   <block id="b77e52b2729a45733366be275a2b1834" category="list-text">En el menú de protección contra ransomware de BlueXP, selecciona *Informes*.</block>
   <block id="2bb8f47d5dd5e5e9025658aa3c0fc126" category="list-text">Si seleccionó la opción *Informes*, seleccione uno de los nombres de archivo CSV preconfigurados y seleccione *Descargar (CSV)* o *Descargar (JSON)*.</block>
   <block id="44f0d43cd92781ec793d9ba50c2d422e" category="inline-image-macro">Informes</block>
-  <block id="4aa52d006a13407e9446998cde5abf48" category="paragraph"><block ref="4aa52d006a13407e9446998cde5abf48" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fcb74668c58aed2ac30ddcdee292a0c5" category="inline-link-macro">Opcionalmente habilita la detección de amenazas</block>
   <block id="896465c47d1995c6e7b722de16fa80e5" category="list-text"><block ref="4e4968353ad45e1648e9b700ebce5a49" category="inline-link-macro-rx"></block>.</block>
   <block id="01d9db102d1bd61a6c3336ec537d1d6b" category="list-text">Asigna una estrategia de protección frente al ransomware a las cargas de trabajo.</block>
@@ -1601,8 +1600,6 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="cb3c0a83218c46d38ab0842ce49a7e6e" category="list-text">Con esta versión, puede detectar las cargas de trabajo recién creadas que se agregaron a los entornos de trabajo seleccionados anteriormente.</block>
   <block id="6a4c9cc76f7f432efa274c3ff0dae3dd" category="list-text">También puede seleccionar entornos de trabajo _NEW_ en esta versión. Esta función le ayuda a proteger las nuevas cargas de trabajo añadidas a su entorno.</block>
   <block id="28573ff4f820730a3eeae9cdd51b54d4" category="list-text">Es posible realizar estos procesos de detección durante el proceso de detección inicial o dentro de la opción Configuración.</block>
-  <block id="16e3b92f9b1f5d1c29b18c748e6a228e" category="inline-link">Configure los fetaures con la opción Configuración</block>
-  <block id="98e6e30b63e5242616c686684a17c03b" category="paragraph">Para obtener más información, consulte<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block> y.<block ref="026d9da5e400c1054ac1084b0f63056d" category="inline-link-rx"></block></block>
   <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">Se generan alertas cuando se detecta un cifrado alto</block>
   <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">Con esta versión, puede ver alertas cuando se detecta un alto cifrado en sus cargas de trabajo incluso sin cambios de extensiones de archivos grandes. Esta función, que utiliza la IA de protección autónoma frente a ransomware (ARP) de ONTAP, le ayuda a identificar cargas de trabajo que están en riesgo de ataques de ransomware. Utilice esta función y descargue la lista completa de archivos afectados con o sin cambios de extensión.</block>
   <block id="ab27c5853140d6fe360c8b6756a8c2c6" category="summary">La protección contra ransomware de BlueXP  usa el control de acceso basado en roles (RBAC) para gobernar el acceso que tiene cada usuario a funciones y acciones específicas. El servicio utiliza roles específicos de la protección contra ransomware de BlueXP  (RPS).</block>
@@ -1736,8 +1733,10 @@ Más información acerca de<block ref="f30128629f1afb4b75b9a7fc6de548bc" categor
   <block id="7a01e31bb54fb84b5dbc9ee51947a45b" category="list-text">Mira el tipo de ataque potencial.</block>
   <block id="7d8343c0bc6249f96b5c9e2c1d4f8d8f" category="paragraph">Si el Tipo indica que se sospecha que un usuario tiene actividad maliciosa, revise el nombre de usuario. Es posible que desee investigar más al usuario en Data Infrastructure Insights Workload Security seleccionando *Investigar en Workload Security*.</block>
   <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">Indique el estado seleccionando *Editar estado* y cambie el estado a uno de los siguientes:</block>
-  <block id="3ce945a70891d1550d3b785a4c8624ed" category="section-title">Descargue el informe de detalles de preparación</block>
-  <block id="153e13288e2e43aabfecd526b2fef2b5" category="paragraph">Una vez finalizada la profundización de preparación, es posible que desee revisar y guardar un informe CSV en la profundización.</block>
-  <block id="bd048471c80988072b8f583ab0ca3a12" category="list-text">Seleccione la alerta y seleccione la flecha *Descargar* para descargar un archivo CSV.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">Limitaciones conocidas</block>
+  <block id="210e4b14373af6b033275b95f93f9177" category="inline-link">Configure las funciones con la opción Configuración</block>
+  <block id="b094aa2183c533f36783add64e674cad" category="paragraph">Para obtener más información, consulte<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block> y.<block ref="852406c43f066a159f215dbd2c4abfc1" category="inline-link-rx"></block></block>
+  <block id="7992a2f93dea39d7df576f4591a08a35" category="paragraph"><block ref="7992a2f93dea39d7df576f4591a08a35" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe4a10adefd95198c71721789b65ec39" category="paragraph"><block ref="fe4a10adefd95198c71721789b65ec39" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fc75a3cf3d58a1a3fcbe221a5a34b910" category="paragraph"><block ref="fc75a3cf3d58a1a3fcbe221a5a34b910" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

@@ -26,7 +26,7 @@ También se puede usar la consola para revisar y actuar sobre recomendaciones de
 Después de la detección, la consola muestra el estado de la protección de datos de las cargas de trabajo.
 
 +
-image:screen-dashboard.png["Consola"]
+image:screen-dashboard2.png["Consola"]
 
 . En Dashboard, puede realizar las siguientes acciones en cada uno de los paneles:
 +
@@ -164,7 +164,7 @@ Los archivos CSV incluyen datos para todas las cargas de trabajo en todos los en
 .Pasos
 . En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
 +
-image:screen-dashboard.png["Consola"]
+image:screen-dashboard2.png["Consola"]
 
 . En la página, selecciona la opción *Refrescar* image:button-refresh.png["Opción Refrescar"] en la parte superior derecha para actualizar los datos que aparecerán en los archivos.
 . Debe realizar una de las siguientes acciones:

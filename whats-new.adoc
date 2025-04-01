@@ -39,7 +39,7 @@ Esta versión incluye mejoras en los procesos selectivos de detección y redetec
 * Es posible realizar estos procesos de detección durante el proceso de detección inicial o dentro de la opción Configuración.
 
 
-Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Detectar las cargas de trabajo recién creadas para los entornos de trabajo seleccionados anteriormente"] y. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configure los fetaures con la opción Configuración"]
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Detectar las cargas de trabajo recién creadas para los entornos de trabajo seleccionados anteriormente"] y. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configure las funciones con la opción Configuración"]
 
 
 

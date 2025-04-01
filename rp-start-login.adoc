@@ -35,7 +35,7 @@ image:screen-landing.png["Captura de pantalla de la página de destino para la p
 De lo contrario, se mostrará la consola de protección contra ransomware de BlueXP.
 
 +
-image:screen-dashboard.png["Consola de protección contra ransomware de BlueXP"]
+image:screen-dashboard2.png["Consola de protección contra ransomware de BlueXP"]
 
 +
 

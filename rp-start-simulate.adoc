@@ -167,14 +167,3 @@ IMPORTANT: Después de que descartes un ataque, no puedes cambiarlo de nuevo. Si
 
 
 
-
-
-
-== Descargue el informe de detalles de preparación
-
-Una vez finalizada la profundización de preparación, es posible que desee revisar y guardar un informe CSV en la profundización.
-
-.Pasos
-. En el menú de protección contra ransomware de BlueXP, selecciona *Alertas*.
-. Seleccione la alerta y seleccione la flecha *Descargar* para descargar un archivo CSV.
-

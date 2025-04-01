@@ -42,6 +42,6 @@ image:screen-dashboard.png["Consola"]
 
 . Si seleccionó la opción *Informes*, seleccione uno de los nombres de archivo CSV preconfigurados y seleccione *Descargar (CSV)* o *Descargar (JSON)*.
 +
-image:screen-reports.png["Informes"]
+image:screen-reports0.png["Informes"]
 
 
