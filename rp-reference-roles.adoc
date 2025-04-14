@@ -14,218 +14,322 @@ summary: 'La protección contra ransomware de BlueXP  usa el control de acceso 
 [role="lead"]
 La protección frente al ransomware de BlueXP  emplea roles para gobernar el acceso que cada usuario tiene a funciones y acciones específicas.
 
-La protección frente a ransomware de BlueXP  usa los siguientes roles:
+El servicio utiliza los siguientes roles específicos de la protección contra ransomware de BlueXP .
 
-* Administrador de la organización
-* Visor (administrador no de organización)
+* *Ransomware protection admin*: Administrar acciones en las pestañas Proteger, Alertas, Recuperar, Configuración e Informes.
+* *Visor de protección contra ransomware*: Ver datos de carga de trabajo, ver datos de alerta, descargar datos de recuperación e informes de descarga.
 
 
-La siguiente tabla indica que cada rol de protección contra ransomware de BlueXP  puede realizar acciones.
+La plataforma BlueXP  para todos los servicios BlueXP  utiliza los siguientes tipos de roles:
+
+* * Los roles de la plataforma * le permiten administrar usuarios, asignarlos a recursos y darles roles junto con otras acciones de toda la plataforma.
++
+
+TIP: Para el descubrimiento en la protección contra ransomware de BlueXP , debe tener el rol *Administrador de la organización* además del rol *Administrador de protección contra ransomware*.
+
+* *Los roles de servicios de datos* se limitan solo a un servicio de datos específico. Puede tener varios roles de servicios de datos en función del trabajo. La protección contra ransomware de BlueXP  es uno de los servicios de datos de BlueXP .
+
+
+Para obtener más información sobre los roles de plataforma, consulte https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["La documentación de configuración y administración de BlueXP "^].
+
+La siguiente tabla indica las acciones que puede realizar cada rol de protección contra ransomware de BlueXP .
 
 [cols="40,20a,20a"]
 |===
-| Característica y acción | Administrador de la organización | Visionador 
+| Característica y acción | Administrador de protección frente a ransomware | Visor de protección contra ransomware 
+
+
+| Ver panel y todas las pestañas  a| 
+Sí
+ a| 
+Sí
+
+
+
+| En el panel de control, actualice el estado de la recomendación  a| 
+Sí
+ a| 
+No
+
 
 
 | Inicie una prueba gratuita  a| 
-Y
+Sí
  a| 
-N
-
-
-
-| Consola de visualización  a| 
-Y
- a| 
-Y
-
-
-
-| Ver pestaña Protección  a| 
-Y
- a| 
-Y
-
-
-
-| Ver pestaña Alertas  a| 
-Y
- a| 
-Y
-
-
-
-| Ver pestaña Recuperar  a| 
-Y
- a| 
-Y
-
-
-
-| Ver ficha Informes  a| 
-Y
- a| 
-Y
-
-
-
-| Pestaña Ver configuración  a| 
-Y
- a| 
-Y
+No
 
 
 
 | Inicie la detección de las cargas de trabajo  a| 
-Y
+Sí
  a| 
-N
+No
 
 
 
-| Proteger: Modifique o elimine políticas  a| 
-Y
+| Inicie la nueva detección de cargas de trabajo  a| 
+Sí
  a| 
-N
+No
 
 
 
-| Proteger: Añada políticas  a| 
-Y
+3+| *En la pestaña Proteger*: 
+
+
+| Agregar, modificar o eliminar planes de protección  a| 
+Sí
  a| 
-N
+No
 
 
 
-| Proteger: Proteja las cargas de trabajo  a| 
-Y
+| Proteja las cargas de trabajo  a| 
+Sí
  a| 
-N
+No
 
 
 
-| Proteger: Identifique los datos confidenciales  a| 
-Y
+| Identificar la exposición a datos confidenciales  a| 
+Sí
  a| 
-N
+No
 
 
 
-| Proteger: Edite la protección de la carga de trabajo  a| 
-Y
+| Lista de planes de protección y detalles  a| 
+Sí
  a| 
-N
+Sí
 
 
 
-| Proteger: Ver los detalles de la carga de trabajo  a| 
-Y
+| Enumerar los grupos de protección  a| 
+Sí
  a| 
-Y
+Sí
 
 
 
-| Proteger: Descargue los datos  a| 
-Y
+| Ver los detalles del grupo de protección  a| 
+Sí
  a| 
-Y
+Sí
 
 
 
-| Alertas: Ver detalles de alerta  a| 
-Y
+| Cree, edite o elimine el grupo de protección  a| 
+Sí
  a| 
-Y
+No
 
 
 
-| Alertas: Edite el estado del incidente  a| 
-Y
+| Descargar datos  a| 
+Sí
  a| 
-N
+Sí
 
 
 
-| Alertas: Permite ver los detalles de los incidentes  a| 
-Y
+3+| *En la pestaña Alertas*: 
+
+
+| Ver alertas y detalles de alertas  a| 
+Sí
  a| 
-Y
+Sí
 
 
 
-| Alertas: Obtenga una lista completa de los archivos afectados  a| 
-Y
+| Editar el estado del incidente  a| 
+Sí
  a| 
-N
+No
 
 
 
-| Alertas: Descargar datos de alertas  a| 
-Y
+| Marcar alerta para recuperación  a| 
+Sí
  a| 
-Y
+No
 
 
 
-| Recuperar: Descargar archivos afectados  a| 
-Y
+| Ver detalles del incidente  a| 
+Sí
  a| 
-N
+Sí
 
 
 
-| Recuperar: Restaure la carga de trabajo  a| 
-Y
+| Descarte o resuelva los incisos  a| 
+Sí
  a| 
-N
+No
 
 
 
-| Recuperar: Descargar datos de recuperación  a| 
-Y
+| Usuario de bloque  a| 
+Sí
  a| 
-Y
+No
 
 
 
-| Recuperar: Descargue los informes  a| 
-Y
+| Obtener una lista completa de archivos afectados  a| 
+Sí
  a| 
-Y
+No
 
 
 
-| Configuración: Agregar o modificar destinos de copia de seguridad  a| 
-Y
+| Descargar datos de alertas  a| 
+Sí
  a| 
-N
+Sí
 
 
 
-| Configuración: Agregue o modifique destinos de SIEM  a| 
-Y
+3+| *En la pestaña Recuperar*: 
+
+
+| Descargar archivos afectados  a| 
+Sí
  a| 
-N
+No
 
 
 
-| Informes: Descargue los informes  a| 
-Y
+| Restaure la carga de trabajo  a| 
+Sí
  a| 
-Y
+No
 
 
 
-| Documentación: Vea la documentación sobre el producto  a| 
-Y
+| Descargar datos de recuperación  a| 
+Sí
  a| 
-Y
+Sí
 
 
 
-| Documentación: Vea la documentación sobre las novedades del producto  a| 
-Y
+| Descargar informes  a| 
+Sí
  a| 
-Y
+Sí
+
+
+
+3+| *En la pestaña Configuración*: 
+
+
+| Agregar o modificar destinos de copia de seguridad  a| 
+Sí
+ a| 
+No
+
+
+
+| Mostrar destinos de backup  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Ver destinos de SIEM conectados  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Agregue o modifique destinos de SIEM  a| 
+Sí
+ a| 
+No
+
+
+
+| Conectar destinos de seguridad de carga de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+| Ver el estado de conexión de seguridad de la carga de trabajo  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Desconecte los destinos de seguridad de carga de trabajo  a| 
+Sí
+ a| 
+No
+
+
+
+| Configurar detalle de preparación  a| 
+Sí
+ a| 
+No
+
+
+
+| Inicie el ejercicio de preparación  a| 
+Sí
+ a| 
+No
+
+
+
+| Restablezca el detalle de preparación  a| 
+Sí
+ a| 
+No
+
+
+
+| Editar detalle de preparación  a| 
+Sí
+ a| 
+No
+
+
+
+| Revisión del estado de detalle de preparación  a| 
+Sí
+ a| 
+Sí
+
+
+
+| Actualice la configuración de detección  a| 
+Sí
+ a| 
+No
+
+
+
+| Ver la configuración de detección  a| 
+Sí
+ a| 
+Sí
+
+
+
+3+| *En la pestaña Informes*: 
+
+
+| Descargar informes  a| 
+Sí
+ a| 
+Sí
 
 |===

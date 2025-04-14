@@ -18,6 +18,38 @@ Descubre las novedades de la protección frente al ransomware de BlueXP.
 
 
 
+== 14 de abril de 2025
+
+
+
+=== Informes de detalle de preparación
+
+Con este lanzamiento, puede revisar los informes simulacros de preparación para los ataques de ransomware. Un ejercicio de preparación le permite simular un ataque de ransomware en una carga de trabajo de muestra recién creada. A continuación, investigue el ataque simulado y recupere la carga de trabajo de muestra. Esta función te ayuda a saber que estás preparado en caso de un ataque real de ransomware mediante la prueba de los procesos de notificación de alertas, respuesta y recuperación.
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Haz un simulacro de preparación para los ataques de ransomware"] .
+
+
+
+=== Nuevos roles y permisos de control de acceso basado en roles
+
+Antes, podrías asignar roles y permisos a los usuarios en función de sus responsabilidades, lo que te ayudaba a gestionar el acceso de los usuarios a la protección frente al ransomware de BlueXP . Con esta versión, hay dos roles nuevos específicos de la protección contra ransomware de BlueXP  con permisos actualizados. Los nuevos roles son los siguientes:
+
+* Administrador de protección frente a ransomware
+* Visor de protección contra ransomware
+
+
+Para obtener más información sobre los permisos, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Acceso a funciones basado en roles de protección frente al ransomware de BlueXP "] .
+
+
+
+=== Mejoras de pago
+
+Esta versión incluye varias mejoras en el proceso de pago.
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Configurar opciones de licencia y pago"] .
+
+
+
 == 10 de marzo de 2025
 
 

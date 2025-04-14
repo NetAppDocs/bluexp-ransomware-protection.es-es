@@ -26,12 +26,12 @@ Cada alerta podría tener varios incidentes en volúmenes diferentes con estados
 El servicio proporciona información llamada _Evidence_ sobre qué causó que se emitiera la alerta, como la siguiente:
 
 * Las extensiones de archivo se han creado o cambiado
-* Se ha producido la creación del archivo y se ha aumentado en un porcentaje mostrado
-* Se ha suprimido el archivo y se ha aumentado en un porcentaje mostrado
+* Creación de archivos con una comparación de las tasas detectadas frente a las previstas
+* Eliminación de archivos con una comparación de las tasas detectadas frente a las esperadas
 * Cuando el cifrado es alto, sin cambios de extensión de archivo
 
 
-Una alerta se basa en los siguientes tipos de comportamiento:
+Una alerta se clasifica como una de las siguientes:
 
 * *Ataque potencial*: Una alerta se produce cuando Autonomous Ransomware Protection detecta una nueva extensión y la ocurrencia se repite más de 20 veces en las últimas 24 horas (comportamiento predeterminado).
 * *Advertencia*: Se produce una advertencia basada en los siguientes comportamientos:
