@@ -153,7 +153,7 @@ Es posible exportar datos y descargar archivos CSV que muestren detalles de prot
 Puede descargar archivos CSV desde cualquiera de las opciones del menú principal:
 
 * *Protección*: Contiene el estado y los detalles de todas las cargas de trabajo, incluido el número total protegido y en riesgo.
-* *Alertas*: Incluye el estado y los detalles de todas las alertas, incluyendo el número total de alertas y Snapshots automatizados.
+* *Alertas*: Incluye el estado y los detalles de todas las alertas, incluyendo el número total de alertas y instantáneas automáticas.
 * *Recuperación*: Incluye el estado y los detalles de todas las cargas de trabajo que necesitan ser restauradas, incluyendo el número total de cargas de trabajo marcadas como “Restauración necesaria”, “En curso”, “Restauración fallida” y “Restaurada exitosamente”.
 
 

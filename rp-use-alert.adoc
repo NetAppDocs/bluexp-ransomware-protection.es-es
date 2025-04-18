@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: Si la protección frente a ransomware de BlueXP  detecta un posible ataque, aparece una alerta en la consola de protección frente a ransomware de BlueXP  que indica un ataque potencial. El servicio también inicia inmediatamente la creación de una copia snapshot. En este punto, deberías conocer el riesgo potencial en la pestaña Alertas de protección contra ransomware de BlueXP. 
+summary: Si la protección frente a ransomware de BlueXP  detecta un posible ataque, aparece una alerta en la consola de protección frente a ransomware de BlueXP  que indica un ataque potencial. El servicio también inicia inmediatamente la realización de una copia snapshot. En este punto, deberías conocer el riesgo potencial en la pestaña Alertas de protección contra ransomware de BlueXP. 
 ---
 = Responder a una alerta de ransomware detectada
 :hardbreaks:
@@ -57,10 +57,11 @@ Un incidente de alerta se clasifica en uno de los siguientes estados:
 * *Descartado*: Si sospechas que la actividad no es un ataque de ransomware, puedes cambiar el estado a “Descartado”.
 +
 
-CAUTION: Después de que descartes un ataque, no puedes cambiarlo de nuevo. Si descarta una carga de trabajo, todas las copias de SnapVault que se hagan automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.
+CAUTION: Después de que descartes un ataque, no puedes cambiarlo de nuevo. Si descarta una carga de trabajo, todas las copias de snapshots realizadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.
 
 * *Descartar*: El incidente está en proceso de ser despedido.
 * *Resuelto*: El incidente ha sido mitigado.
+* *Auto Resuelto*: Para alertas de baja prioridad, el incidente se resuelve automáticamente si no se ha tomado ninguna acción en el plazo de 5 días.
 
 
 
@@ -206,7 +207,7 @@ Después de revisar los incidentes, debe determinar si los incidentes son posibl
 
 Puede descartar falsos positivos o decidir recuperar sus datos de inmediato. Si decide ignorar la alerta, el servicio aprenderá este comportamiento y lo asociará con las operaciones normales y no iniciará una alerta sobre dicho comportamiento de nuevo.
 
-Si descarta una carga de trabajo, todas las copias de SnapVault que se hagan automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.
+Si descarta una carga de trabajo, todas las copias de snapshots realizadas automáticamente en respuesta al posible ataque de ransomware se eliminarán de forma permanente.
 
 
 CAUTION: Si descarta una alerta, no puede volver a cambiar ese estado a otro estado y no puede deshacer este cambio.
@@ -232,7 +233,7 @@ image:screen-alerts-status-edit.png["Editar Estado de Alerta"]
 
 . En el cuadro Editar estado, seleccione el estado *“Despedido”*.
 +
-Se muestra información adicional sobre la carga de trabajo y qué copias Snapshot se eliminarán.
+Se muestra información adicional sobre la carga de trabajo y las copias Snapshot que se eliminarán.
 
 . Seleccione *Guardar*.
 +

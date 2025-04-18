@@ -19,7 +19,7 @@ Antes de descargar los archivos, debe actualizar los datos, que también refresc
 Puede descargar archivos desde cualquiera de las opciones del menú principal:
 
 * *Protección*: Contiene el estado y los detalles de todas las cargas de trabajo, incluido el número total protegido y en riesgo.
-* *Alertas*: Incluye el estado y los detalles de todas las alertas, incluyendo el número total de alertas y Snapshots automatizados.
+* *Alertas*: Incluye el estado y los detalles de todas las alertas, incluyendo el número total de alertas y instantáneas automáticas.
 * *Recuperación*: Incluye el estado y los detalles de todas las cargas de trabajo que necesitan ser restauradas, incluyendo el número total de cargas de trabajo marcadas como “Restauración necesaria”, “En curso”, “Restauración fallida” y “Restaurada exitosamente”.
 * *Informes*: Puedes exportar datos desde cualquiera de las páginas y descargar los archivos.
 +

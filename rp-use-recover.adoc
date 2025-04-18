@@ -233,7 +233,7 @@ image:screen-alerts-incidents-impacted-files.png["lista de archivos afectados pa
 . *Punto de restauración*: Selecciona la flecha hacia abajo junto a *Punto de restauración* para ver los detalles. Seleccione el punto de restauración que desea utilizar para restaurar los datos.
 +
 
-NOTE: La columna Razón del panel Puntos de restauración muestra el motivo por el que la copia Snapshot o la copia de seguridad son «programadas» o «respuesta automatizada al incidente de ransomware».
+NOTE: La columna Razón del panel Puntos de restauración muestra el motivo de la instantánea o la copia de seguridad como «Programada» o «Respuesta automatizada al incidente de ransomware».
 
 . *Archivos*:
 +
