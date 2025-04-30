@@ -57,7 +57,7 @@ image:screen-discover-workloads1.png["Captura de pantalla para detectar cargas d
 Aparece una lista de entornos de trabajo.
 
 +
-image:screen-discover-workloads-select-no-autodiscovery.png["Captura de pantalla para detectar cargas de trabajo"]
+image:screen-discover-workloads-select.png["Captura de pantalla para detectar cargas de trabajo"]
 
 . Seleccione los entornos de trabajo en los que desea detectar cargas de trabajo o seleccione el cuadro de la parte superior de la tabla para detectar cargas de trabajo en todos los entornos de carga de trabajo detectados.
 . Seleccione *Discover*.

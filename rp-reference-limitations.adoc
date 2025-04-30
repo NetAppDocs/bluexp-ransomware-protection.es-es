@@ -19,3 +19,13 @@ Las limitaciones conocidas identifican plataformas, dispositivos o funciones que
 == Problema de opción de restablecimiento de detalle de preparación
 
 Si seleccionas un volumen de ONTAP de 9.11.1 TB para el ejercicio de preparación contra el ataque de ransomware, la protección contra ransomware de BlueXP  te notifica mediante una alerta. Si recupera los datos con la opción «clone-to-volume» y restablece el simulacro, la operación de restablecimiento fallará.
+
+
+
+== Limitaciones de Amazon FSx para NetApp ONTAP
+
+El entorno de trabajo de Amazon FSx para NetApp ONTAP es compatible con la protección frente al ransomware de BlueXP . Las siguientes limitaciones se aplican a este entorno de trabajo:
+
+* Las políticas de backup no son compatibles con FSx para ONTAP. En este entorno, debe realizar operaciones de copia de seguridad con el servicio de copia de seguridad de Amazon FS para ONTAP. Puede restaurar estas cargas de trabajo mediante snapshots de protección frente al ransomware de BlueXP .
+* Las operaciones de restauración se realizan únicamente desde Snapshot.
+

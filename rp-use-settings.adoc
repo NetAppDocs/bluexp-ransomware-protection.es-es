@@ -105,6 +105,9 @@ Para proteger esas cargas de trabajo, debe añadir un destino de backup. Es posi
 * Microsoft Azure
 
 
+
+NOTE: Los destinos de los backups no están disponibles para cargas de trabajo en Amazon FSx para NetApp ONTAP. Realizar operaciones de backup mediante el servicio de backup de FSx para ONTAP.
+
 Puede agregar un destino de copia de seguridad basado en una acción recomendada en la consola o desde el acceso a la opción Configuración en el menú.
 
 

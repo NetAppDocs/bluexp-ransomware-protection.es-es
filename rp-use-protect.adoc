@@ -4,7 +4,7 @@ permalink: rp-use-protect.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, protect, malware, attack 
 summary: Puedes proteger las cargas de trabajo contra ataques de ransomware mediante la asignación de políticas a una carga de trabajo en la protección contra ransomware de BlueXP. 
 ---
-= Proteger cargas de trabajo con estrategias de ransomware
+= Proteger cargas de trabajo con estrategias de protección frente al ransomware
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -42,10 +42,13 @@ Puede cambiar las políticas de protección en función de la protección de las
 * *Cargas de trabajo con protección existente de aplicaciones NetApp*: Estas cargas de trabajo tienen políticas de copias de seguridad o instantáneas administradas por SnapCenter, SnapCenter para VMware vSphere o copias de seguridad y recuperación de BlueXP .
 +
 ** Si SnapCenter, SnapCenter para VMware o el sistema de backup y recuperación de datos de BlueXP  gestionan las políticas de backup o Snapshot, seguirán siendo gestionadas por estas aplicaciones. Con la protección frente al ransomware de BlueXP , también puedes aplicar una política de detección de ransomware a esas cargas de trabajo.
-** Si la protección autónoma de ransomware (ARP) y FPolicy en ONTAP gestionan una política de detección de ransomware, esas cargas de trabajo estarán protegidas y seguirán gestionándolas por ARP y FPolicy.
+** Si se gestiona una política de detección de ransomware mediante protección autónoma frente a ransomware (ARP o ARP/AI, según la versión de ONTAP) y FPolicy en ONTAP, esas cargas de trabajo estarán protegidas y seguirán gestionándose mediante ARP y FPolicy.
 
 
 
+
+
+NOTE: Los destinos de los backups no están disponibles para cargas de trabajo en Amazon FSx para NetApp ONTAP. Realizar operaciones de backup mediante el servicio de backup de FSx para ONTAP. El usuario establece políticas de backup para cargas de trabajo en FSx para ONTAP en AWS, no en la protección contra ransomware de BlueXP . Las políticas de backup aparecen en la protección frente a ransomware de BlueXP  y permanecen sin cambios en AWS.
 
 *¿Qué políticas se requieren en una estrategia de protección contra ransomware? *
 
@@ -83,7 +86,7 @@ image:screen-protection.png["Protección"]
 
 
 
-NOTE: Para las cargas de trabajo que ya poseen una política de protección con un servicio de backup y recuperación de datos de SnapCenter o BlueXP, no se puede editar la protección. Para estas cargas de trabajo, el ransomware de BlueXP permite la protección autónoma frente a ransomware o la protección de FPolicy si ya están activados en otros servicios. Más información sobre https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protección autónoma de ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup y recuperación de BlueXP"^]y https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy de ONTAP"^].
+NOTE: Para las cargas de trabajo que ya poseen una política de protección con un servicio de backup y recuperación de datos de SnapCenter o BlueXP, no se puede editar la protección. Para estas cargas de trabajo, el ransomware de BlueXP  permite la protección autónoma frente a ransomware y la protección de FPolicy si ya están activados en otros servicios. Más información sobre https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protección autónoma de ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup y recuperación de BlueXP"^]y https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy de ONTAP"^].
 
 
 
@@ -93,7 +96,7 @@ En la página Protection, se muestra la siguiente información sobre la protecci
 
 *Estado de protección*: Una carga de trabajo puede mostrar uno de los siguientes estados de protección para indicar si se aplica o no una política:
 
-* *Protegido*: Se aplica una política. ARP está habilitado en todos los volúmenes relacionados con la carga de trabajo.
+* *Protegido*: Se aplica una política. ARP (o ARP/AI según la versión ONTAP) está habilitado en todos los volúmenes relacionados con la carga de trabajo.
 * *En riesgo*: No se aplica ninguna política. Si una carga de trabajo no tiene activada una política de detección primaria, está «en riesgo» aunque tenga activada una política de instantáneas y de backup.
 * *En progreso*: Se está aplicando una política pero aún no se ha completado.
 * *Fallo*: Se aplica una política pero no funciona.
