@@ -21,4 +21,4 @@ Puede ver los entornos de trabajo no compatibles durante la detección inicial y
 
 Puede descargar los resultados del proceso de detección después de la detección.
 
-Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discovery.html["Detecta cargas de trabajo en la protección frente al ransomware de BlueXP"] .
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Detecta cargas de trabajo en la protección frente al ransomware de BlueXP"] .
