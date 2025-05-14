@@ -33,9 +33,14 @@ Aparecerá la página Configurar detalle de preparación.
 +
 image:screen-settings-alert-drill-configure.png["Configurar página de detalle de preparación"]
 
-. Seleccione el conector BlueXP  que desea utilizar para el detalle de preparación.
-. Seleccione un entorno de trabajo de prueba.
-. Introduzca el nombre de una nueva carga de trabajo de prueba que se creará.
+. Haga lo siguiente:
++
+.. Seleccione el conector BlueXP  que desea utilizar para el detalle de preparación.
+.. Seleccione un entorno de trabajo de prueba.
+.. Seleccione una SVM de almacenamiento de prueba.
+.. Introduzca el nombre de una nueva carga de trabajo de prueba que se creará. No incluya guiones en el nombre.
+
+
 . Seleccione *Guardar*.
 
 
