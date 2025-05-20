@@ -20,7 +20,7 @@ link:rp-start-prerequisites.html["Asegúrese de que su entorno cumpla estos requ
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dos"] Configura el servicio de protección contra ransomware
 [role="quick-margin-list"]
-* link:rp-start-setup.html["Prepare NetApp StorageGRID, Amazon Web Services o Microsoft Azure como destino de backup"].
+* link:rp-start-setup.html["Preparar NetApp StorageGRID, Amazon Web Services, Google Cloud Platform o Microsoft Azure como destino de backup"].
 * link:rp-start-setup.html["Configura un conector en BlueXP"].
 * link:rp-start-licenses.html["Configurar la licencia"].
 * link:rp-start-discover.html["Detecta cargas de trabajo en BlueXP"].

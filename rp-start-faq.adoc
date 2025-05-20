@@ -23,7 +23,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 Puede utilizar los siguientes tipos de licencia:
 
 * Regístrate para una prueba gratuita de 30 días.
-* Compre una suscripción de pago por uso (PAYGO) con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace y Microsoft Azure Marketplace (próximamente).
+* Compra una suscripción de pago por uso (PAYGO) para los servicios inteligentes de NetApp y la protección contra ransomware de BlueXP  con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace y Microsoft Azure Marketplace.
 * BYOL (BYOL), que es un Archivo de licencia de NetApp (NLF) que obtiene del representante de ventas de NetApp Puede utilizar el número de serie de la licencia para activar la licencia de licencia en la cartera digital de BlueXP.
 
 
@@ -100,8 +100,6 @@ La protección frente al ransomware de BlueXP  asocia los datos con una carga d
 *¿Qué es una carga de trabajo “en riesgo”?* Si una carga de trabajo no tiene habilitada una política de detección primaria, está «en riesgo» aunque tenga habilitada una política de copia de seguridad y Snapshot.
 
 *Nuevo volumen agregado, pero aún no aparece* Si agregaste un nuevo volumen a tu entorno, inicia de nuevo el descubrimiento y aplica políticas de protección para proteger ese nuevo volumen.
-
-*El Dashboard no muestra todas mis cargas de trabajo. ¿Qué podría estar mal?* Actualmente, solo son compatibles los volúmenes NFS y CIFS. Los volúmenes iSCSI y otras configuraciones no compatibles se filtran y no aparecen en la consola.
 
 
 
