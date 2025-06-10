@@ -4,7 +4,7 @@ permalink: rp-use-reports.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: Con la protección contra ransomware de BlueXP, puedes descargar informes que muestren detalles de protección, alertas y recuperación, y guardarlos como . Archivos CSV. 
 ---
-= Descargar informes
+= Descargar informes sobre la protección contra ransomware de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,9 +14,12 @@ summary: Con la protección contra ransomware de BlueXP, puedes descargar inform
 [role="lead"]
 Puede exportar datos de protección y descargar archivos CSV o JSON que muestran los detalles de los simulacros de preparación para ataques, protección, alertas y recuperación.
 
-Antes de descargar los archivos, debe actualizar los datos, que también refrescan los datos que aparecerán en los archivos.
 
-Puede descargar archivos desde cualquiera de las opciones del menú principal:
+TIP: Antes de descargar los archivos, debe actualizar los datos, que también refrescan los datos que aparecerán en los archivos.
+
+*Rol de BlueXP requerido* Administrador de organización, administrador de carpeta o proyecto, administrador de protección contra ransomware o rol de visualizador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+
+¿Qué datos puedes descargar? Puede descargar archivos desde cualquiera de las opciones del menú principal:
 
 * *Protección*: Contiene el estado y los detalles de todas las cargas de trabajo, incluido el número total protegido y en riesgo.
 * *Alertas*: Incluye el estado y los detalles de todas las alertas, incluyendo el número total de alertas y instantáneas automáticas.
@@ -35,7 +38,7 @@ Los archivos CSV o JSON incluyen datos para todas las cargas de trabajo en todos
 .Pasos
 . En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
 +
-image:screen-dashboard.png["Consola"]
+image:screen-dashboard3.png["Consola"]
 
 . Desde el Panel de Control u otra página, seleccione la opción *Actualizar* image:button-refresh.png["Opción Refrescar"] en la parte superior derecha para actualizar los datos que aparecerán en los informes.
 . Debe realizar una de las siguientes acciones:

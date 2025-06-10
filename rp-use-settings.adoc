@@ -14,7 +14,9 @@ summary: Puedes configurar varias opciones, como un destino de backup, la detecc
 [role="lead"]
 Puede configurar destinos de copia de seguridad, habilitar la detección de amenazas, realizar un simulacro de preparación para ataques, configurar la detección de cargas de trabajo o configurar la conexión a la seguridad de la carga de trabajo de Data Infrastructure Insights accediendo a la opción *Configuración*.
 
-En la página Settings, puede realizar lo siguiente:
+*Rol de BlueXP requerido* Rol de administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+
+¿Qué puedes hacer en la página de Configuración? En la página Settings, puede realizar lo siguiente:
 
 * Simular un ataque de ransomware llevando a cabo un ejercicio de preparación y responder a una alerta simulada de ransomware. Para obtener más información, consulte link:rp-start-simulate.html["Haz un simulacro de preparación para los ataques de ransomware"].
 * Configurar la detección de cargas de trabajo.
@@ -120,7 +122,7 @@ La consola ofrece muchas recomendaciones. Una recomendación podría ser configu
 . En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
 . Revise el panel de acciones recomendadas de la consola.
 +
-image:screen-dashboard.png["Consola"]
+image:screen-dashboard3.png["Consola"]
 
 . Desde el Panel de Control, seleccione *Revisar y corregir* para la recomendación de “Preparar <backup provider> como destino de respaldo”.
 . Continúe con las instrucciones dependiendo del proveedor de copias de seguridad.

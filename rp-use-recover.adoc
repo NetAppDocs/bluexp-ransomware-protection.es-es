@@ -4,7 +4,7 @@ permalink: rp-use-recover.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
 summary: 'Después de un ataque, la protección frente al ransomware de BlueXP verifica que los datos de backup en el almacenamiento secundario no sean correctos, recomienda un punto de recuperación real (RPA) y orquesta el flujo de trabajo para conseguir una recuperación resistente a los fallos.' 
 ---
-= Recuperarse de un ataque de ransomware (después de neutralizar los incidentes)
+= Recupérese de un ataque de ransomware (después de neutralizar los incidentes) con la protección contra ransomware de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -59,6 +59,8 @@ Gracias a la protección frente al ransomware de BlueXP, el administrador de alm
 
 El estado de la aplicación cambiará si es necesario para la restauración. La aplicación se restaurará a su estado anterior a partir de los archivos de control, si se incluyen en la copia de seguridad. Una vez finalizada la restauración, la aplicación se abre en modo de LECTURA y ESCRITURA.
 
+*Rol de BlueXP requerido* Administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Recuperación*.
 . Revise la información de la carga de trabajo en la página *Recovery*.
@@ -90,6 +92,8 @@ TIP: La protección frente al ransomware de BlueXP identifica el mejor punto de 
 == Restaure una carga de trabajo no gestionada por SnapCenter
 
 Gracias a la protección frente al ransomware de BlueXP, el administrador de almacenamiento puede determinar la mejor forma de restaurar las cargas de trabajo, ya sea desde el punto de restauración recomendado o desde el punto de restauración preferido.
+
+*Rol de BlueXP requerido* Administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
 
 El administrador del almacenamiento de seguridad puede recuperar los datos en diferentes niveles:
 

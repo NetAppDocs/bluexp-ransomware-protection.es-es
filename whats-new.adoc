@@ -18,6 +18,38 @@ Descubre las novedades de la protección frente al ransomware de BlueXP.
 
 
 
+== 9 de junio de 2025
+
+
+
+=== Actualizaciones de la página de destino
+
+Esta versión incluye actualizaciones a la página de inicio de la protección contra ransomware BlueXP que facilita el inicio de la prueba gratuita y el descubrimiento.
+
+
+
+=== Actualizaciones de simulacros de preparación
+
+Anteriormente, se podía ejecutar un simulacro de preparación contra ransomware simulando un ataque en una nueva carga de trabajo de muestra. Con esta función, se puede investigar el ataque simulado y recuperar la carga de trabajo. Úsela para probar las notificaciones de alerta, la respuesta y la recuperación. Ejecute y programe estos simulacros con la frecuencia que necesite.
+
+Con esta versión, puede usar un nuevo botón en el Panel de protección contra ransomware de BlueXP para ejecutar un simulacro de preparación para ransomware en una carga de trabajo de prueba, lo que le facilita simular ataques de ransomware, investigar su impacto y recuperar cargas de trabajo de manera eficiente, todo dentro de un entorno controlado.
+
+Ahora puede ejecutar simulacros de preparación en cargas de trabajo CIFS (SMB) además de en cargas de trabajo NFS.
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Haz un simulacro de preparación para los ataques de ransomware"] .
+
+
+
+=== Habilitar actualizaciones de clasificación de BlueXP
+
+Antes de usar la clasificación de BlueXP  dentro del servicio de protección contra ransomware de BlueXP , debe habilitar la clasificación BlueXP  para analizar sus datos. La clasificación de datos le ayuda a encontrar información de identificación personal (PII), lo que puede aumentar los riesgos de seguridad.
+
+Puede implementar la clasificación de BlueXP en una carga de trabajo de recursos compartidos de archivos desde la protección contra ransomware de BlueXP. En la columna *Exposición de privacidad*, seleccione la opción *Identificar exposición*. Si ha habilitado el servicio de clasificación, esta acción identifica la exposición. De lo contrario, con esta versión, un cuadro de diálogo presenta la opción para implementar la clasificación de BlueXP. Seleccione *Implementar* para ir a la página principal del servicio de clasificación de BlueXP, donde podrá implementarlo. W
+
+Para más detalles, consulte  https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["Pon en marcha la clasificación de BlueXP en el cloud"^] y para utilizar el servicio dentro de la protección contra ransomware BlueXP, consulte  https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Escanee para obtener información de identificación personal con la clasificación BlueXP "] .
+
+
+
 == 13 de mayo de 2025
 
 
@@ -58,6 +90,14 @@ TIP: Las políticas de backup para una carga de trabajo que se ejecuta en FSx pa
 Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Obtén más información sobre los entornos de trabajo y la protección frente al ransomware de BlueXP "] .
 
 Para obtener más información sobre las opciones admitidas, consulte la https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["Limitaciones de protección contra ransomware de BlueXP "].
+
+
+
+=== Se necesita el rol de acceso a BlueXP
+
+Ahora necesita uno de los siguientes roles de acceso para ver, descubrir o administrar la protección contra ransomware de BlueXP: administrador de la organización, administrador de carpeta o proyecto, administrador de protección contra ransomware o visor de protección contra ransomware.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^].
 
 
 

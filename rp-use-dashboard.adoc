@@ -4,7 +4,7 @@ permalink: rp-use-dashboard.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: La consola de protección contra ransomware de BlueXP ofrece información sobre el estado de protección de las cargas de trabajo. Puede determinar rápidamente las cargas de trabajo que están en riesgo o protegidas, las cargas de trabajo afectadas afectadas por un incidente o en recuperación, y medir el grado de protección observando cuánto almacenamiento está protegido o en riesgo. También puede usar la consola para revisar y actuar sobre las recomendaciones de protección. 
 ---
-= Vea de un vistazo el estado de las cargas de trabajo mediante la consola
+= Supervise el estado de la carga de trabajo mediante el panel de protección contra ransomware de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,7 +14,9 @@ summary: La consola de protección contra ransomware de BlueXP ofrece informaci�
 [role="lead"]
 La consola de protección frente a ransomware de BlueXP proporciona información de un vistazo sobre el estado de protección de tus cargas de trabajo. Puede determinar rápidamente cargas de trabajo que están en riesgo o protegidas, identificar cargas de trabajo afectadas por un incidente o en recuperación y medir el grado de protección observando cuánto almacenamiento está protegido o en riesgo.
 
-También se puede usar la consola para revisar y actuar sobre recomendaciones de protección, acceder a configuraciones globales, descargar informes y acceder a esta documentación técnica.
+Utilice el Panel de Control para revisar sugerencias de protección, cambiar configuraciones, descargar informes y ver documentación.
+
+*Rol de BlueXP requerido* Administrador de organización, administrador de carpeta o proyecto, administrador de protección contra ransomware o rol de visualizador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
 
 
 
@@ -23,19 +25,19 @@ También se puede usar la consola para revisar y actuar sobre recomendaciones de
 .Pasos
 . En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
 +
-Después de la detección, la consola muestra el estado de la protección de datos de las cargas de trabajo.
+Una vez que BlueXP descubre sus cargas de trabajo, el Panel de control muestra el estado de la protección de datos de las cargas de trabajo.
 
 +
 image:screen-dashboard2.png["Consola"]
 
 . En Dashboard, puede realizar las siguientes acciones en cada uno de los paneles:
 +
-** *Protección de datos de carga de trabajo*: Haga clic en *Ver todo* para ver todas las cargas de trabajo que están en riesgo o protegidas en la página Protección. Las cargas de trabajo están en riesgo cuando los niveles de protección no coinciden con una política de protección. Consulte link:rp-use-protect.html["Proteja las cargas de trabajo"].
+** *Protección de datos de carga de trabajo*: seleccione *Ver todo* para ver todas las cargas de trabajo que están en riesgo o protegidas en la página Protección. Las cargas de trabajo están en riesgo cuando los niveles de protección no coinciden con una política de protección. Consulte link:rp-use-protect.html["Proteja las cargas de trabajo"].
 +
 
-TIP: Haga clic en la nota i para ver sugerencias sobre estos datos. Para aumentar el límite de carga de trabajo, haga clic en *Aumentar límite de carga de trabajo* dentro de esta nota. Al hacer clic en esto, accederá a la página Soporte de BlueXP , donde podrá crear un ticket de caso.
+TIP: Seleccione la nota "i" para ver sugerencias sobre estos datos. Para aumentar el límite de carga de trabajo, seleccione *Aumentar límite de carga de trabajo* dentro de esta nota "i". Al hacer clic en esto, accederá a la página Soporte de BlueXP , donde podrá crear un ticket de caso.
 
-** *Alertas y recuperación de datos de carga de trabajo*: Haga clic en *Ver todo* para ver los incidentes activos que han impactado en su carga de trabajo, están listos para la recuperación después de que los incidentes se neutralizan o están en recuperación. Consulte link:rp-use-alert.html["Responder a una alerta detectada"].
+** *Alertas y recuperación de datos de carga de trabajo*: seleccione *Ver todo* para ver los incidentes activos que han afectado su carga de trabajo, que están listos para recuperarse después de que se neutralicen los incidentes o que están en recuperación. Consulte link:rp-use-alert.html["Responder a una alerta detectada"].
 +
 *** Un incidente se clasifica en uno de los siguientes estados:
 +
@@ -61,15 +63,15 @@ TIP: Haga clic en la nota i para ver sugerencias sobre estos datos. Para aumenta
 
 
 
-** *Acciones recomendadas*: Para aumentar la protección, revise cada recomendación y haga clic en *Revisar y arreglar*.
+** *Acciones recomendadas*: Para aumentar la protección, revise cada recomendación y seleccione *Revisar y corregir*.
 +
-Consulte link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Revise las recomendaciones de protección en la consola"] o. link:rp-use-protect.html["Proteja las cargas de trabajo"].
+Ver link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Revisar las sugerencias de protección en el Panel de Control"] o link:rp-use-protect.html["Proteja las cargas de trabajo"] .
 
 +
-Cualquier recomendación que se haya agregado desde la última vez que visitó el Panel de Control se indica con “Nuevo” durante al menos 24 horas. Las acciones se enumeran en orden de prioridad con las más importantes en la parte superior. Puede revisar y actuar en cada uno de ellos o descartarlo.
+BlueXP marca las nuevas recomendaciones desde tu última visita al Panel con "Nuevo" durante 24 horas. Las acciones aparecen en orden de prioridad, con la más importante al principio. Revisa, actúa según o descarta cada recomendación.
 
 +
-El número total de acciones no incluye acciones descartadas.
+El número total de acciones no incluye las acciones que usted descartó.
 
 ** *Datos de carga de trabajo*: Monitorea los cambios en la cobertura de protección durante los últimos 7 días.
 ** *Copias de seguridad de la carga de trabajo*: Monitorea los cambios en las copias de seguridad de la carga de trabajo creadas por el servicio que han fallado o se han completado correctamente en los últimos 7 días.
@@ -152,12 +154,12 @@ Es posible exportar datos y descargar archivos CSV que muestren detalles de prot
 
 Puede descargar archivos CSV desde cualquiera de las opciones del menú principal:
 
-* *Protección*: Contiene el estado y los detalles de todas las cargas de trabajo, incluido el número total protegido y en riesgo.
+* *Protección*: Contiene el estado y los detalles de todas las cargas de trabajo, incluida la cantidad total de cargas de trabajo que BlueXP marca como protegidas o en riesgo.
 * *Alertas*: Incluye el estado y los detalles de todas las alertas, incluyendo el número total de alertas y instantáneas automáticas.
-* *Recuperación*: Incluye el estado y los detalles de todas las cargas de trabajo que necesitan ser restauradas, incluyendo el número total de cargas de trabajo marcadas como “Restauración necesaria”, “En curso”, “Restauración fallida” y “Restaurada exitosamente”.
+* *Recuperación*: incluye el estado y los detalles de todas las cargas de trabajo que necesitan restaurarse, incluido el número total de cargas de trabajo que BlueXP marca como "Restauración necesaria", "En progreso", "Restauración fallida" y "Restauradas exitosamente".
 
 
-Si descarga archivos CSV de la página Protección, Alertas o Recuperación, solo los datos de esa página se incluirán en el archivo CSV.
+Descargar un archivo CSV de una página incluye solo los datos de esa página.
 
 Los archivos CSV incluyen datos para todas las cargas de trabajo en todos los entornos de trabajo de BlueXP.
 

@@ -4,7 +4,7 @@ permalink: rp-start-simulate.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
 summary: Lleve a cabo un simulacro de ataque de ransomware en una carga de trabajo de muestra recién creada. A continuación, investigue el ataque simulado y recupere la carga de trabajo de muestra. Puede realizar un simulacro de preparación contra el ransomware en varias ocasiones. 
 ---
-= Simule un ataque de ransomware simulando el estado de preparación
+= Realice un simulacro de preparación para ataques de ransomware en la protección contra ransomware de BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,23 +12,36 @@ summary: Lleve a cabo un simulacro de ataque de ransomware en una carga de traba
 
 
 [role="lead"]
-Lleve a cabo un simulacro de ataque de ransomware en una carga de trabajo de muestra recién creada. A continuación, investigue el ataque simulado y recupere la carga de trabajo de muestra. Esta función te ayuda a saber que estás preparado en caso de un ataque real de ransomware mediante la prueba de los procesos de notificación de alertas, respuesta y recuperación. Puede realizar un simulacro de preparación contra el ransomware en varias ocasiones.
+Realice un simulacro de preparación ante un ataque de ransomware simulando un ataque en una nueva carga de trabajo de muestra. Investigue el ataque simulado y recupere la carga de trabajo. Utilice esta función para probar las notificaciones de alerta, la respuesta y la recuperación. Realice el simulacro con la frecuencia necesaria.
 
 
-TIP: No se verá afectada su información de carga de trabajo real.
+TIP: Sus datos de carga de trabajo reales no se verán afectados.
+
+Puede ejecutar simulacros de preparación en cargas de trabajo NFS y CIFS (SMB).
 
 
 
 == Configurar un simulacro de preparación para el ataque de ransomware
 
-Antes de realizar una simulación, debe configurar un cambio de nivel mediante la página Configuración. Puede acceder fácilmente a la página Configuración desde la opción Acciones cerca del menú superior.
+Antes de ejecutar una simulación, configure un ejercicio en la página Configuración. Acceda a ella desde la opción "Acciones" del menú superior.
+
+Necesitará ingresar un nombre de usuario y contraseña para las siguientes situaciones:
+
+* Si se produjeron cambios de nombre de usuario o contraseña para la máquina virtual de almacenamiento seleccionada anteriormente
+* Si selecciona una máquina virtual de almacenamiento CIFS (SMB) diferente
+* Si ingresa un nombre de carga de trabajo de prueba diferente
+
+
+*Rol de BlueXP requerido* Administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
 
 .Pasos
-. En el menú de protección contra ransomware de BlueXP, seleccione la opción vertical image:button-actions-vertical.png["Acciones verticales"]... opción en la parte superior derecha.
-. En el menú desplegable, selecciona *Perforación de preparación* o *Configuración*.
+. Desde el menú de protección contra ransomware BlueXP, seleccione el botón *Ejecutar simulacro de preparación* en la parte superior derecha.
++
+image:screen-dashboard3.png["Página del panel que muestra el botón de simulacro de preparación para la ejecución"]
+
 . En la tarjeta de perforación de preparación de la página Configuración, seleccione *Configurar*.
 +
-Aparecerá la página Configurar detalle de preparación.
+BlueXP muestra la página Configurar simulacro de preparación.
 
 +
 image:screen-settings-alert-drill-configure.png["Configurar página de detalle de preparación"]
@@ -38,6 +51,7 @@ image:screen-settings-alert-drill-configure.png["Configurar página de detalle d
 .. Seleccione el conector BlueXP  que desea utilizar para el detalle de preparación.
 .. Seleccione un entorno de trabajo de prueba.
 .. Seleccione una SVM de almacenamiento de prueba.
+.. Si seleccionó una máquina virtual de almacenamiento CIFS (SMB), aparecerán los campos "Nombre de usuario" y "Contraseña". Ingrese el nombre de usuario y la contraseña de la máquina virtual de almacenamiento.
 .. Introduzca el nombre de una nueva carga de trabajo de prueba que se creará. No incluya guiones en el nombre.
 
 
@@ -53,15 +67,20 @@ TIP: Puede editar la configuración de cambio de nivel de preparación más tard
 
 Después de configurar el cambio de nivel de disponibilidad, puede iniciar el cambio de nivel.
 
+*Rol de BlueXP requerido* Administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+
 Cuando inicias el simulacro de preparación, la protección contra ransomware de BlueXP  omite el modo de aprendizaje y inicia la simulacro en el modo activo. El estado de detección de la carga de trabajo es Activo.
 
 
-TIP: Una carga de trabajo puede tener un estado *Modo de aprendizaje* de detección de ransomware que indica que se ha asignado recientemente una política de detección de ransomware a la carga de trabajo y que el servicio está analizando cargas de trabajo. Un estado de detección de *Activo* indica que se ha asignado una política de protección de detección de ransomware.
+TIP: Una carga de trabajo puede tener un estado de *Modo de aprendizaje* de detección de ransomware cuando se asigna recientemente una política de detección y el servicio escanea las cargas de trabajo.
 
 .Pasos
 . Debe realizar una de las siguientes acciones:
 +
-** En el menú Configuración de protección contra ransomware de BlueXP , selecciona *Perforación de preparación* y, a continuación, en la página de perforación de preparación, selecciona *Inicio*.
+** Desde el menú de protección contra ransomware BlueXP, seleccione el botón *Ejecutar simulacro de preparación* en la parte superior derecha.
++
+image:screen-dashboard3.png["Página del panel que muestra el botón de simulacro de preparación para la ejecución"]
+
 ** O bien, en la página Configuración, en la tarjeta de perforación de preparación, seleccione *Inicio*.
 
 
@@ -77,10 +96,12 @@ NOTE: Una vez iniciado el cambio de nivel, no puede editar la configuración de 
 
 Pruebe su preparación respondiendo a una alerta de disponibilidad detallada.
 
+*Rol de BlueXP requerido* Administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
+
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Alertas*.
 +
-Aparece la página Alertas. En la columna ID de alerta, aparece el indicador de disponibilidad junto al ID.
+BlueXP muestra la página de Alertas. En la columna ID de alerta, verá "Simulacro de preparación" junto al ID.
 
 +
 image:screen-alerts-readiness.png["Página Alertas que muestra la alerta de detalle de disponibilidad"]
@@ -120,7 +141,9 @@ Si el Tipo indica que se sospecha que un usuario tiene actividad maliciosa, revi
 
 == Restaure la carga de trabajo de prueba
 
-Después de revisar la alerta de detalle de disponibilidad, es posible que desee restaurar la carga de trabajo de prueba.
+Después de revisar la alerta del simulacro de preparación, restaure la carga de trabajo de prueba si es necesario.
+
+*Rol de BlueXP requerido* Administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
 
 .Pasos
 . Vuelva a la página Detalles de Alerta.
@@ -141,10 +164,10 @@ Después de revisar la alerta de detalle de disponibilidad, es posible que desee
 
 . En la página Restaurar revisión, seleccione *Restaurar*.
 +
-La página Recuperación muestra el estado de la restauración de detalles de preparación como en curso.
+BlueXP muestra el estado de la restauración del simulacro de preparación como "En progreso" en la página Recuperación.
 
 +
-Una vez completada la restauración, el estado de la carga de trabajo cambia a *restored*.
+Una vez completada la restauración, BlueXP cambia el estado de la carga de trabajo a *Restaurado*.
 
 . Revise la carga de trabajo restaurada.
 
@@ -156,7 +179,9 @@ TIP: Para obtener detalles sobre el proceso de restauración, consulte link:rp-u
 
 == Cambie el estado de las alertas después del cambio de nivel de disponibilidad
 
-Después de revisar la alerta de detalle de disponibilidad y restaurar la carga de trabajo, es posible que desee cambiar el estado de la alerta.
+Después de revisar la alerta del simulacro de preparación y restaurar la carga de trabajo, cambie el estado de la alerta si es necesario.
+
+*Rol de BlueXP requerido* Administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
 
 .Pasos
 . Vuelva a la página Detalles de Alerta.
@@ -178,6 +203,8 @@ IMPORTANT: Después de que descartes un ataque, no puedes cambiarlo de nuevo. Si
 == Permite revisar informes sobre el detalle de disponibilidad
 
 Una vez finalizada la profundización de preparación, es posible que desee revisar y guardar un informe en la profundización.
+
+*Rol de BlueXP requerido* Administrador de organización, administrador de carpeta o proyecto, administrador de protección contra ransomware o rol de visualizador de ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
 
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Informes*.
