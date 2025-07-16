@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: Si la protección frente a ransomware de BlueXP  detecta un posible ataque, aparece una alerta en la consola de protección frente a ransomware de BlueXP  que indica un ataque potencial. El servicio también inicia inmediatamente la realización de una copia snapshot. En este punto, deberías conocer el riesgo potencial en la pestaña Alertas de protección contra ransomware de BlueXP. 
+summary: Si la protección frente a ransomware de BlueXP  detecta un posible ataque, aparece una alerta en la consola de protección frente a ransomware de BlueXP  que indica un ataque potencial. En este punto, deberías conocer el riesgo potencial en la pestaña Alertas de protección contra ransomware de BlueXP. 
 ---
 = Gestione las alertas de ransomware detectadas con la protección contra ransomware de BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Si la protección frente a ransomware de BlueXP  detecta un posible at
 [role="lead"]
 Cuando la protección contra ransomware de BlueXP detecta un posible ataque, muestra una alerta en el Panel de Control y en el área de Notificaciones. El servicio toma una instantánea inmediatamente. Revise el riesgo potencial en la pestaña *Alertas* de la protección contra ransomware de BlueXP.
 
-Si la BlueXP ransomware protection detecta un posible ataque, se mostrará una notificación en las Notificaciones de BlueXP y se enviará un correo electrónico a la dirección configurada para informar sobre un posible ataque de ransomware. El servicio también genera una instantánea de inmediato. En este punto, deberías analizar el riesgo potencial en la pestaña *Alertas* de protección contra ransomware de BlueXP.
+Si la BlueXP ransomware protection detecta un posible ataque, se mostrará una notificación en las Notificaciones de BlueXP y se enviará un correo electrónico a la dirección configurada. El correo electrónico incluye información sobre la gravedad, la carga de trabajo afectada y un enlace a la alerta en la pestaña *Alertas* de la BlueXP ransomware protection .
 
 Puede descartar falsos positivos o decidir recuperar sus datos de inmediato.
 
@@ -152,12 +152,12 @@ Si mira la pestaña Alertas, puede identificar si hay actividad maliciosa.
 Para habilitar la seguridad de la carga de trabajo en la protección contra ransomware de BlueXP , vaya a la página *Configuración* y seleccione la opción *Conexión de seguridad de carga de trabajo*.
 
 +
-Para obtener una visión general de la seguridad de la carga de trabajo de Data Infrastucture Insights, consulte https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Acerca de la seguridad de la carga de trabajo"^].
+Para obtener una descripción general de la seguridad de la carga de trabajo de Data Infrastructure Insights , revise  https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Acerca de la seguridad de la carga de trabajo"^] .
 
 
 
 
-TIP: Si no tiene una licencia para la seguridad de carga de trabajo de infraestructura de datos y no la habilita en la protección contra ransomware de BlueXP , no verá la información anómala sobre el comportamiento de los usuarios.
+TIP: Si no tiene una licencia para la seguridad de la carga de trabajo de infraestructura de datos y no la habilita en la BlueXP ransomware protection, no verá la información de comportamiento anómalo del usuario.
 
 Cuando se produce una actividad maliciosa, se genera una alerta y se realiza una instantánea automatizada.
 
@@ -262,7 +262,7 @@ Una vez que se marca la alerta para restaurar, la alerta pasa de la pestaña Ale
 
 Después de revisar los incidentes, debe determinar si los incidentes son posibles ataques. Si no se cumple la condición anterior podrán ser despedidos.
 
-Puede descartar falsos positivos o decidir recuperar sus datos de inmediato. Si descarta la alerta, el servicio aprenderá este comportamiento y lo asociará con las operaciones normales y no volverá a iniciar una alerta sobre dicho comportamiento.
+Puede descartar falsos positivos o decidir recuperar sus datos de inmediato. Si descarta la alerta, el servicio aprende este comportamiento, lo asocia con operaciones normales y no vuelve a iniciar una alerta sobre dicho comportamiento.
 
 Si descarta una carga de trabajo, todas las copias instantáneas tomadas automáticamente en respuesta a un posible ataque de ransomware se eliminan de forma permanente.
 
