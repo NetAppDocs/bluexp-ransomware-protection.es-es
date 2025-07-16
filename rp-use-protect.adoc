@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: rp-use-protect.html 
-keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, protect, malware, attack 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
 summary: Puedes proteger las cargas de trabajo contra ataques de ransomware mediante la asignación de políticas a una carga de trabajo en la protección contra ransomware de BlueXP. 
 ---
 = Proteja las cargas de trabajo con las estrategias de protección contra ransomware de BlueXP
@@ -16,53 +16,50 @@ Puede proteger las cargas de trabajo contra ataques de ransomware habilitando la
 
 *Rol de BlueXP requerido* Rol de administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
 
-*¿Cómo se pueden proteger las cargas de trabajo?* La protección de las cargas de trabajo con la protección contra ransomware BlueXP incluye las siguientes tareas:
-
-* Habilite la protección coherente con las cargas de trabajo, que funciona con el software SnapCenter o el complemento SnapCenter para VMware vSphere.
-* Cree o gestione estrategias de protección frente al ransomware, que incluyen políticas que cree para copias Snapshot, backups y protección frente al ransomware (conocidas como _políticas de detección_).
-* Importe una estrategia y ajústela.
-* Agrupe los recursos compartidos de archivos para que le resulte más fácil proteger las cargas de trabajo en lugar de protegerlas individualmente.
-* Elimina una estrategia de protección contra ransomware.
 
 
-*¿Qué servicios se utilizan en la protección? * Los siguientes servicios pueden utilizarse para gestionar las políticas de protección. La información sobre protección de estos servicios aparece en la protección contra ransomware de BlueXP :
+== Comprenda las estrategias de BlueXP ransomware protection
+
+Las estrategias de BlueXP ransomware protection abarcan políticas de _detección_ y _protección_.
+
+* Las **políticas de detección** detectan amenazas de ransomware y, opcionalmente, bloquean extensiones de archivos sospechosas.
+* Las **políticas de protección** incluyen políticas de instantáneas y de copia de seguridad. Las políticas de detección e instantáneas son obligatorias en una estrategia de protección. Las políticas de copia de seguridad son opcionales.
++
+Si utiliza otros productos de NetApp para proteger su carga de trabajo, la BlueXP ransomware protection los detecta y ofrece la opción de:
+
++
+** utilizar una política de detección de ransomware y continuar utilizando las políticas de instantáneas y copias de seguridad creadas por otras herramientas de NetApp , o
+** Utilice la BlueXP ransomware protection para administrar la detección, las instantáneas y las copias de seguridad.
+
+
+
+
+
+TIP: Para una mejor gestión y protección de su patrimonio de datos, puede crear link:#group-file-shares-for-easier-protection["recursos compartidos de archivos grupales"] proteger colectivamente los volúmenes bajo una sola estrategia.
+
+
+
+=== Políticas de protección con otros servicios administrados por NetApp
+
+Además de la BlueXP ransomware protection, se pueden utilizar los siguientes servicios para administrar la protección:
 
 * Backup y recuperación de BlueXP  para recursos compartidos de archivos y recursos compartidos de archivos de equipos virtuales
 * SnapCenter para VMware para almacenes de datos de máquinas virtuales
 * SnapCenter para Oracle y MySQL
 
 
+La información de protección de estos servicios aparece en la BlueXP ransomware protection. Puede agregar políticas de detección a estos servicios con la BlueXP ransomware protection. Agregar una política de protección con la BlueXP ransomware protection reemplaza las políticas de protección existentes.
 
-
-== Políticas de protección
-
-Puede resultar útil revisar información sobre las políticas de protección que se pueden cambiar y qué tipos de políticas existen en una estrategia de protección.
-
-*¿Qué políticas de protección puedes cambiar?*
-
-Puede cambiar las políticas de protección en función de la protección de las cargas de trabajo que tenga:
-
-* *Las cargas de trabajo no están protegidas por aplicaciones NetApp*: Estas cargas de trabajo no están gestionadas por SnapCenter, el complemento SnapCenter para VMware vSphere o la copia de seguridad y recuperación de BlueXP . Estas cargas de trabajo pueden tener copias Snapshot realizadas como parte de ONTAP u otros productos. Si existe protección de ONTAP FPolicy, puede cambiar la protección de FPolicy mediante ONTAP.
-* *Cargas de trabajo con protección existente de aplicaciones NetApp*: Estas cargas de trabajo tienen políticas de copias de seguridad o instantáneas administradas por SnapCenter, SnapCenter para VMware vSphere o copias de seguridad y recuperación de BlueXP .
-+
-** Si SnapCenter, SnapCenter para VMware o el sistema de backup y recuperación de datos de BlueXP  gestionan las políticas de backup o Snapshot, seguirán siendo gestionadas por estas aplicaciones. Con la protección frente al ransomware de BlueXP , también puedes aplicar una política de detección de ransomware a esas cargas de trabajo.
-** Si se gestiona una política de detección de ransomware mediante protección autónoma frente a ransomware (ARP o ARP/AI, según la versión de ONTAP) y FPolicy en ONTAP, esas cargas de trabajo estarán protegidas y seguirán gestionándose mediante ARP y FPolicy.
-
-
-
+Si una política de detección de ransomware está siendo administrada por Autonomous Ransomware Protection (ARP o ARP/AI, dependiendo de la versión de ONTAP ) y FPolicy en ONTAP, esas cargas de trabajo están protegidas y continuarán siendo administradas por ARP y FPolicy.
 
 
 NOTE: Los destinos de los backups no están disponibles para cargas de trabajo en Amazon FSx para NetApp ONTAP. Realizar operaciones de backup mediante el servicio de backup de FSx para ONTAP. El usuario establece políticas de backup para cargas de trabajo en FSx para ONTAP en AWS, no en la protección contra ransomware de BlueXP . Las políticas de backup aparecen en la protección frente a ransomware de BlueXP  y permanecen sin cambios en AWS.
 
-*¿Qué políticas se requieren en una estrategia de protección contra ransomware? *
-
-Las siguientes políticas son necesarias en la estrategia de protección contra ransomware:
-
-* Política de detección de ransomware
-* Política de Snapshot
 
 
-No es necesaria una política de backup en la estrategia de protección frente a ransomware de BlueXP .
+=== Políticas de protección para cargas de trabajo no protegidas por aplicaciones de NetApp
+
+Si su carga de trabajo no está administrada por BlueXP backup and recovery, BlueXP ransomware protection, SnapCenter o el SnapCenter Plug-in for VMware vSphere, es posible que tenga instantáneas tomadas como parte de ONTAP u otros productos. Si existe protección de ONTAP FPolicy, puede cambiar la protección de FPolicy mediante ONTAP.
 
 
 
@@ -71,8 +68,9 @@ No es necesaria una política de backup en la estrategia de protección frente a
 Uno de los primeros pasos para proteger las cargas de trabajo es visualizar las cargas de trabajo actuales y su estado de protección. Se pueden ver los siguientes tipos de cargas de trabajo:
 
 * Cargas de trabajo de aplicaciones
-* Cargas de trabajo de máquinas virtuales
+* Bloquear cargas de trabajo
 * Cargas de trabajo de recursos compartidos de archivos
+* Cargas de trabajo de máquinas virtuales
 
 
 .Pasos
@@ -90,11 +88,11 @@ image:screen-protection.png["Protección"]
 
 
 
-NOTE: Para las cargas de trabajo que ya poseen una política de protección con un servicio de backup y recuperación de datos de SnapCenter o BlueXP, no se puede editar la protección. Para estas cargas de trabajo, el ransomware de BlueXP  permite la protección autónoma frente a ransomware y la protección de FPolicy si ya están activados en otros servicios. Más información sobre https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protección autónoma de ransomware"^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup y recuperación de BlueXP"^]y https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy de ONTAP"^].
+NOTE: Ver link:#add-a-ransomware-protection-strategy["Añada una estrategia de protección contra ransomware"] para obtener información sobre el uso de la BlueXP ransomware protection cuando existe una política de protección con SnapCenter o el servicio de BlueXP backup and recovery .
 
 
 
-=== Detalles de protección en la página Protection
+=== Comprender la página de Protección
 
 En la página Protection, se muestra la siguiente información sobre la protección de cargas de trabajo:
 
@@ -138,7 +136,7 @@ La protección frente al ransomware de BlueXP asigna una importancia o prioridad
 * *Estándar*: Copias instantáneas tomadas más de 1 por día
 
 
-*Políticas de detección predefinidas*
+*Políticas de detección predefinidas* [[predefinidas]]
 
 Puedes elegir una de las siguientes políticas predefinidas de protección contra ransomware de BlueXP , que están alineadas con la importancia de la carga de trabajo:
 
@@ -232,7 +230,7 @@ Para obtener más información sobre el registro de SnapCenter o el plugin de Sn
 
 . Siga la información para registrar el host de SnapCenter o el plugin de SnapCenter para VMware vSphere con el backup y la recuperación de BlueXP.
 . Vuelve a la protección contra el ransomware de BlueXP.
-. En la protección contra ransomware de BlueXP, accede a la consola e inicia de nuevo el proceso de detección.
+. Desde la BlueXP ransomware protection, navegue hasta el Panel de control e inicie el proceso de detección nuevamente.
 . En Protección contra ransomware de BlueXP, selecciona *Protección* para ver la página Protección.
 . Revise los detalles de la columna Snapshot y backup policies de la página Protection para ver que las políticas se gestionan en otros lugares.
 
@@ -241,16 +239,35 @@ Para obtener más información sobre el registro de SnapCenter o el plugin de Sn
 
 == Añada una estrategia de protección contra ransomware
 
-Puedes añadir una estrategia de protección contra ransomware a las cargas de trabajo. La forma de hacerlo depende de si ya existen políticas de Snapshot y backup:
+Hay tres enfoques para agregar una estrategia de protección contra ransomware:
 
-* * Cree una estrategia de protección contra ransomware si no tiene instantáneas o políticas de copia de seguridad*. Si las copias Snapshot o las políticas de backup no existen en la carga de trabajo, puede crear una estrategia de protección contra ransomware, que puede incluir las siguientes políticas que crea en la protección contra ransomware de BlueXP :
+* **Cree una estrategia de protección contra ransomware si no tiene políticas de instantáneas o copias de seguridad.**
++
+La estrategia de protección contra ransomware incluye:
+
 +
 ** Política de Snapshot
-** Política de backup
 ** Política de detección de ransomware
+** Política de backup
 
 
-* *Crear una política de detección para cargas de trabajo que ya tienen políticas de instantáneas y copias de seguridad*, que se administran en otros productos o servicios de NetApp. La política de detección no cambiará las políticas gestionadas en otros productos.
+* **Reemplace las políticas de instantáneas o de respaldo existentes de SnapCenter o la protección de BlueXP backup and recovery con estrategias de protección administradas por la BlueXP ransomware protection.**
++
+La estrategia de protección contra ransomware incluye:
+
++
+** Política de Snapshot
+** Política de detección de ransomware
+** Política de backup
+
+
+* *Cree una política de detección para cargas de trabajo con políticas de backup e instantáneas existentes administradas en otros productos o servicios de NetApp .*
++
+La política de detección no cambia las políticas administradas en otros productos.
+
++
+La política de detección habilita la protección autónoma contra ransomware y la protección FPolicy si ya están activadas en otros servicios. Más información sobre link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protección autónoma de ransomware"^] , link:https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup y recuperación de BlueXP"^] , y link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy de ONTAP"^] .
+
 
 
 
@@ -264,12 +281,12 @@ Si las copias Snapshot o las políticas de backup no existen en la carga de trab
 * Política de detección de ransomware
 
 
-.Pasos para crear una estrategia de protección contra el ransomware
+.Pasos para crear una estrategia de protección contra ransomware [[pasos]]
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
 +
 image:screen-protection.png["Gestionar la página de estrategia"]
 
-. En la página Protección, selecciona *Administrar estrategias de protección*.
+. Desde la página Protección, seleccione una carga de trabajo y luego *Proteger*.
 +
 image:screen-protection-strategy.png["Gestionar estrategias"]
 
@@ -296,7 +313,7 @@ Si desea cambiar las extensiones de archivo bloqueadas, edítelas en System Mana
 
 ** *Política de Snapshot*:
 +
-*** *Nombre base de la política de instantáneas*: Seleccione una política o seleccione *Crear* e introduzca un nombre para la política de instantáneas.
+*** *Nombre base de la política de instantáneas*: seleccione una política o seleccione *Crear* e ingrese un nombre para la política de instantáneas.
 *** *Bloqueo de instantáneas*: Permite que esto bloquee las copias instantáneas en el almacenamiento primario para que no se puedan modificar o eliminar durante un cierto período de tiempo, incluso si un ataque de ransomware se dirige al destino de almacenamiento de la copia de seguridad. Esto también se denomina _almacenamiento inmutable_. Esto permite acelerar el tiempo de restauración.
 +
 Cuando una snapshot está bloqueada, la hora de caducidad del volumen se establece en la hora de caducidad de la copia Snapshot.
@@ -324,63 +341,72 @@ TIP: Para habilitar el bloqueo de copia de seguridad en el almacenamiento secund
 
 
 
-=== Añada una política de detección a las cargas de trabajo que ya tengan políticas de Snapshot y backup
+=== Agregue una política de detección a las cargas de trabajo con políticas de instantáneas y copias de seguridad existentes administradas por SnapCenter o BlueXP backup and recovery
 
-Con la protección frente a ransomware de BlueXP , puedes asignar una política de detección de ransomware a cargas de trabajo que ya tengan políticas de backup y Snapshot que se gestionen en otros productos o servicios de NetApp. La política de detección no cambiará las políticas gestionadas en otros productos.
+La BlueXP ransomware protection le permite asignar una política de detección o de protección a las cargas de trabajo con protección de snapshots y backups gestionada en otros productos o servicios de NetApp . Otros servicios, como BlueXP backup and recovery y SnapCenter, utilizan políticas que controlan snapshots, replicación a almacenamiento secundario o backups a almacenamiento de objetos.
 
-Otros servicios, como el backup y recuperación de BlueXP y SnapCenter, usan los siguientes tipos de políticas para gobernar las cargas de trabajo:
 
-* Políticas que rigen las snapshots
-* Normativas que rigen la replicación en el almacenamiento secundario
-* Directivas que rigen los backups del almacenamiento de objetos
 
+==== Agregue una política de detección a las cargas de trabajo con políticas de copia de seguridad o instantáneas existentes
+
+Si ya tiene políticas de instantáneas o copias de seguridad con BlueXP backup and recovery o SnapCenter, puede agregar una política para detectar ataques de ransomware. Para administrar la protección y la detección con BlueXP ransomware protection, consulte <<protection,Protéjase con la BlueXP ransomware protection>> .
 
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
 +
 image:screen-protection.png["Gestionar la página de estrategia"]
 
-. En la página Protección, seleccione una carga de trabajo y seleccione *Proteger*.
+. Desde la página Protección, seleccione una carga de trabajo y luego seleccione *Proteger*.
+. La BlueXP ransomware protection detecta si existen políticas de BlueXP backup and recovery de SnapCenter o BlueXP activas.
+. Para dejar sus políticas de BlueXP backup and recovery o de SnapCenter existentes en su lugar y solo aplicar una política de _detección_, deje la casilla **Reemplazar políticas existentes** sin marcar.
+. Para ver los detalles de las políticas de SnapCenter , seleccione la *flecha hacia abajo*.
 +
-La página Protect muestra las políticas gestionadas por el software de SnapCenter, SnapCenter para VMware vSphere y backup y recuperación de BlueXP.
+Seleccione una política de detección y luego seleccione **Proteger**.
 
+. En la página Protección, revise el **Estado de detección** para confirmar que la detección esté Activa.
+
+
+
+
+==== Reemplace las políticas de copia de seguridad o instantáneas existentes con una estrategia de BlueXP ransomware protection
+
+Puede reemplazar sus políticas de copias de seguridad o instantáneas con una estrategia de BlueXP ransomware protection . Este enfoque elimina la protección administrada externamente y configura la detección y la protección en la BlueXP ransomware protection.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
 +
-El siguiente ejemplo muestra las políticas gestionadas por SnapCenter:
+image:screen-protection.png["Gestionar la página de estrategia"]
 
-+
-image:screen-protect-sc-policies.png["Proteger la página que muestra políticas de SnapCenter"]
-
-+
-En el siguiente ejemplo se muestran las políticas gestionadas por backup y recuperación de datos de BlueXP:
-
-+
-image:screen-protect-br-policies.png["Protege la página que muestra las políticas de backup y recuperación de BlueXP"]
-
-. Para ver los detalles de las políticas administradas en otro lugar, haga clic en la flecha *abajo*.
-. Para aplicar una política de detección además de las políticas de instantáneas y copias de seguridad gestionadas en otros lugares, seleccione la política de detección.
-. Seleccione *Proteger*.
-. En la página Protección, revise la columna Política de detección para ver la política de detección asignada. Además, la columna Instantánea y políticas de copia de seguridad muestra el nombre del producto o servicio que gestiona las políticas.
+. Desde la página Protección, seleccione una carga de trabajo y luego seleccione *Proteger*.
+. La BlueXP ransomware protection detecta si existen políticas activas de BlueXP backup and recovery o de SnapCenter . Para reemplazar las políticas de BlueXP backup and recovery o de SnapCenter , seleccione la casilla **Reemplazar políticas existentes**. Al seleccionarla, la BlueXP ransomware protection reemplaza la lista de políticas de detección con las políticas de detección.
+. Seleccione una política de protección. Si no existe ninguna, seleccione **Agregar** para crear una nueva. Para obtener información sobre cómo crear una política, consulte <<steps,Cree una política de protección>> . Seleccione **Siguiente**.
+. Seleccione un destino de respaldo o cree uno nuevo. Seleccione **Siguiente**.
+. Revise la nueva estrategia de protección y luego seleccione **Proteger** para aplicarla.
+. En la página Protección, revise el **Estado de detección** para confirmar que la detección esté Activa.
 
 
 
 
 === Asigne una política diferente
 
-Puede asignar una política de protección diferente a la actual.
+Puede reemplazar la política existente por una diferente.
 
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
 . En la página Protección, en la fila de carga de trabajo, seleccione *Editar protección*.
-. En la página Policies, haga clic en la flecha hacia abajo de la política que desea asignar para revisar los detalles.
+. Si la carga de trabajo ya tiene una política de BlueXP backup and recovery o de SnapCenter que desea mantener, desmarque la opción **Reemplazar políticas existentes**. Para reemplazar las políticas existentes, marque la opción **Reemplazar políticas existentes**.
+. En la página Políticas, seleccione la flecha hacia abajo de la política que desea asignar para revisar los detalles.
 . Seleccione la política que desea asignar.
-. Selecciona *Proteger* para finalizar el cambio.
+. Seleccione *Proteger* para completar el cambio.
 
 
 
 
 == Agrupe los recursos compartidos de archivos para una protección más sencilla
 
-La agrupación de recursos compartidos de archivos facilita la protección del patrimonio de datos. El servicio puede proteger todos los volúmenes de un grupo a la vez, en lugar de proteger cada volumen por separado.
+Agrupar recursos compartidos de archivos en un grupo de protección facilita la protección de sus datos. El servicio puede proteger todos los volúmenes de un grupo simultáneamente, en lugar de proteger cada volumen por separado.
+
+Puede crear grupos independientemente de su estado de protección (es decir, grupos protegidos y no protegidos). Al agregar una política de protección a un grupo, esta reemplaza cualquier política existente, incluidas las administradas por BlueXP backup and recovery y SnapCenter.
 
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
@@ -396,22 +422,6 @@ image:screen-protection-groups.png["Grupos de protección"]
 image:screen-protection-groups-add.png["Añadir página de grupo de protección"]
 
 . Introduzca un nombre para el grupo de protección.
-. Realice uno de los siguientes pasos:
-+
-.. Si ya cuenta con políticas de protección, seleccione si desea agrupar cargas de trabajo según si las gestiona una de estas:
-+
-*** Protección contra ransomware de BlueXP
-*** Backup y recuperación de datos de SnapCenter o BlueXP 
-
-
-.. Si ya no tienes políticas de protección implementadas, la página muestra las estrategias preconfiguradas de protección contra ransomware.
-+
-... Elige uno para proteger tu grupo y selecciona *Siguiente*.
-... Si la carga de trabajo que ha elegido tiene volúmenes en varios entornos de trabajo, seleccione el destino de backup para los múltiples entornos de trabajo para que se puedan hacer backups en el cloud.
-
-
-
-
 . Seleccione las cargas de trabajo que se añadirán al grupo.
 +
 
@@ -425,6 +435,21 @@ image:screen-protection-groups-policy.png["Página Agregar grupo de protección 
 . Seleccione *Siguiente*.
 . Revise las selecciones del grupo de protección.
 . Seleccione *Agregar*.
+
+
+
+
+=== Editar protección de grupo
+
+Puede cambiar la política de detección en un grupo existente.
+
+.Pasos
+. En el menú de protección contra ransomware de BlueXP, selecciona *Protección*.
+. Desde la página Protección, seleccione la pestaña *Grupos de protección* y luego seleccione el grupo cuya política desea modificar.
+. Desde la página de descripción general del grupo de protección, seleccione *Editar protección*.
+. Seleccione una política de protección existente para aplicarla o seleccione **Agregar** para crear una nueva. Para obtener más información sobre cómo agregar una política de protección, consulte <<steps,Cree una política de protección>> Luego seleccione **Guardar**.
+. En la descripción general del destino de copia de seguridad, seleccione un destino de copia de seguridad existente o **Agregar un nuevo destino de copia de seguridad**.
+. Seleccione **Siguiente** para revisar sus cambios.
 
 
 
@@ -485,7 +510,7 @@ La página Estrategias de protección contra ransomware muestra una lista de est
 +
 image:screen-protection-strategy-list.png["Pantalla de estrategias de protección contra ransomware que muestra una lista de estrategias"]
 
-. En la página Ransomware protection Strategies, en la columna Protected Workloads, haga clic en la flecha hacia abajo al final de la fila.
+. En la página Estrategias de protección contra ransomware, en la columna Cargas de trabajo protegidas, seleccione la flecha hacia abajo al final de la fila.
 
 
 

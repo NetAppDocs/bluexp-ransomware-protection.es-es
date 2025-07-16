@@ -63,7 +63,7 @@ TIP: Seleccione la nota "i" para ver sugerencias sobre estos datos. Para aumenta
 
 
 
-** *Acciones recomendadas*: Para aumentar la protección, revise cada recomendación y seleccione *Revisar y corregir*.
+** *Acciones recomendadas*: Para aumentar la protección, revise cada recomendación y luego seleccione *Revisar y corregir*.
 +
 Ver link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Revisar las sugerencias de protección en el Panel de Control"] o link:rp-use-protect.html["Proteja las cargas de trabajo"] .
 
@@ -98,7 +98,7 @@ Aquí hay una muestra de las recomendaciones que ofrece el servicio.
 Consulte link:rp-use-protect.html["Protege las cargas de trabajo contra ataques de ransomware"]. 
 
 
-| Conéctese a SEIM para la generación de informes de amenazas. | Envíe datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas. | Introduzca los detalles del servidor SIEM/XDR para activar la detección de amenazas. Consulte link:rp-use-settings.html["Configure las opciones de protección"]. 
+| Conéctese a SIEM para la generación de informes de amenazas. | Envíe datos a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas. | Introduzca los detalles del servidor SIEM/XDR para activar la detección de amenazas. Consulte link:rp-use-settings.html["Configure las opciones de protección"]. 
 
 
 | Habilite la protección coherente con las cargas de trabajo para aplicaciones o VMware. | Estas cargas de trabajo no están gestionadas por el software SnapCenter o el plugin de SnapCenter para VMware vSphere. | Para que sean administradas por SnapCenter, habilite la protección consistente con las cargas de trabajo.
@@ -134,7 +134,7 @@ Consulte link:rp-use-alert.html["Responder a una alerta de ransomware detectada"
 |===
 .Pasos
 . En la navegación izquierda de BlueXP, selecciona *Protección* > *Protección contra ransomware*.
-. En el panel Acciones recomendadas, selecciona una recomendación y selecciona *Revisar y corregir*.
+. En el panel Acciones recomendadas, seleccione una recomendación y luego seleccione *Revisar y corregir*.
 . Para descartar la acción hasta más tarde, selecciona *Descartar*.
 +
 La recomendación se borra de la lista de tareas pendientes y aparece en la lista de rechazados.
@@ -175,7 +175,7 @@ image:screen-dashboard2.png["Consola"]
 ** En el menú de protección contra ransomware de BlueXP, selecciona *Informes*.
 
 
-. Si seleccionó la opción *Informes*, seleccione uno de los archivos con nombre preconfigurados y seleccione *Descargar (CSV)* o *Descargar (JSON)*.
+. Si seleccionó la opción *Informes*, seleccione uno de los archivos con nombre preconfigurados y luego seleccione *Descargar (CSV)* o *Descargar (JSON)*.
 
 
 

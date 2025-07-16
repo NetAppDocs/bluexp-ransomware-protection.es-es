@@ -103,7 +103,7 @@ El administrador del almacenamiento de seguridad puede recuperar los datos en di
 * Recuperación de un almacén de datos en el nivel de máquina virtual.
 
 
-El proceso difiere levemente en función del tipo de carga de trabajo.
+El proceso varía según el tipo de carga de trabajo.
 
 .Pasos
 . En el menú de protección contra ransomware de BlueXP, selecciona *Recuperación*.
@@ -115,6 +115,10 @@ El proceso difiere levemente en función del tipo de carga de trabajo.
 ** Todos los volúmenes
 ** Por volumen
 ** Por archivo: Puede especificar una carpeta o archivos individuales para restaurar.
++
+
+IMPORTANT: Para las cargas de trabajo SAN, solo se puede restaurar por carga de trabajo.
+
 +
 
 TIP: Puede seleccionar hasta 100 archivos o una sola carpeta.

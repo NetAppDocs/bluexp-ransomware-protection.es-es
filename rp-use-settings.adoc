@@ -12,7 +12,7 @@ summary: Puedes configurar varias opciones, como un destino de backup, la detecc
 
 
 [role="lead"]
-Puede configurar destinos de copia de seguridad, habilitar la detección de amenazas, realizar un simulacro de preparación para ataques, configurar la detección de cargas de trabajo o configurar la conexión a la seguridad de la carga de trabajo de Data Infrastructure Insights accediendo a la opción *Configuración*.
+Puede configurar destinos de respaldo, enviar datos a un sistema externo de seguridad y gestión de eventos (SIEM), realizar un simulacro de preparación para ataques, configurar el descubrimiento de carga de trabajo o configurar la conexión a la seguridad de la carga de trabajo de Data Infrastructure Insights accediendo a la opción *Configuración*.
 
 *Rol de BlueXP requerido* Rol de administrador de organización, administrador de carpeta o proyecto, o administrador de protección contra ransomware.  https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga información sobre los roles de acceso de BlueXP para todos los servicios"^] .
 
@@ -22,7 +22,7 @@ Puede configurar destinos de copia de seguridad, habilitar la detección de amen
 * Configurar la detección de cargas de trabajo.
 * Configure la conexión a la seguridad de carga de trabajo de información de la infraestructura de datos para ver la información de usuario sospechosa en las alertas de ransomware.
 * Agregue un destino de copia de seguridad.
-* Habilite la detección de amenazas y conecte su sistema de gestión de eventos y seguridad (SIEM) para el análisis y la detección de amenazas. Habilitar la detección de amenazas envía automáticamente datos a su SIEM para el análisis de amenazas.
+* Conecte su sistema de seguridad y gestión de eventos (SIEM) para el análisis y la detección de amenazas. Habilitar la detección de amenazas envía automáticamente datos a su SIEM para el análisis de amenazas.
 
 
 
@@ -315,7 +315,7 @@ image:screen-settings-backup-destinations-list2.png["Backup destinations para la
 
 
 
-== Habilita la detección de amenazas
+== Conectarse a un sistema de gestión de eventos y seguridad (SIEM) para el análisis y detección de amenazas
 
 Puede enviar datos automáticamente a su sistema de gestión de eventos y seguridad (SIEM) para analizar y detectar amenazas. Puede seleccionar AWS Security Hub, Microsoft Sentinel o Splunk Cloud como su SIEM.
 
