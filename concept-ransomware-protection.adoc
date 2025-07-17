@@ -157,9 +157,7 @@ image:diagram-rp-architecture-preview3.png["Diagrama en el que se muestra la arq
 
 == Destinos de backup, entornos de trabajo y orígenes de datos de cargas de trabajo admitidos
 
-Utilice la BlueXP ransomware protection para ver qué tan resistentes son sus datos ante un ciberataque en los siguientes tipos de destinos de respaldo, entornos de trabajo y fuentes de datos de carga de trabajo:
-
-El ransomware BlueXP admite los siguientes entornos de trabajo y destinos de copia de seguridad:
+El ransomware BlueXP admite los siguientes objetivos de respaldo, entornos de trabajo y fuentes de datos:
 
 *Destinos de copia de seguridad soportados*
 
